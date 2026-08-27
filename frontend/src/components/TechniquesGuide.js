@@ -163,6 +163,156 @@ function TechniquesGuide() {
         'Proteger de contacto con el suelo',
         'Aplicar acabados protectores'
       ]
+    },
+    {
+      name: 'Piedra',
+      icon: '🪨',
+      description: 'Construcción tradicional con piedra natural, unida con mortero de cal o barro.',
+      advantages: [
+        'Durabilidad excepcional (siglos)',
+        'Resistencia al fuego y agua',
+        'Excelente masa térmica',
+        'Material abundante en muchas zonas',
+        'Estética natural atractiva',
+        'Mínimo mantenimiento'
+      ],
+      disadvantages: [
+        'Requiere mano de obra especializada',
+        'Proceso lento y laborioso',
+        'Peso considerable (cimientos fuertes)',
+        'Costosa si se transporta lejos',
+        'Difícil hacer modificaciones'
+      ],
+      ideal: 'Zonas con abundancia de piedra, construcciones duraderas, climas extremos',
+      process: [
+        'Seleccionar piedras de río o cantera',
+        'Clasificar por tamaño y forma',
+        'Preparar mortero de cal o tierra-cemento',
+        'Colocar piedras grandes en la base',
+        'Levantar muros rellenando huecos con mortero',
+        'Dejar juntas de dilatación',
+        'Aplicar acabado o dejar vista'
+      ]
+    },
+    {
+      name: 'Botellas de Vidrio Recicladas',
+      icon: '🍾',
+      description: 'Muros construidos con botellas de vidrio unidas con mortero, creando efectos lumínicos únicos.',
+      advantages: [
+        'Reutiliza residuos (ecológico)',
+        'Crea efectos de luz hermosos',
+        'Buen aislamiento térmico',
+        'Material gratuito o muy barato',
+        'Resistente al agua',
+        'Estética única y artística'
+      ],
+      disadvantages: [
+        'Requiere muchas botellas',
+        'Proceso de recolección laborioso',
+        'Limpieza intensiva necesaria',
+        'Requiere buen diseño estructural',
+        'Menos resistencia que muros sólidos'
+      ],
+      ideal: 'Muros no estructurales, cerramientos, muros decorativos, espacios creativos',
+      process: [
+        'Recolectar y limpiar botellas (mismo tamaño)',
+        'Diseñar patrón de colocación',
+        'Preparar mortero de tierra-cemento o cal',
+        'Colocar botellas horizontalmente con fondos hacia fuera',
+        'Rellenar espacios con mortero',
+        'Instalar malla de refuerzo entre capas',
+        'Revocar si se desea o dejar botellas expuestas'
+      ]
+    },
+    {
+      name: 'Tapia/Tapial (Tierra Compactada)',
+      icon: '🏗️',
+      description: 'Técnica de tierra compactada entre encofrados, creando muros monolíticos muy resistentes.',
+      advantages: [
+        'Muros muy resistentes y duraderos',
+        'Excelente masa térmica',
+        'Acabado liso sin revoque',
+        'Construcción relativamente rápida',
+        'Bajo costo de materiales',
+        'Estética contemporánea'
+      ],
+      disadvantages: [
+        'Requiere encofrado (inversión inicial)',
+        'Trabajo físicamente exigente',
+        'Necesita tierra específica',
+        'Sensible a lluvia durante construcción',
+        'Requiere experiencia técnica'
+      ],
+      ideal: 'Construcciones modernas de tierra, climas áridos y semi-áridos',
+      process: [
+        'Seleccionar tierra con 5-15% arcilla',
+        'Tamizar y mezclar con grava pequeña',
+        'Preparar encofrado resistente',
+        'Llenar encofrado con capas de 10-15 cm',
+        'Compactar cada capa con pisón',
+        'Desencofrar después de 24-48 horas',
+        'Proteger del agua hasta curado completo'
+      ]
+    },
+    {
+      name: 'Tierra-Paja (Light Earth)',
+      icon: '🌾',
+      description: 'Mezcla ligera de paja recubierta con barbotina de arcilla, excelente aislante.',
+      advantages: [
+        'Excelente aislamiento térmico',
+        'Muy liviano',
+        'Transpirable y regulador de humedad',
+        'Materiales económicos',
+        'Fácil de trabajar',
+        'Buen aislamiento acústico'
+      ],
+      disadvantages: [
+        'Requiere estructura portante',
+        'Necesita protección exterior',
+        'Proceso de secado lento',
+        'Sensible a humedad extrema',
+        'Menos masa térmica que tierra sólida'
+      ],
+      ideal: 'Relleno de estructuras de madera, climas fríos, renovaciones',
+      process: [
+        'Preparar barbotina de arcilla líquida',
+        'Sumergir paja en la barbotina',
+        'Escurrir el exceso',
+        'Rellenar estructura de madera en capas',
+        'Compactar ligeramente',
+        'Dejar secar completamente (varias semanas)',
+        'Aplicar revoque de protección'
+      ]
+    },
+    {
+      name: 'Madera',
+      icon: '🪵',
+      description: 'Construcción tradicional con estructura y revestimiento de madera natural.',
+      advantages: [
+        'Material renovable si es certificado',
+        'Construcción rápida',
+        'Liviano y flexible',
+        'Buen aislamiento natural',
+        'Fácil de trabajar',
+        'Estética cálida y natural'
+      ],
+      disadvantages: [
+        'Requiere tratamiento contra insectos y hongos',
+        'Sensible a humedad',
+        'Requiere mantenimiento regular',
+        'Costo variable según tipo de madera',
+        'Riesgo de incendio (requiere protección)'
+      ],
+      ideal: 'Zonas boscosas, climas fríos y templados, construcción rápida',
+      process: [
+        'Seleccionar madera apropiada (dura para estructura)',
+        'Secar madera adecuadamente',
+        'Aplicar tratamientos naturales preventivos',
+        'Construir estructura portante',
+        'Instalar aislamiento natural',
+        'Aplicar revestimiento exterior',
+        'Proteger con acabados ecológicos'
+      ]
     }
   ];
 

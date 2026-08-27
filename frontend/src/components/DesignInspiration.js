@@ -70,6 +70,51 @@ function DesignInspiration() {
       features: ['Diseño comunitario', 'Huertos integrados', 'Espacios compartidos', 'Gestión de agua', 'Autonomía energética'],
       climate: 'Adaptable a diferentes climas',
       icon: '🏘️'
+    },
+    {
+      title: 'Casa de Piedra de Montaña',
+      technique: 'Piedra',
+      location: 'Zona montañosa',
+      description: 'Construcción tradicional con piedra de cantera local. Muros gruesos de 60cm que proporcionan excelente aislamiento. Integrada en ladera con vistas panorámicas.',
+      features: ['110 m²', 'Muros de piedra vista', 'Chimenea central', 'Durabilidad centenaria', 'Fusión con terreno'],
+      climate: 'Clima de montaña con temperaturas extremas',
+      icon: '🪨'
+    },
+    {
+      title: 'Casa Lumínica de Botellas',
+      technique: 'Botellas de Vidrio',
+      location: 'Proyecto artístico comunitario',
+      description: 'Muro decorativo construido con 3,000 botellas de vidrio recicladas. Crea efectos de luz mágicos durante el día. Proyecto participativo que reutiliza residuos locales.',
+      features: ['Muro de 25 m²', 'Efectos cromáticos', 'Material reciclado 100%', 'Construcción comunitaria', 'Arte funcional'],
+      climate: 'Cualquier clima (muro interior o protegido)',
+      icon: '🍾'
+    },
+    {
+      title: 'Casa de Tapia Contemporánea',
+      technique: 'Tapia/Tapial',
+      location: 'Zona semiárida',
+      description: 'Vivienda moderna de tierra compactada con diseño minimalista. Muros monolíticos sin revoque que muestran capas de tierra. Integración perfecta de técnica ancestral con arquitectura contemporánea.',
+      features: ['140 m²', 'Muros de 40cm', 'Acabado natural', 'Diseño moderno', 'Cero mantenimiento'],
+      climate: 'Clima seco con variación térmica',
+      icon: '🏗️'
+    },
+    {
+      title: 'Casa de Tierra-Paja Alpina',
+      technique: 'Tierra-Paja',
+      location: 'Zona de alta montaña',
+      description: 'Construcción de madera con relleno de tierra-paja. Excelente aislamiento para climas extremos. Estructura expuesta tipo chalet combinada con tecnología natural.',
+      features: ['95 m²', 'Aislamiento R-35', 'Estructura de madera', 'Confort térmico superior', 'Bajo consumo energético'],
+      climate: 'Clima alpino con inviernos rigurosos',
+      icon: '🏔️'
+    },
+    {
+      title: 'Cabaña de Madera del Bosque',
+      technique: 'Madera',
+      location: 'Bosque templado',
+      description: 'Cabaña construida con madera local certificada. Diseño que respeta el entorno boscoso. Uso de técnicas tradicionales de carpintería con acabados naturales.',
+      features: ['70 m²', 'Madera certificada FSC', 'Techo de madera natural', 'Integración total', 'Estufa de leña'],
+      climate: 'Clima templado lluvioso',
+      icon: '🪵'
     }
   ];
 

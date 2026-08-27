@@ -144,6 +144,41 @@ function ProjectPlanner() {
         'Uniones y amarres',
         'Instalación de cerramientos',
         'Protección y acabados'
+      ],
+      'piedra': [
+        'Selección y clasificación de piedras',
+        'Preparación de mortero de cal',
+        'Colocación de piedras grandes en base',
+        'Levantamiento de muros con técnica tradicional',
+        'Relleno de juntas y acabado'
+      ],
+      'botellas': [
+        'Recolección y limpieza de botellas',
+        'Diseño de patrón lumínico',
+        'Preparación de mortero reforzado',
+        'Colocación de botellas con malla de refuerzo',
+        'Acabado y protección de superficie'
+      ],
+      'tapia': [
+        'Preparación de tierra y mezcla',
+        'Construcción y ajuste de encofrados',
+        'Llenado y compactación por capas',
+        'Desencofrado progresivo',
+        'Curado y protección superficial'
+      ],
+      'tierra-paja': [
+        'Preparación de barbotina de arcilla',
+        'Tratamiento de paja con barbotina',
+        'Construcción de estructura portante',
+        'Relleno con mezcla tierra-paja',
+        'Secado completo y revoque de protección'
+      ],
+      'madera': [
+        'Tratamiento preventivo de madera',
+        'Construcción de estructura portante',
+        'Instalación de aislamiento natural',
+        'Colocación de revestimiento exterior',
+        'Aplicación de acabados protectores'
       ]
     };
     return tasks[tech] || tasks['adobe'];
@@ -195,6 +230,11 @@ function ProjectPlanner() {
             <option value="bahareque">Bahareque</option>
             <option value="paja">Pacas de Paja</option>
             <option value="bambu">Bambú</option>
+            <option value="piedra">Piedra</option>
+            <option value="botellas">Botellas de Vidrio</option>
+            <option value="tapia">Tapia/Tapial</option>
+            <option value="tierra-paja">Tierra-Paja</option>
+            <option value="madera">Madera</option>
           </select>
         </div>
       </div>

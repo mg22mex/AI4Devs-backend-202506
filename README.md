@@ -23,6 +23,11 @@ Esta plataforma ayuda a arquitectos, autoconstructores, estudiantes y comunidade
 - **Bahareque (Quincha)**: Entramado liviano tropical
 - **Pacas de Paja**: Aislamiento superior para climas fríos
 - **Bambú**: Estructuras livianas y renovables
+- **Piedra**: Construcción tradicional de alta durabilidad
+- **Botellas de Vidrio**: Muros con botellas recicladas y efectos lumínicos
+- **Tapia/Tapial**: Tierra compactada monolítica
+- **Tierra-Paja**: Mezcla liviana con excelente aislamiento
+- **Madera**: Construcción tradicional con madera natural
 
 ### 🚀 Inicio Rápido
 

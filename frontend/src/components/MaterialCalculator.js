@@ -91,6 +91,70 @@ function MaterialCalculator() {
         cost = cañas * 15000 + areaNum * 25000;
         break;
 
+      case 'piedra':
+        const piedraVolume = areaNum * heightNum * thicknessNum;
+        const toneladasPiedra = piedraVolume * 2.5; // Densidad aprox de piedra
+        materials = {
+          'Piedra de río o cantera': `${toneladasPiedra.toFixed(2)} toneladas (${piedraVolume.toFixed(2)} m³)`,
+          'Mortero de cal': `${(piedraVolume * 0.3).toFixed(2)} m³`,
+          'Arena': `${(piedraVolume * 0.4).toFixed(2)} m³`,
+          'Cemento natural o cal': `${(piedraVolume * 0.15 * 1000).toFixed(0)} kg`,
+          'Herramientas (cinceles, mazos)': 'Kit básico'
+        };
+        cost = toneladasPiedra * 35000 + piedraVolume * 45000;
+        break;
+
+      case 'botellas':
+        const botellasVolume = areaNum * heightNum * thicknessNum;
+        const numBotellas = Math.ceil(botellasVolume / 0.001); // Aprox 1000 botellas por m³
+        materials = {
+          'Botellas de vidrio (750ml-1L)': `${numBotellas}`,
+          'Mortero de tierra-cemento': `${(botellasVolume * 0.6).toFixed(2)} m³`,
+          'Arena': `${(botellasVolume * 0.3).toFixed(2)} m³`,
+          'Cemento o cal': `${(botellasVolume * 0.1 * 1000).toFixed(0)} kg`,
+          'Malla de refuerzo': `${(areaNum * 1.5).toFixed(0)} m²`
+        };
+        cost = botellasVolume * 35000; // Botellas recicladas (costo de recolección y mortero)
+        break;
+
+      case 'tapia':
+        const tapiaVolume = areaNum * heightNum * thicknessNum;
+        materials = {
+          'Tierra seleccionada': `${(tapiaVolume * 1.2).toFixed(2)} m³`,
+          'Grava o piedra pequeña': `${(tapiaVolume * 0.15).toFixed(2)} m³`,
+          'Cal hidráulica': `${(tapiaVolume * 0.08 * 1000).toFixed(0)} kg`,
+          'Encofrado reutilizable': `${(areaNum / 2).toFixed(0)} m² de tableros`,
+          'Estabilizante (opcional)': `${(tapiaVolume * 0.05 * 1000).toFixed(0)} kg`
+        };
+        cost = tapiaVolume * 28000;
+        break;
+
+      case 'tierra-paja':
+        const tierraPajaVolume = areaNum * heightNum * thicknessNum;
+        materials = {
+          'Tierra arcillosa (barbotina)': `${(tierraPajaVolume * 0.4).toFixed(2)} m³`,
+          'Paja larga': `${(tierraPajaVolume * 0.3 * 1000).toFixed(0)} kg`,
+          'Arena': `${(tierraPajaVolume * 0.2).toFixed(2)} m³`,
+          'Estructura de madera': `${(areaNum * 0.2).toFixed(2)} m³`,
+          'Agua': `${(tierraPajaVolume * 180).toFixed(0)} litros`,
+          'Revoque de cal': `${(areaNum * 0.02).toFixed(2)} m³`
+        };
+        cost = tierraPajaVolume * 22000;
+        break;
+
+      case 'madera':
+        const maderaVolume = areaNum * 0.15; // Estimación para estructura + cerramiento
+        materials = {
+          'Madera estructural (pino/eucalipto)': `${maderaVolume.toFixed(2)} m³`,
+          'Tablones para revestimiento': `${(areaNum * 1.2).toFixed(0)} m²`,
+          'Aislante natural (lana, corcho)': `${(areaNum * 0.15).toFixed(2)} m³`,
+          'Tratamiento natural (aceite de linaza)': `${(areaNum * 0.3).toFixed(0)} litros`,
+          'Clavos y tornillos': `${(areaNum * 0.5).toFixed(0)} kg`,
+          'Impermeabilizante ecológico': `${(areaNum * 0.4).toFixed(0)} litros`
+        };
+        cost = maderaVolume * 450000 + areaNum * 55000;
+        break;
+
       default:
         break;
     }
@@ -110,7 +174,12 @@ function MaterialCalculator() {
       'superadobe': 'Superadobe',
       'bahareque': 'Bahareque',
       'paja': 'Pacas de Paja',
-      'bambu': 'Bambú'
+      'bambu': 'Bambú',
+      'piedra': 'Piedra',
+      'botellas': 'Botellas de Vidrio',
+      'tapia': 'Tapia/Tapial',
+      'tierra-paja': 'Tierra-Paja',
+      'madera': 'Madera'
     };
     return names[tech] || tech;
   };
@@ -128,6 +197,11 @@ function MaterialCalculator() {
           <option value="bahareque">Bahareque (Quincha)</option>
           <option value="paja">Pacas de Paja (Fardos)</option>
           <option value="bambu">Bambú</option>
+          <option value="piedra">Piedra</option>
+          <option value="botellas">Botellas de Vidrio Recicladas</option>
+          <option value="tapia">Tapia/Tapial (Tierra Compactada)</option>
+          <option value="tierra-paja">Tierra-Paja (Light Earth)</option>
+          <option value="madera">Madera (Construcción tradicional)</option>
         </select>
       </div>
 

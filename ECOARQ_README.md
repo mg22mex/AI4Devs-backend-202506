@@ -5,13 +5,18 @@ Una aplicación web integral para diseñar, planificar y calcular proyectos de c
 ## 🌟 Características
 
 ### 1. Calculadora de Materiales
-Calcula con precisión los materiales necesarios para tu proyecto según diferentes técnicas constructivas:
+Calcula con precisión los materiales necesarios para tu proyecto según 11 técnicas constructivas:
 - **Adobe**: Bloques de tierra, arena y paja
 - **Cob**: Construcción monolítica de tierra
 - **Superadobe**: Sacos rellenos de tierra
 - **Bahareque/Quincha**: Entramado de caña con tierra
 - **Pacas de Paja**: Construcción con fardos
 - **Bambú**: Estructuras de caña de bambú
+- **Piedra**: Construcción tradicional de piedra
+- **Botellas de Vidrio**: Muros con botellas recicladas
+- **Tapia/Tapial**: Tierra compactada
+- **Tierra-Paja**: Mezcla ligera aislante
+- **Madera**: Construcción de madera natural
 
 ### 2. Guía de Técnicas Constructivas
 Información completa sobre cada técnica:
@@ -96,6 +101,21 @@ Excelente aislamiento térmico. Ideal para climas fríos y construcciones eficie
 
 ### Bambú
 Material renovable más resistente que el acero. Perfecto para estructuras livianas.
+
+### Piedra
+Construcción tradicional con piedra natural. Durabilidad excepcional de siglos y excelente masa térmica.
+
+### Botellas de Vidrio Recicladas
+Muros creativos con botellas que crean efectos lumínicos únicos. Reutiliza residuos y aporta valor artístico.
+
+### Tapia/Tapial (Tierra Compactada)
+Tierra compactada entre encofrados. Muros monolíticos muy resistentes con acabado contemporáneo.
+
+### Tierra-Paja (Light Earth)
+Mezcla ligera de paja con barbotina de arcilla. Excelente aislamiento térmico y transpirabilidad.
+
+### Madera
+Construcción tradicional con madera natural certificada. Material renovable con estética cálida.
 
 ## 📊 Cálculos y Estimaciones
 
