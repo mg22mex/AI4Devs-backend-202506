@@ -1,0 +1,210 @@
+import React, { useState } from 'react';
+
+function MaterialCalculator() {
+  const [technique, setTechnique] = useState('adobe');
+  const [area, setArea] = useState('');
+  const [wallHeight, setWallHeight] = useState('2.5');
+  const [wallThickness, setWallThickness] = useState('0.4');
+  const [result, setResult] = useState(null);
+
+  const calculateMaterials = () => {
+    const areaNum = parseFloat(area);
+    const heightNum = parseFloat(wallHeight);
+    const thicknessNum = parseFloat(wallThickness);
+
+    if (!areaNum || areaNum <= 0) {
+      alert('Por favor ingresa un área válida');
+      return;
+    }
+
+    let materials = {};
+    let cost = 0;
+
+    switch(technique) {
+      case 'adobe':
+        const adobeVolume = areaNum * heightNum * thicknessNum;
+        materials = {
+          'Tierra arcillosa': `${(adobeVolume * 1.8).toFixed(2)} m³`,
+          'Arena': `${(adobeVolume * 0.6).toFixed(2)} m³`,
+          'Paja o fibra': `${(adobeVolume * 0.2 * 1000).toFixed(0)} kg`,
+          'Adobes necesarios (30x40x10cm)': `${Math.ceil(areaNum * heightNum / 0.12)}`,
+          'Agua': `${(adobeVolume * 200).toFixed(0)} litros`
+        };
+        cost = adobeVolume * 25000; // Precio estimado por m³
+        break;
+
+      case 'cob':
+        const cobVolume = areaNum * heightNum * thicknessNum;
+        materials = {
+          'Tierra arcillosa': `${(cobVolume * 2).toFixed(2)} m³`,
+          'Arena': `${(cobVolume * 0.8).toFixed(2)} m³`,
+          'Paja larga': `${(cobVolume * 0.15 * 1000).toFixed(0)} kg`,
+          'Agua': `${(cobVolume * 250).toFixed(0)} litros`
+        };
+        cost = cobVolume * 20000;
+        break;
+
+      case 'superadobe':
+        const sacoVolume = areaNum * heightNum * thicknessNum;
+        const numSacos = Math.ceil(sacoVolume / 0.08); // Aprox 80 litros por saco
+        materials = {
+          'Tierra': `${(sacoVolume * 1.5).toFixed(2)} m³`,
+          'Sacos de polipropileno': `${numSacos}`,
+          'Alambre de púas': `${(areaNum * heightNum * 3.14 / 0.3).toFixed(0)} metros`,
+          'Cal o cemento': `${(sacoVolume * 0.05 * 1000).toFixed(0)} kg`
+        };
+        cost = numSacos * 500 + sacoVolume * 15000;
+        break;
+
+      case 'bahareque':
+        materials = {
+          'Bambú o caña (estructura)': `${(areaNum / 2).toFixed(0)} unidades`,
+          'Bejucos o alambre': `${(areaNum * 10).toFixed(0)} metros`,
+          'Tierra arcillosa': `${(areaNum * 0.15).toFixed(2)} m³`,
+          'Paja o fibra': `${(areaNum * 5).toFixed(0)} kg`,
+          'Cal para acabado': `${(areaNum * 2).toFixed(0)} kg`
+        };
+        cost = areaNum * 30000;
+        break;
+
+      case 'paja':
+        const numPacas = Math.ceil(areaNum * heightNum / 0.5); // Aprox 2 pacas por m²
+        materials = {
+          'Pacas de paja': `${numPacas}`,
+          'Estructura de madera': `${(areaNum * 0.3).toFixed(2)} m³`,
+          'Revoque de cal o arcilla': `${(areaNum * 0.03).toFixed(2)} m³`,
+          'Malla gallinera': `${(areaNum * 1.2).toFixed(0)} m²`,
+          'Impermeabilizante natural': `${(areaNum * 0.5).toFixed(0)} litros`
+        };
+        cost = numPacas * 8000 + areaNum * 40000;
+        break;
+
+      case 'bambu':
+        const cañas = Math.ceil(areaNum / 3); // Aprox 3 cañas por m²
+        materials = {
+          'Cañas de bambú (6m)': `${cañas}`,
+          'Amarres (cuerda o alambre)': `${(cañas * 10).toFixed(0)} metros`,
+          'Impermeabilizante': `${(areaNum * 0.3).toFixed(0)} litros`,
+          'Recubrimiento natural': `${(areaNum * 0.02).toFixed(2)} m³`,
+          'Base de piedra': `${(areaNum * 0.1).toFixed(2)} m³`
+        };
+        cost = cañas * 15000 + areaNum * 25000;
+        break;
+
+      default:
+        break;
+    }
+
+    setResult({
+      materials,
+      cost: cost.toFixed(0),
+      area: areaNum,
+      technique: getTechniqueName(technique)
+    });
+  };
+
+  const getTechniqueName = (tech) => {
+    const names = {
+      'adobe': 'Adobe',
+      'cob': 'Cob',
+      'superadobe': 'Superadobe',
+      'bahareque': 'Bahareque',
+      'paja': 'Pacas de Paja',
+      'bambu': 'Bambú'
+    };
+    return names[tech] || tech;
+  };
+
+  return (
+    <div>
+      <h2 className="section-title">Calculadora de Materiales</h2>
+
+      <div className="form-group">
+        <label>Técnica Constructiva:</label>
+        <select value={technique} onChange={(e) => setTechnique(e.target.value)}>
+          <option value="adobe">Adobe</option>
+          <option value="cob">Cob</option>
+          <option value="superadobe">Superadobe</option>
+          <option value="bahareque">Bahareque (Quincha)</option>
+          <option value="paja">Pacas de Paja (Fardos)</option>
+          <option value="bambu">Bambú</option>
+        </select>
+      </div>
+
+      <div className="two-column-grid">
+        <div className="form-group">
+          <label>Área de construcción (m²):</label>
+          <input
+            type="number"
+            value={area}
+            onChange={(e) => setArea(e.target.value)}
+            placeholder="Ej: 80"
+            step="0.01"
+            min="0"
+          />
+        </div>
+
+        <div className="form-group">
+          <label>Altura de muros (m):</label>
+          <input
+            type="number"
+            value={wallHeight}
+            onChange={(e) => setWallHeight(e.target.value)}
+            placeholder="Ej: 2.5"
+            step="0.1"
+            min="0"
+          />
+        </div>
+      </div>
+
+      <div className="form-group">
+        <label>Espesor de muro (m):</label>
+        <input
+          type="number"
+          value={wallThickness}
+          onChange={(e) => setWallThickness(e.target.value)}
+          placeholder="Ej: 0.4"
+          step="0.05"
+          min="0"
+        />
+      </div>
+
+      <button className="button-primary" onClick={calculateMaterials}>
+        Calcular Materiales
+      </button>
+
+      {result && (
+        <div className="result-box">
+          <h4>Resultados para {result.technique}</h4>
+          <p><strong>Área de construcción:</strong> {result.area} m²</p>
+          
+          <h4 style={{marginTop: '20px'}}>Materiales Necesarios:</h4>
+          {Object.entries(result.materials).map(([material, cantidad]) => (
+            <p key={material}><strong>{material}:</strong> {cantidad}</p>
+          ))}
+          
+          <p style={{fontSize: '1.2em', marginTop: '20px', color: '#4a7c59'}}>
+            <strong>Costo estimado:</strong> ${parseInt(result.cost).toLocaleString('es-CL')} CLP
+          </p>
+          
+          <p style={{fontSize: '0.9em', fontStyle: 'italic', marginTop: '15px'}}>
+            * Los costos son aproximados y pueden variar según la región y disponibilidad de materiales.
+          </p>
+        </div>
+      )}
+
+      <div className="info-section" style={{marginTop: '40px'}}>
+        <h4>Notas Importantes:</h4>
+        <ul>
+          <li>Estos cálculos son estimaciones basadas en promedios. Ajusta según tus necesidades específicas.</li>
+          <li>Considera agregar un 10-15% extra de materiales para compensar desperdicios.</li>
+          <li>Los precios son referenciales y varían según la ubicación geográfica.</li>
+          <li>Consulta con un experto local antes de iniciar la construcción.</li>
+          <li>Verifica la calidad de la tierra antes de usarla (prueba de sedimentación).</li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default MaterialCalculator;

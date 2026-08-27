@@ -1,0 +1,229 @@
+import React from 'react';
+
+function DesignInspiration() {
+  const designs = [
+    {
+      title: 'Casa de Adobe Mediterránea',
+      technique: 'Adobe',
+      location: 'Valle Central, Chile',
+      description: 'Construcción de adobe tradicional con techo de tejas, paredes gruesas que proporcionan excelente aislamiento térmico. Integración con el paisaje mediante colores tierra y formas simples.',
+      features: ['120 m²', '2 dormitorios', 'Patio interior', 'Aleros amplios', 'Orientación norte'],
+      climate: 'Clima mediterráneo con estaciones marcadas',
+      icon: '🏠'
+    },
+    {
+      title: 'Domo de Superadobe',
+      technique: 'Superadobe',
+      location: 'Norte de Chile',
+      description: 'Estructura en forma de domo construida con sacos de tierra, ideal para climas áridos. Diseño circular que minimiza el uso de materiales y maximiza la eficiencia espacial.',
+      features: ['45 m²', 'Espacio diáfano', 'Lucernario central', 'Resistente a sismos', 'Bajo costo'],
+      climate: 'Clima desértico con alta radiación solar',
+      icon: '🏜️'
+    },
+    {
+      title: 'Cabaña de Cob con Techo Verde',
+      technique: 'Cob',
+      description: 'Pequeña cabaña de cob con formas orgánicas y esculturales. Techo verde que proporciona aislamiento adicional y se integra con el entorno natural.',
+      features: ['35 m²', 'Diseño de espacio abierto', 'Nichos integrados', 'Techo vivo', 'Ventanas curvas'],
+      climate: 'Clima templado húmedo',
+      icon: '🏡'
+    },
+    {
+      title: 'Casa de Bahareque Tropical',
+      technique: 'Bahareque',
+      location: 'Zona tropical',
+      description: 'Construcción ligera de bahareque con ventilación cruzada natural. Elevada del suelo para protección contra humedad e inundaciones.',
+      features: ['80 m²', 'Planta elevada', 'Ventilación cruzada', 'Terrazas amplias', 'Materiales locales'],
+      climate: 'Clima tropical húmedo',
+      icon: '🎋'
+    },
+    {
+      title: 'Casa de Pacas de Paja Eficiente',
+      technique: 'Pacas de Paja',
+      location: 'Zona fría',
+      description: 'Vivienda ultra-eficiente con muros de pacas de paja y revoque de cal. Diseño pasivo que minimiza necesidades de calefacción.',
+      features: ['100 m²', 'Triple vidriado', 'Muro trombe', 'Aislamiento R-30', 'Energía pasiva'],
+      climate: 'Clima frío con inviernos severos',
+      icon: '🌾'
+    },
+    {
+      title: 'Estructura de Bambú Contemporánea',
+      technique: 'Bambú',
+      location: 'Zona subtropical',
+      description: 'Diseño moderno que aprovecha la resistencia y flexibilidad del bambú. Estructura liviana con grandes ventanales y conexión con el exterior.',
+      features: ['90 m²', 'Doble altura', 'Estructura expuesta', 'Gran luminosidad', 'Diseño modular'],
+      climate: 'Clima subtropical',
+      icon: '🎍'
+    },
+    {
+      title: 'Casa Híbrida Bioclimática',
+      technique: 'Mixta',
+      description: 'Combina adobe en muros norte y sur, vidrio al norte, ventilación cruzada y techo de paja. Diseño que responde al microclima específico del sitio.',
+      features: ['150 m²', 'Diseño bioclimático', 'Captación solar', 'Ventilación natural', 'Inercia térmica'],
+      climate: 'Clima temperado',
+      icon: '🌍'
+    },
+    {
+      title: 'Ecoaldea de Tierra',
+      technique: 'Múltiples',
+      description: 'Conjunto de viviendas naturales con espacios comunitarios. Uso de diferentes técnicas según función: adobe para casas, cob para espacios comunes, bahareque para talleres.',
+      features: ['Diseño comunitario', 'Huertos integrados', 'Espacios compartidos', 'Gestión de agua', 'Autonomía energética'],
+      climate: 'Adaptable a diferentes climas',
+      icon: '🏘️'
+    }
+  ];
+
+  const principles = [
+    {
+      title: 'Diseño Bioclimático',
+      description: 'Aprovechar las condiciones climáticas locales para maximizar confort y minimizar consumo energético.',
+      tips: [
+        'Orientación según hemisferio (norte en sur, sur en norte)',
+        'Ventilación cruzada natural',
+        'Aleros dimensionados para cada latitud',
+        'Uso de masa térmica',
+        'Protección solar en verano'
+      ]
+    },
+    {
+      title: 'Integración con el Entorno',
+      description: 'Diseñar edificaciones que se integren armónicamente con el paisaje y ecosistema local.',
+      tips: [
+        'Usar materiales locales',
+        'Respetar topografía existente',
+        'Colores que se integren al paisaje',
+        'Mínima alteración del terreno',
+        'Preservar vegetación nativa'
+      ]
+    },
+    {
+      title: 'Eficiencia de Recursos',
+      description: 'Optimizar el uso de materiales, agua y energía en diseño y construcción.',
+      tips: [
+        'Diseño compacto reduce materiales',
+        'Espacios multiuso',
+        'Captación de agua lluvia',
+        'Energías renovables',
+        'Reutilización de materiales'
+      ]
+    },
+    {
+      title: 'Espacios Saludables',
+      description: 'Crear ambientes interiores que promuevan salud y bienestar de los ocupantes.',
+      tips: [
+        'Buena calidad del aire',
+        'Iluminación natural abundante',
+        'Conexión visual con naturaleza',
+        'Materiales no tóxicos',
+        'Aislamiento acústico'
+      ]
+    }
+  ];
+
+  return (
+    <div>
+      <h2 className="section-title">Inspiración y Diseños</h2>
+
+      <div className="info-section">
+        <p style={{fontSize: '1.1em', textAlign: 'center'}}>
+          Explora ejemplos inspiradores de construcción natural de diferentes técnicas y climas.
+        </p>
+      </div>
+
+      <h3 style={{color: '#2d3748', fontSize: '1.5em', marginTop: '30px', marginBottom: '20px'}}>
+        Proyectos Destacados
+      </h3>
+
+      {designs.map((design, index) => (
+        <div key={index} className="card" style={{marginBottom: '25px'}}>
+          <div style={{display: 'flex', alignItems: 'center', marginBottom: '15px'}}>
+            <span style={{fontSize: '2.5em', marginRight: '15px'}}>{design.icon}</span>
+            <div>
+              <h3 style={{margin: 0, color: '#4a7c59'}}>{design.title}</h3>
+              <span className="technique-badge">{design.technique}</span>
+              {design.location && (
+                <span style={{color: '#718096', fontSize: '0.9em', marginLeft: '10px'}}>
+                  📍 {design.location}
+                </span>
+              )}
+            </div>
+          </div>
+
+          <p style={{fontSize: '1.05em', lineHeight: '1.7', marginBottom: '20px'}}>
+            {design.description}
+          </p>
+
+          <div style={{background: '#f7fafc', padding: '15px', borderRadius: '8px', marginBottom: '15px'}}>
+            <h4 style={{color: '#2d3748', fontSize: '1.1em', marginBottom: '10px'}}>
+              Características Principales:
+            </h4>
+            <div style={{display: 'flex', flexWrap: 'wrap', gap: '10px'}}>
+              {design.features.map((feature, i) => (
+                <span key={i} style={{
+                  background: 'white',
+                  padding: '6px 12px',
+                  borderRadius: '15px',
+                  fontSize: '0.9em',
+                  color: '#4a5568',
+                  border: '1px solid #e2e8f0'
+                }}>
+                  {feature}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <p style={{fontSize: '0.95em', color: '#718096', fontStyle: 'italic'}}>
+            <strong>Clima:</strong> {design.climate}
+          </p>
+        </div>
+      ))}
+
+      <h3 style={{color: '#2d3748', fontSize: '1.5em', marginTop: '50px', marginBottom: '20px'}}>
+        Principios de Diseño Sostenible
+      </h3>
+
+      <div className="cards-grid">
+        {principles.map((principle, index) => (
+          <div key={index} className="card">
+            <h3>{principle.title}</h3>
+            <p style={{marginBottom: '20px'}}>{principle.description}</p>
+            <h4 style={{fontSize: '1em', color: '#4a7c59', marginBottom: '10px'}}>
+              Estrategias Clave:
+            </h4>
+            <ul style={{paddingLeft: '20px'}}>
+              {principle.tips.map((tip, i) => (
+                <li key={i} style={{marginBottom: '8px', color: '#4a5568'}}>
+                  {tip}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <div className="info-section" style={{marginTop: '40px'}}>
+        <h4>📚 Recursos Adicionales</h4>
+        <p>Para profundizar en construcción natural, considera explorar:</p>
+        <ul>
+          <li><strong>Libros recomendados:</strong> "La Casa Ecológica" de Julià Pérez, "Building with Earth" de Gernot Minke</li>
+          <li><strong>Documentales:</strong> "Earthship Chronicles", "The Natural Building Companion"</li>
+          <li><strong>Organizaciones:</strong> Red Iberoamericana de Construcción con Tierra (RedIberoTerra)</li>
+          <li><strong>Cursos:</strong> Busca talleres prácticos de bioconstrucción en tu región</li>
+          <li><strong>Comunidades:</strong> Únete a grupos locales de construcción natural</li>
+        </ul>
+      </div>
+
+      <div className="result-box" style={{marginTop: '30px'}}>
+        <h4>💡 Consejos para tu Diseño</h4>
+        <p><strong>Empieza simple:</strong> Tu primer proyecto debe ser manejable y realista.</p>
+        <p><strong>Visita proyectos existentes:</strong> Aprende de edificios naturales locales.</p>
+        <p><strong>Experimenta a pequeña escala:</strong> Construye una caseta o horno antes de tu casa.</p>
+        <p><strong>Documenta el proceso:</strong> Toma fotos y notas para futuras referencias.</p>
+        <p><strong>Trabaja con la naturaleza:</strong> Observa patrones naturales antes de intervenir.</p>
+      </div>
+    </div>
+  );
+}
+
+export default DesignInspiration;
