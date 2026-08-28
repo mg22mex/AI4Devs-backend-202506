@@ -151,6 +151,33 @@ function DesignInspiration() {
       features: ['110 m²', '2,500 botellas', 'Construcción comunitaria', 'Muros lumínicos', 'Arte funcional'],
       climate: 'Urbano, clima templado',
       icon: '🏘️'
+    },
+    {
+      title: 'Walipini Andino de Alta Montaña',
+      technique: 'Walipini',
+      location: 'Altiplano andino, 3,800 msnm',
+      description: 'Invernadero subterráneo que permite cultivar hortalizas durante todo el año en clima extremo. Excavación de 2.2m aprovecha temperatura constante del subsuelo (12-15°C). Producción continua a pesar de heladas nocturnas de -15°C.',
+      features: ['60 m²', 'Cultivo todo el año', 'Protección contra heladas', 'Ahorro de agua 60%', 'Sin calefacción'],
+      climate: 'Alta montaña con heladas 300+ días/año',
+      icon: '🌱'
+    },
+    {
+      title: 'Bodega Subterránea Campesina',
+      technique: 'Root Cellar',
+      location: 'Zona rural templada',
+      description: 'Bodega tradicional excavada en colina con techo abovedado de piedra. Mantiene temperatura de 10-12°C y humedad 85% todo el año sin electricidad. Almacena 2 toneladas de productos durante 6-8 meses.',
+      features: ['25 m²', 'Temperatura constante', 'Sin refrigeración', 'Duración 100+ años', 'Techo abovedado'],
+      climate: 'Templado con estaciones marcadas',
+      icon: '🍷'
+    },
+    {
+      title: 'Temazcal Comunitario Maya',
+      technique: 'Temazcal',
+      location: 'Península de Yucatán, México',
+      description: 'Baño de vapor tradicional de 8m² construido con piedra volcánica y adobe. Domo bajo (1.6m altura) retiene calor perfectamente. Capacidad para 6-8 personas. Usado semanalmente por comunidad de 50 familias para ceremonias de sanación.',
+      features: ['8 m²', 'Piedra volcánica', 'Tradición ancestral', 'Terapia y bienestar', 'Bajo costo'],
+      climate: 'Tropical, ideal cualquier clima',
+      icon: '♨️'
     }
   ];
 

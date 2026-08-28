@@ -200,6 +200,27 @@ function ProjectPlanner() {
         'Cimientos circulares o radiales',
         'Construcción según técnica base elegida',
         'Acabados curvos y detalles especiales'
+      ],
+      'walipini': [
+        'Excavación de fosa con pendiente norte-sur',
+        'Construcción de muros de contención',
+        'Instalación de estructura de techo inclinado',
+        'Cobertura con plástico invernadero doble capa',
+        'Instalación de sistema de ventilación y drenaje'
+      ],
+      'cellar': [
+        'Excavación profunda en pendiente',
+        'Construcción de muros impermeabilizados',
+        'Construcción de techo abovedado',
+        'Instalación de ventilación cruzada',
+        'Construcción de acceso y estantes'
+      ],
+      'temazcal': [
+        'Excavación ligera y base circular',
+        'Construcción de estructura de arcos',
+        'Construcción de domo bajo con adobe',
+        'Instalación de piedras volcánicas y chimenea',
+        'Impermeabilización y aislamiento con tierra'
       ]
     };
     return tasks[tech] || tasks['adobe'];
@@ -268,6 +289,9 @@ function ProjectPlanner() {
             </optgroup>
             <optgroup label="Diseños Especiales">
               <option value="circular">Diseño Circular/Domo</option>
+              <option value="walipini">Walipini (Invernadero)</option>
+              <option value="cellar">Bodega/Cellar</option>
+              <option value="temazcal">Temazcal</option>
             </optgroup>
           </select>
         </div>

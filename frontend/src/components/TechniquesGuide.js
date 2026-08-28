@@ -373,6 +373,113 @@ function TechniquesGuide() {
         'Impermeabilizar base y coronamiento',
         'Aplicar acabado según diseño'
       ]
+    },
+    {
+      name: 'Walipini (Invernadero Subterráneo)',
+      icon: '🌱',
+      description: 'Invernadero excavado en la tierra que aprovecha la temperatura constante del subsuelo para cultivar durante todo el año.',
+      advantages: [
+        'Cultivo durante todo el año (incluso en invierno)',
+        'Protección contra heladas',
+        'Temperatura estable del subsuelo',
+        'Menor consumo de agua (menos evaporación)',
+        'Protección contra vientos fuertes',
+        'Ahorro energético (sin calefacción activa)',
+        'Máxima eficiencia en climas fríos'
+      ],
+      disadvantages: [
+        'Requiere excavación considerable',
+        'Necesita buen drenaje para evitar inundaciones',
+        'Orientación solar crítica (norte-sur)',
+        'Requiere ventilación adecuada',
+        'Costo inicial de excavación',
+        'No funciona en terrenos con napa freática alta'
+      ],
+      ideal: 'Climas fríos con inviernos largos, zonas con heladas frecuentes, autosuficiencia alimentaria',
+      process: [
+        'Seleccionar sitio con orientación norte-sur (hemisferio norte)',
+        'Excavar fosa de 2-2.5m de profundidad',
+        'Crear pendiente del piso hacia el norte (drenaje)',
+        'Construir muros de contención (piedra, tierra compactada)',
+        'Instalar estructura de techo inclinado',
+        'Cubrir con plástico invernadero doble capa',
+        'Colocar barriles con agua (masa térmica)',
+        'Instalar tubos de ventilación pasiva',
+        'Construir acceso con escalones',
+        'Sistema de drenaje perimetral'
+      ]
+    },
+    {
+      name: 'Bodega/Cellar Subterráneo',
+      icon: '🍷',
+      description: 'Espacio de almacenamiento subterráneo que mantiene temperatura y humedad constantes, ideal para conservar alimentos.',
+      advantages: [
+        'Temperatura estable (10-15°C todo el año)',
+        'Humedad ideal para conservación',
+        'No requiere refrigeración eléctrica',
+        'Conserva alimentos por meses',
+        'Ahorro energético significativo',
+        'Protección contra heladas y calor extremo',
+        'Dura décadas con poco mantenimiento'
+      ],
+      disadvantages: [
+        'Requiere excavación profunda (2-3m)',
+        'Construcción inicial costosa',
+        'Necesita impermeabilización cuidadosa',
+        'Requiere ventilación controlada',
+        'Riesgo de humedad excesiva si está mal diseñado',
+        'Acceso puede ser complicado'
+      ],
+      ideal: 'Almacenamiento de verduras, frutas, vinos, conservas; autosuficiencia; climas con estaciones marcadas',
+      process: [
+        'Elegir sitio en pendiente (facilita drenaje)',
+        'Excavar fosa de 2.5-3m de profundidad',
+        'Construir muros de piedra o concreto',
+        'Crear techo abovedado (mejor distribución de carga)',
+        'Impermeabilizar muros y techo completamente',
+        'Instalar 2-4 tubos de ventilación (cruzada)',
+        'Colocar piso de grava (drenaje y humedad)',
+        'Instalar puerta aislada con sello hermético',
+        'Construir estantes de madera interior',
+        'Cubrir con tierra (aislamiento)'
+      ]
+    },
+    {
+      name: 'Temazcal (Baño de Vapor)',
+      icon: '♨️',
+      description: 'Baño de vapor tradicional mesoamericano, estructura pequeña de tierra o piedra para rituales de purificación y salud.',
+      advantages: [
+        'Beneficios terapéuticos reconocidos',
+        'Construcción de bajo costo',
+        'Uso de materiales locales',
+        'Estructura compacta (6-10m²)',
+        'Durabilidad (siglos de tradición)',
+        'Eficiencia energética (retiene calor)',
+        'Conexión cultural y espiritual'
+      ],
+      disadvantages: [
+        'Requiere conocimiento de construcción de domos',
+        'Necesita mantenimiento regular de sellado',
+        'Riesgo de grietas por calor extremo',
+        'Ventilación debe ser precisa',
+        'Altura limitada (espacios bajos)',
+        'Uso específico (no multiuso)'
+      ],
+      ideal: 'Espacios de bienestar, turismo ecológico, comunidades, retiros de salud, terapias naturales',
+      process: [
+        'Excavar ligeramente el piso (20-30cm)',
+        'Crear base circular de piedra o adobe',
+        'Construir estructura de arcos de madera',
+        'Rellenar con adobe o tierra-paja',
+        'Crear domo bajo (1.5-1.8m altura)',
+        'Dejar espacio para puerta pequeña (1m altura)',
+        'Instalar chimenea/salida de humo',
+        'Colocar piedras volcánicas para calentar',
+        'Impermeabilizar con lona o plástico',
+        'Cubrir con más tierra (aislamiento)',
+        'Construir bancas interiores de madera',
+        'Decorar con piedras de río'
+      ]
     }
   ];
 

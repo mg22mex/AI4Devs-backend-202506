@@ -199,6 +199,56 @@ function MaterialCalculator() {
         cost = domeVolume * 30000; // Estimado medio
         break;
 
+      case 'walipini':
+        // Invernadero subterráneo - excavación + estructura
+        const walipiniDepth = 2; // Profundidad típica
+        const excavationVol = areaNum * walipiniDepth;
+        materials = {
+          'Excavación de tierra': `${excavationVol.toFixed(2)} m³`,
+          'Muros de contención (piedra o tierra)': `${(areaNum * 0.6).toFixed(2)} m³`,
+          'Plástico invernadero (doble capa)': `${(areaNum * 1.3).toFixed(2)} m²`,
+          'Estructura de madera para techo': `${(areaNum * 0.12).toFixed(2)} m³`,
+          'Tubería de ventilación': `${(areaNum * 0.5).toFixed(0)} metros`,
+          'Grava para drenaje': `${(areaNum * 0.15).toFixed(2)} m³`,
+          'Barril de agua (masa térmica)': `${Math.ceil(areaNum / 10)} unidades`
+        };
+        cost = excavationVol * 8000 + areaNum * 25000;
+        break;
+
+      case 'cellar':
+        // Bodega subterránea para almacenamiento
+        const cellarDepth = 2.5; // Profundidad típica
+        const cellarExcavation = areaNum * cellarDepth;
+        materials = {
+          'Excavación': `${cellarExcavation.toFixed(2)} m³`,
+          'Muros de piedra o concreto': `${(areaNum * 0.8).toFixed(2)} m³`,
+          'Impermeabilización': `${(areaNum * 1.5).toFixed(0)} m²`,
+          'Techo abovedado (piedra/ladrillo)': `${(areaNum * 1.2).toFixed(2)} m²`,
+          'Tubos de ventilación': '2-4 unidades',
+          'Puerta aislada': '1 unidad',
+          'Estantes de madera': `${(areaNum * 0.3).toFixed(0)} metros lineales`,
+          'Grava para piso': `${(areaNum * 0.1).toFixed(2)} m³`
+        };
+        cost = cellarExcavation * 10000 + areaNum * 45000;
+        break;
+
+      case 'temazcal':
+        // Baño de vapor tradicional - pequeña estructura
+        const temazcalArea = areaNum < 10 ? areaNum : 10; // Máximo 10m² típico
+        const domeHeight = 1.8; // Altura baja típica
+        materials = {
+          'Piedra volcánica para calentamiento': `${(temazcalArea * 0.3).toFixed(2)} m³`,
+          'Adobe o tierra para domo': `${(temazcalArea * 0.5).toFixed(2)} m³`,
+          'Estructura de madera (arcos)': `${(temazcalArea * 0.08).toFixed(2)} m³`,
+          'Lona o plástico (barrera de vapor)': `${(temazcalArea * 1.5).toFixed(2)} m²`,
+          'Puerta pequeña de madera': '1 unidad',
+          'Chimenea/salida de humo': '1 unidad',
+          'Bancas de madera interior': `${Math.ceil(temazcalArea / 2)} unidades`,
+          'Piedras de río para decoración': `${(temazcalArea * 50).toFixed(0)} kg`
+        };
+        cost = temazcalArea * 85000; // Más costoso por especialización
+        break;
+
       default:
         break;
     }
@@ -226,7 +276,10 @@ function MaterialCalculator() {
       'madera': 'Madera',
       'llantas': 'Llantas/Neumáticos (Earthship)',
       'mamposteria': 'Mampostería',
-      'circular': 'Diseño Circular/Domo'
+      'circular': 'Diseño Circular/Domo',
+      'walipini': 'Walipini (Invernadero Subterráneo)',
+      'cellar': 'Bodega/Cellar Subterráneo',
+      'temazcal': 'Temazcal (Baño de Vapor)'
     };
     return names[tech] || tech;
   };
@@ -261,6 +314,9 @@ function MaterialCalculator() {
           </optgroup>
           <optgroup label="Diseños Especiales">
             <option value="circular">Diseño Circular/Domo</option>
+            <option value="walipini">Walipini (Invernadero Subterráneo)</option>
+            <option value="cellar">Bodega/Cellar Subterráneo</option>
+            <option value="temazcal">Temazcal (Baño de Vapor)</option>
           </optgroup>
         </select>
       </div>
