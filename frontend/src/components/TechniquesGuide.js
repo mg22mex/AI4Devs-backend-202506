@@ -516,6 +516,113 @@ function TechniquesGuide() {
         'Proveer contenedor de material absorbente',
         'Educar a usuarios sobre uso correcto'
       ]
+    },
+    {
+      name: 'Horno de Barro/Leña',
+      icon: '🔥',
+      description: 'Horno tradicional de barro cocido o adobe para cocción de pan, pizza y alimentos. Retiene calor durante horas permitiendo cocción lenta y eficiente con leña.',
+      advantages: [
+        'Cocción tradicional de alta calidad',
+        'Retiene calor durante 4-8 horas',
+        'Sabor especial a leña',
+        'Eficiencia energética (consume poca leña)',
+        'Construcción con materiales naturales',
+        'Durabilidad de décadas',
+        'Puede servir como fuente de calor'
+      ],
+      disadvantages: [
+        'Requiere habilidad para construir',
+        'Tiempo de precalentamiento (1-2 horas)',
+        'Necesita leña seca disponible',
+        'Mantenimiento de grietas por calor',
+        'Requiere espacio exterior o buena ventilación',
+        'No es instantáneo como gas o eléctrico'
+      ],
+      ideal: 'Cocina tradicional, panadería artesanal, turismo rural, autosuficiencia, comunidades',
+      process: [
+        'Construir base elevada de piedra (80-100cm)',
+        'Crear piso refractario nivelado',
+        'Formar cúpula con arena húmeda (molde temporal)',
+        'Aplicar capa de ladrillos refractarios o adobe',
+        'Cubrir con mezcla aislante (perlita, vermiculita)',
+        'Aplicar capas exteriores de adobe',
+        'Instalar puerta de fierro en entrada',
+        'Construir chimenea con tubo de 15-20cm',
+        'Curar horno con fuegos graduales',
+        'Decorar y proteger con techo'
+      ]
+    },
+    {
+      name: 'Chimenea/Rocket Mass Heater',
+      icon: '🏠',
+      description: 'Sistema de calefacción eficiente de masa térmica que quema leña limpiamente y almacena calor en banco de adobe o mampostería. Hasta 90% más eficiente que chimenea tradicional.',
+      advantages: [
+        'Eficiencia hasta 90% (vs 15-30% tradicional)',
+        'Consume 1/4 a 1/10 de la leña',
+        'Combustión limpia (sin humo visible)',
+        'Calor radiante durante 12-24 horas',
+        'Banco caliente para sentarse',
+        'No requiere electricidad',
+        'Bajo costo operativo'
+      ],
+      disadvantages: [
+        'Construcción más compleja',
+        'Requiere leña seca (humedad <20%)',
+        'Espacio significativo (banco térmico)',
+        'Inversión inicial mayor',
+        'No aceptado en todos los códigos de construcción',
+        'Requiere aprendizaje de operación'
+      ],
+      ideal: 'Climas fríos, zonas con acceso a leña, viviendas off-grid, autosuficiencia energética',
+      process: [
+        'Construir cámara de combustión vertical refractaria',
+        'Crear canal horizontal de humos bajo banco',
+        'Construir banco de masa térmica con adobe',
+        'Instalar barril metálico o tubo de calor',
+        'Construir chimenea vertical exterior',
+        'Aislar cámara de combustión (perlita)',
+        'Instalar puerta de carga frontal',
+        'Crear tiro regulable',
+        'Curar sistema gradualmente',
+        'Terminar banco con adobe o baldosa'
+      ]
+    },
+    {
+      name: 'Piso Climatizado (Radiante)',
+      icon: '🌡️',
+      description: 'Sistema de calefacción por suelo radiante que distribuye agua caliente (o aire) bajo el piso. Calor uniforme, eficiente y confortable desde los pies.',
+      advantages: [
+        'Calor uniforme en toda la superficie',
+        'Confort térmico superior',
+        'Eficiencia 25-30% mayor que radiadores',
+        'Compatible con energía solar térmica',
+        'Estéticamente invisible',
+        'Reduce circulación de polvo',
+        'Combina con masa térmica (adobe)'
+      ],
+      disadvantages: [
+        'Instalación compleja y costosa',
+        'Difícil acceso para reparaciones',
+        'Respuesta térmica lenta (inercia)',
+        'Requiere fuente de calor constante',
+        'No compatible con todos los pisos',
+        'Mantenimiento especializado'
+      ],
+      ideal: 'Climas fríos, viviendas con energía solar térmica, construcción nueva, confort de alta gama',
+      process: [
+        'Nivelar y compactar base',
+        'Instalar capa de grava drenante',
+        'Colocar aislante térmico (EPS, XPS)',
+        'Instalar malla de refuerzo',
+        'Tender tubería PEX en serpentín (15-20cm separación)',
+        'Conectar a colectores y termostato',
+        'Verter masa térmica (adobe líquido o concreto)',
+        'Nivelar superficie a 5-8cm sobre tubos',
+        'Curar y secar completamente',
+        'Instalar terminación de piso',
+        'Conectar a fuente de calor (caldera, solar)',
+        'Purgar sistema y probar'
+      ]
     }
   ];
 

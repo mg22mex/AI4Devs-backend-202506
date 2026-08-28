@@ -17,13 +17,13 @@ function Home() {
           <h3>Calculadora de Materiales</h3>
           <p>
             Calcula con precisión los materiales necesarios para tu proyecto de construcción natural.
-            Incluye 18 técnicas: tierra (adobe, cob, superadobe, tapia, tierra-paja), fibras vegetales (bahareque, paja, bambú), pétreos (piedra, mampostería, madera), reciclaje (botellas, llantas) y diseños especiales (circular, walipini, cellar, temazcal, baño seco).
+            Incluye 21 técnicas: tierra (adobe, cob, superadobe, tapia, tierra-paja), fibras vegetales (bahareque, paja, bambú), pétreos (piedra, mampostería, madera), reciclaje (botellas, llantas), diseños especiales (circular, walipini, cellar, temazcal, baño seco) y sistemas térmicos (hornos, chimeneas, pisos climatizados).
           </p>
           <ul>
             <li>✓ Cálculos precisos por m²</li>
-            <li>✓ 18 técnicas constructivas</li>
+            <li>✓ 21 técnicas constructivas</li>
             <li>✓ Estimación de costos</li>
-            <li>✓ Diseños especiales y sostenibles</li>
+            <li>✓ Sistemas de calefacción y cocción</li>
           </ul>
         </div>
 
@@ -31,15 +31,15 @@ function Home() {
           <div className="icon">📚</div>
           <h3>Guía de Técnicas</h3>
           <p>
-            Aprende sobre 18 diferentes técnicas de construcción natural, sistemas pasivos de climatización y diseños especiales.
+            Aprende sobre 21 diferentes técnicas de construcción natural, sistemas pasivos de climatización, diseños especiales y sistemas de calefacción.
           </p>
           <ul>
             <li>✓ Adobe, cob, tapia y tierra-paja</li>
             <li>✓ Piedra, mampostería y madera</li>
             <li>✓ Botellas y llantas recicladas</li>
             <li>✓ Walipini, cellar, temazcal y baño seco</li>
+            <li>✓ Hornos, chimeneas y pisos climatizados</li>
             <li>✓ Sistemas de manejo térmico pasivo</li>
-            <li>✓ Construcción circular y domos</li>
           </ul>
         </div>
 

@@ -229,6 +229,31 @@ function ProjectPlanner() {
         'Montaje de asiento con separador',
         'Instalación de tubo de ventilación de 3m',
         'Educación de usuarios sobre manejo'
+      ],
+      'horno': [
+        'Construcción de base elevada de piedra',
+        'Instalación de piso refractario',
+        'Construcción de cúpula con molde',
+        'Aplicación de capas aislantes y adobe',
+        'Instalación de puerta y chimenea',
+        'Curado con fuegos graduales'
+      ],
+      'chimenea': [
+        'Construcción de cámara de combustión refractaria',
+        'Instalación de barril o tubo de calor',
+        'Construcción de banco de masa térmica',
+        'Instalación de chimenea exterior',
+        'Sistema de tiro y puerta de carga',
+        'Curado y pruebas de funcionamiento'
+      ],
+      'piso-climatizado': [
+        'Preparación y nivelación de base',
+        'Instalación de aislante térmico',
+        'Tendido de tubería PEX en serpentín',
+        'Conexión a colectores y termostato',
+        'Vertido de masa térmica sobre tubos',
+        'Instalación de terminación de piso',
+        'Conexión a fuente de calor y pruebas'
       ]
     };
     return tasks[tech] || tasks['adobe'];
@@ -301,6 +326,11 @@ function ProjectPlanner() {
               <option value="cellar">Bodega/Cellar</option>
               <option value="temazcal">Temazcal</option>
               <option value="bano-seco">Baño Seco</option>
+            </optgroup>
+            <optgroup label="Sistemas de Calefacción y Cocción">
+              <option value="horno">Horno de Barro/Leña</option>
+              <option value="chimenea">Chimenea/Rocket Mass Heater</option>
+              <option value="piso-climatizado">Piso Climatizado</option>
             </optgroup>
           </select>
         </div>

@@ -10,7 +10,7 @@ Esta plataforma ayuda a arquitectos, autoconstructores, estudiantes y comunidade
 
 ### ✨ Características Principales
 
-1. **Calculadora de Materiales** - Calcula cantidades exactas y costos para 18 técnicas constructivas
+1. **Calculadora de Materiales** - Calcula cantidades exactas y costos para 21 técnicas constructivas
 2. **Guía de Técnicas** - Información detallada sobre cada método de construcción natural + sistemas pasivos
 3. **Planificador de Proyectos** - Genera planes con fases, cronograma y presupuesto
 4. **Inspiración** - Galería de diseños y principios de construcción sostenible
@@ -45,6 +45,11 @@ Esta plataforma ayuda a arquitectos, autoconstructores, estudiantes y comunidade
 - **Bodega/Cellar**: Almacenamiento subterráneo sin refrigeración
 - **Temazcal**: Baño de vapor tradicional terapéutico
 - **Baño Seco**: Sistema de saneamiento ecológico sin agua
+
+**Sistemas de Calefacción y Cocción:**
+- **Hornos de Barro/Leña**: Cocción tradicional de alta eficiencia
+- **Chimeneas/Rocket Mass Heater**: Calefacción con masa térmica (hasta 90% eficiencia)
+- **Pisos Climatizados**: Sistema de calefacción radiante con energía solar
 
 ### 🚀 Inicio Rápido
 

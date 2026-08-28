@@ -187,6 +187,33 @@ function DesignInspiration() {
       features: ['4 unidades', 'Cero agua', '800 kg compost/3 años', 'Ahorro 300K litros/año', 'Bajo mantenimiento'],
       climate: 'Adaptable a cualquier clima',
       icon: '🚽'
+    },
+    {
+      title: 'Panadería Artesanal con Horno de Barro',
+      technique: 'Horno de Barro',
+      location: 'Valle de Elqui, Chile',
+      description: 'Horno de barro tradicional de 2m² construido con adobe y ladrillos refractarios. Utilizado diariamente para producción de 80 panes. Retiene calor durante 6 horas permitiendo 3 hornadas consecutivas. Consume solo 15 kg de leña por jornada vs 40 kg que consumiría horno convencional.',
+      features: ['2 m²', '80 panes/día', '3 hornadas por calentamiento', '60% menos leña', 'Sabor tradicional'],
+      climate: 'Cualquier clima con disponibilidad de leña',
+      icon: '🔥'
+    },
+    {
+      title: 'Casa Pasiva con Rocket Mass Heater',
+      technique: 'Chimenea Térmica',
+      location: 'Patagonia Argentina',
+      description: 'Vivienda de 85m² calefaccionada con rocket mass heater de 4 metros de banco térmico. Sistema mantiene 18-22°C interior con temperaturas exteriores de -15°C. Consume solo 2-3 kg de leña por día (vs 15-20 kg de estufa tradicional). Banco de adobe almacena calor durante 18 horas.',
+      features: ['85 m² calefaccionados', 'Banco térmico 4m', '90% eficiencia', '2-3 kg leña/día', 'Calor 18+ horas'],
+      climate: 'Ideal climas fríos con inviernos severos',
+      icon: '🏠'
+    },
+    {
+      title: 'Vivienda Solar con Piso Radiante',
+      technique: 'Piso Climatizado',
+      location: 'Zona central, Chile',
+      description: 'Casa de 120m² con sistema de piso radiante conectado a colectores solares térmicos. 15 paneles solares calientan agua a 45-55°C circulando por 840 metros de tubería bajo piso de adobe. Sistema proporciona 70% de calefacción anual sin combustibles. Respaldo con caldera de pellets para días nublados.',
+      features: ['120 m²', '15 colectores solares', '70% energía solar', 'Confort superior', 'Bajo costo operativo'],
+      climate: 'Climas fríos con radiación solar media-alta',
+      icon: '🌡️'
     }
   ];
 

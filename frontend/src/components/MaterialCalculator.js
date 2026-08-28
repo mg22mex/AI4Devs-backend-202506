@@ -267,6 +267,56 @@ function MaterialCalculator() {
         cost = numUnits * 320000; // Costo por unidad completa
         break;
 
+      case 'horno':
+        // Horno de barro/leña para cocción y panadería
+        const hornoSize = areaNum < 2 ? areaNum : 2; // Típicamente 1-2 m²
+        materials = {
+          'Tipo': 'Horno de barro o rocket oven',
+          'Ladrillos refractarios': `${Math.ceil(hornoSize * 200)} unidades`,
+          'Adobe o mezcla refractaria': `${(hornoSize * 0.8).toFixed(2)} m³`,
+          'Arena refractaria': `${(hornoSize * 0.3).toFixed(2)} m³`,
+          'Arco de fierro o acero': `${Math.ceil(hornoSize * 2)} barras`,
+          'Puerta de fierro fundido': '1 unidad',
+          'Tubo de chimenea (15cm)': `${Math.ceil(hornoSize * 2.5)} metros`,
+          'Aislante natural (perlita, vermiculita)': `${(hornoSize * 0.15).toFixed(2)} m³`,
+          'Base de piedra o concreto': `${(hornoSize * 1.5).toFixed(2)} m²`
+        };
+        cost = hornoSize * 450000; // Costo por m² de horno
+        break;
+
+      case 'chimenea':
+        // Chimenea o rocket mass heater
+        const chimeneyHeight = heightNum || 2.5; // Altura típica
+        materials = {
+          'Tipo': 'Chimenea de masa térmica o tradicional',
+          'Ladrillos refractarios': `${Math.ceil(chimeneyHeight * 150)} unidades`,
+          'Ladrillos comunes (cuerpo)': `${Math.ceil(chimeneyHeight * 200)} unidades`,
+          'Mortero refractario': `${(chimeneyHeight * 0.15).toFixed(2)} m³`,
+          'Tubo de acero inoxidable (20cm)': `${chimeneyHeight.toFixed(0)} metros`,
+          'Plancha de acero para cámara': '2-3 unidades',
+          'Puerta de fierro con vidrio': '1 unidad',
+          'Banco de masa térmica (opcional)': `${(areaNum * 0.4).toFixed(2)} m³ de adobe`,
+          'Aislante cerámico': `${(chimeneyHeight * 0.2).toFixed(2)} m²`
+        };
+        cost = chimeneyHeight * 280000 + areaNum * 120000; // Altura + banco térmico
+        break;
+
+      case 'piso-climatizado':
+        // Sistema de piso radiante con masa térmica
+        materials = {
+          'Base de grava': `${(areaNum * 0.15).toFixed(2)} m³`,
+          'Aislante térmico (EPS o natural)': `${(areaNum * 1.1).toFixed(2)} m²`,
+          'Tubería PEX o cobre (16-20mm)': `${(areaNum * 7).toFixed(0)} metros`,
+          'Colectores y distribuidores': `${Math.ceil(areaNum / 30)} juegos`,
+          'Adobe o concreto para masa térmica': `${(areaNum * 0.08).toFixed(2)} m³`,
+          'Terminación de piso (baldosa, madera)': `${(areaNum * 1.05).toFixed(2)} m²`,
+          'Bomba circuladora': '1 unidad',
+          'Termostato y válvulas': '1 sistema',
+          'Fuente de calor (estufa, solar)': '1 unidad'
+        };
+        cost = areaNum * 85000; // Costo por m² instalado
+        break;
+
       default:
         break;
     }
@@ -298,7 +348,10 @@ function MaterialCalculator() {
       'walipini': 'Walipini (Invernadero Subterráneo)',
       'cellar': 'Bodega/Cellar Subterráneo',
       'temazcal': 'Temazcal (Baño de Vapor)',
-      'bano-seco': 'Baño Seco (Compostero)'
+      'bano-seco': 'Baño Seco (Compostero)',
+      'horno': 'Horno de Barro/Leña',
+      'chimenea': 'Chimenea/Rocket Mass Heater',
+      'piso-climatizado': 'Piso Climatizado (Radiante)'
     };
     return names[tech] || tech;
   };
@@ -337,6 +390,11 @@ function MaterialCalculator() {
             <option value="cellar">Bodega/Cellar Subterráneo</option>
             <option value="temazcal">Temazcal (Baño de Vapor)</option>
             <option value="bano-seco">Baño Seco (Compostero)</option>
+          </optgroup>
+          <optgroup label="Sistemas de Calefacción y Cocción">
+            <option value="horno">Horno de Barro/Leña</option>
+            <option value="chimenea">Chimenea/Rocket Mass Heater</option>
+            <option value="piso-climatizado">Piso Climatizado (Radiante)</option>
           </optgroup>
         </select>
       </div>
