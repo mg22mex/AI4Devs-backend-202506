@@ -4,6 +4,7 @@ import MaterialCalculator from './components/MaterialCalculator';
 import TechniquesGuide from './components/TechniquesGuide';
 import ProjectPlanner from './components/ProjectPlanner';
 import DesignInspiration from './components/DesignInspiration';
+import ThreeDVisualization from './components/ThreeDVisualization';
 import Home from './components/Home';
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
         return <ProjectPlanner />;
       case 'inspiration':
         return <DesignInspiration />;
+      case '3d':
+        return <ThreeDVisualization />;
       default:
         return <Home />;
     }
@@ -63,6 +66,12 @@ function App() {
           onClick={() => setActiveSection('inspiration')}
         >
           Inspiración y Diseños
+        </button>
+        <button 
+          className={`nav-button ${activeSection === '3d' ? 'active' : ''}`}
+          onClick={() => setActiveSection('3d')}
+        >
+          Visualización 3D
         </button>
       </nav>
 

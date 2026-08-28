@@ -40,6 +40,14 @@ Ejemplos de proyectos reales:
 - Principios de diseño sostenible
 - Estrategias bioclimáticas
 
+### 5. Visualización 3D y Planos
+Herramientas para llevar tu proyecto al siguiente nivel:
+- **Exportación de datos**: JSON y TXT con especificaciones técnicas
+- **Guías de software**: 6 programas 3D (gratuitos y de pago)
+- **Proceso de renderizado**: 6 pasos detallados
+- **Recursos**: Tutoriales, texturas, comunidades
+- **Casos de estudio**: Ejemplos reales de proyectos renderizados
+
 ## 🚀 Instalación y Uso
 
 ### Prerrequisitos

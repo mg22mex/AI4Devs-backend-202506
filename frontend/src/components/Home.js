@@ -69,6 +69,20 @@ function Home() {
             <li>✓ Diseños bioclimáticos</li>
           </ul>
         </div>
+
+        <div className="card">
+          <div className="icon">🖼️</div>
+          <h3>Visualización 3D y Planos</h3>
+          <p>
+            Exporta tus proyectos y crea renders 3D profesionales. Incluye guías de software, tutoriales y exportación de datos técnicos.
+          </p>
+          <ul>
+            <li>✓ Exportar datos a JSON/TXT</li>
+            <li>✓ Guías de software 3D</li>
+            <li>✓ Proceso de renderizado</li>
+            <li>✓ Recursos y tutoriales</li>
+          </ul>
+        </div>
       </div>
 
       <div className="info-section" style={{marginTop: '40px'}}>
