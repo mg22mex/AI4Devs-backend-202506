@@ -214,6 +214,33 @@ function DesignInspiration() {
       features: ['120 m²', '15 colectores solares', '70% energía solar', 'Confort superior', 'Bajo costo operativo'],
       climate: 'Climas fríos con radiación solar media-alta',
       icon: '🌡️'
+    },
+    {
+      title: 'Casa Autosuficiente con Cosecha de Agua',
+      technique: 'Gestión de Agua',
+      location: 'Isla de Chiloé, Chile',
+      description: 'Vivienda de 100m² con sistema completo de cosecha de lluvia. 120m² de techo captan 102,000 litros anuales (lluvia 1,000mm). 3 tanques de 5,000L proporcionan 80% del agua necesaria. Ahorro de $250,000 CLP anuales vs agua municipal.',
+      features: ['102K litros/año', '3 tanques 5,000L', '80% autosuficiencia', 'Ahorro $250K/año', 'ROI 4 años'],
+      climate: 'Ideal zonas con >500mm lluvia anual',
+      icon: '💧'
+    },
+    {
+      title: 'Ecoaldea con Tratamiento Integral de Aguas',
+      technique: 'Aguas Grises + Permacultura',
+      location: 'Colbún, Chile',
+      description: 'Comunidad de 18 familias con sistema comunitario de aguas grises. 900 litros/día pasan por jardines filtrantes de 120m² con juncos y papiros. Agua tratada riega bosque alimentario de 2 hectáreas. Cero descarga de aguas grises al entorno.',
+      features: ['18 familias', '900 L/día tratados', '120 m² jardín filtrante', '2 ha bosque alimentario', 'Cero descarga'],
+      climate: 'Adaptable a cualquier clima',
+      icon: '🌊'
+    },
+    {
+      title: 'Granja Permacultural con Estanques',
+      technique: 'Permacultura Integral',
+      location: 'Olmué, Chile',
+      description: 'Terreno de 1 hectárea diseñado en permacultura con 3 estanques (150m² total). Sistema captura agua de techo y cerro. Estanques crean microclima, almacenan 180,000L, producen 120 kg peces/año y soportan sistema de riego por goteo para huerto de 800m². 70% autosuficiencia alimentaria.',
+      features: ['1 ha diseñada', '3 estanques 180K L', '120 kg peces/año', '800 m² huerto', '70% autosuficiencia'],
+      climate: 'Clima mediterráneo con estaciones',
+      icon: '🌳'
     }
   ];
 

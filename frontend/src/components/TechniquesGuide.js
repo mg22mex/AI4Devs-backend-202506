@@ -623,6 +623,143 @@ function TechniquesGuide() {
         'Conectar a fuente de calor (caldera, solar)',
         'Purgar sistema y probar'
       ]
+    },
+    {
+      name: 'Cosecha de Agua de Lluvia',
+      icon: '💧',
+      description: 'Sistema de captación, almacenamiento y uso de agua de lluvia del techo. Reduce consumo de agua potable 40-80% según uso. Esencial para autosuficiencia hídrica.',
+      advantages: [
+        'Ahorro 40-80% en consumo de agua potable',
+        'Agua de mejor calidad (sin cloro ni químicos)',
+        'Independencia del suministro municipal',
+        'Reducción de escorrentía y erosión',
+        'ROI en 3-7 años',
+        'Funciona en la mayoría de climas',
+        'Escalable según necesidades'
+      ],
+      disadvantages: [
+        'Inversión inicial moderada-alta',
+        'Requiere mantenimiento de filtros',
+        'Dependiente de lluvias (necesita respaldo)',
+        'Necesita espacio para tanques',
+        'Techo debe estar limpio',
+        'No potable sin tratamiento adicional'
+      ],
+      ideal: 'Zonas con lluvias regulares, autosuficiencia, reducción de costos, áreas sin agua municipal',
+      process: [
+        'Calcular captación (área techo x lluvia anual x 0.85)',
+        'Dimensionar tanques según necesidad',
+        'Instalar canaletas en todo el perímetro del techo',
+        'Colocar filtros de hojas en bajadas',
+        'Instalar sistema de primera lluvia (desvía primeros 20L)',
+        'Conectar bajadas a tanques de almacenamiento',
+        'Instalar filtros de sedimentos',
+        'Sistema de distribución por gravedad o bomba',
+        'Mantenimiento semestral de filtros y limpieza'
+      ]
+    },
+    {
+      name: 'Tratamiento de Aguas Grises',
+      icon: '🌊',
+      description: 'Sistema natural de filtración y tratamiento de aguas de lavamanos, ducha y lavadora. Permite reutilizar 60-70% del agua doméstica para riego. Reduce contaminación.',
+      advantages: [
+        'Reutiliza 60-70% del agua doméstica',
+        'Tratamiento natural sin químicos',
+        'Nutrientes benefician plantas',
+        'Reduce carga en alcantarillado o pozo séptico',
+        'Ahorro en agua de riego',
+        'Construcción de bajo costo',
+        'Educación ambiental práctica'
+      ],
+      disadvantages: [
+        'Requiere diseño y cálculo adecuado',
+        'No apta para aguas negras (inodoro)',
+        'Necesita jabones biodegradables',
+        'Mantenimiento de plantas filtradoras',
+        'Puede generar olores si mal diseñado',
+        'Normativa variable según región'
+      ],
+      ideal: 'Hogares con jardín, autosuficiencia, zonas con escasez de agua, permacultura, reducción de huella',
+      process: [
+        'Separar aguas grises de negras (tuberías independientes)',
+        'Instalar trampa de grasas para cocina',
+        'Filtro de sólidos gruesos',
+        'Conducir a zona de plantas filtradoras',
+        'Crear lecho de grava (3 capas: gruesa, media, fina)',
+        'Plantar especies filtradoras (juncos, papiros, lirios)',
+        'Sistema de distribución subsuperficial',
+        'Salida a área de riego o infiltración',
+        'Mantenimiento trimestral de plantas'
+      ]
+    },
+    {
+      name: 'Estanque/Lago Natural',
+      icon: '🦆',
+      description: 'Cuerpo de agua artificial que imita ecosistema natural. Almacena agua, crea microclima, atrae fauna benéfica, produce alimentos (peces) y aumenta biodiversidad.',
+      advantages: [
+        'Almacenamiento de agua para riego/emergencias',
+        'Crea microclima (enfría en verano)',
+        'Atrae fauna benéfica (aves, libélulas)',
+        'Puede producir peces comestibles',
+        'Aumenta valor de la propiedad',
+        'Belleza y recreación',
+        'Biodiversidad y resiliencia ecológica'
+      ],
+      disadvantages: [
+        'Inversión inicial significativa',
+        'Requiere mantenimiento (equilibrio ecológico)',
+        'Pérdida de agua por evaporación',
+        'Riesgo si hay niños pequeños',
+        'Puede atraer mosquitos si mal diseñado',
+        'Requiere espacio adecuado'
+      ],
+      ideal: 'Terrenos grandes, permacultura, acuicultura, reserva de agua, microclima, biodiversidad',
+      process: [
+        'Diseñar forma irregular (natural, no geométrica)',
+        'Excavar con pendientes suaves (3:1)',
+        'Crear zonas de profundidad (borde 30cm, centro 1.5-2m)',
+        'Compactar fondo o instalar geomembrana EPDM',
+        'Zona de borde con grava',
+        'Plantar vegetación acuática (oxigenadoras, flotantes)',
+        'Llenar gradualmente',
+        'Introducir peces si es deseado (después 1 mes)',
+        'Sistema de rebose para exceso de agua'
+      ]
+    },
+    {
+      name: 'Diseño de Permacultura',
+      icon: '🌳',
+      description: 'Sistema de diseño integral que integra vivienda, agua, energía, alimentos y comunidad de forma sostenible. Basado en patrones naturales y principios ecológicos.',
+      advantages: [
+        'Autosuficiencia en agua, energía y alimentos',
+        'Resiliencia ante crisis (climática, económica)',
+        'Reducción drástica de costos operativos',
+        'Mejora continua del suelo y biodiversidad',
+        'Mínimo trabajo por máximo resultado',
+        'Integración armónica con la naturaleza',
+        'Modelo replicable y educativo'
+      ],
+      disadvantages: [
+        'Requiere conocimiento y diseño profesional',
+        'Inversión inicial en diseño',
+        'Resultados a mediano-largo plazo (3-5 años)',
+        'Requiere mantenimiento informado',
+        'Cambio de mentalidad necesario',
+        'Puede requerir normativas especiales'
+      ],
+      ideal: 'Autosuficiencia, resiliencia, producción de alimentos, bajo impacto, educación, comunidades',
+      process: [
+        'Análisis completo del sitio (agua, sol, viento, suelo)',
+        'Definir las 5 zonas de permacultura',
+        'Diseño de flujos de agua (swales, estanques)',
+        'Ubicación de vivienda (orientación solar)',
+        'Planificación de bosque alimentario',
+        'Sistemas de agua (captación, grises, estanques)',
+        'Energía renovable (solar, eólica)',
+        'Área de animales integrados (gallinas, abejas)',
+        'Compostaje y ciclaje de nutrientes',
+        'Implementación por fases (3-5 años)'
+      ]
     }
   ];
 

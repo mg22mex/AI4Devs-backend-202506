@@ -317,6 +317,82 @@ function MaterialCalculator() {
         cost = areaNum * 85000; // Costo por m² instalado
         break;
 
+      case 'cosecha-agua':
+        // Sistema de captación de agua de lluvia
+        const roofArea = areaNum; // Área de techo en m²
+        const rainfall = 800; // mm anuales (promedio Chile central)
+        const captureVolume = (roofArea * rainfall / 1000 * 0.85).toFixed(0); // Litros anuales, 85% eficiencia
+        materials = {
+          'Área de captación (techo)': `${roofArea.toFixed(0)} m²`,
+          'Volumen anual capturable': `${captureVolume} litros`,
+          'Canaletas PVC o zinc': `${(roofArea * 0.8).toFixed(0)} metros`,
+          'Bajadas de agua (tubos 100mm)': `${Math.ceil(roofArea / 40)} unidades`,
+          'Tanque de almacenamiento (1000-5000L)': `${Math.ceil(parseInt(captureVolume) / 30000)} tanques`,
+          'Filtro de hojas y sedimentos': `${Math.ceil(roofArea / 40)} unidades`,
+          'Tubería de distribución': `${(roofArea * 0.5).toFixed(0)} metros`,
+          'Sistema de primera lluvia (desvío)': '1 unidad',
+          'Bomba (si es necesario)': '1 unidad (opcional)'
+        };
+        cost = roofArea * 25000 + Math.ceil(parseInt(captureVolume) / 1000) * 150000;
+        break;
+
+      case 'aguas-grises':
+        // Sistema de tratamiento de aguas grises
+        const peopleServed = Math.ceil(areaNum / 20) || 4; // Estimar personas según área
+        const greyWaterDaily = peopleServed * 90; // Litros/día/persona
+        materials = {
+          'Personas a servir': `${peopleServed}`,
+          'Volumen diario': `${greyWaterDaily} litros`,
+          'Trampa de grasas': '1 unidad',
+          'Filtro de sólidos': '1 unidad',
+          'Tubería de conducción (50mm)': `${(areaNum * 0.4).toFixed(0)} metros`,
+          'Zona de plantas filtradoras': `${(peopleServed * 2).toFixed(0)} m²`,
+          'Grava para filtración': `${(peopleServed * 0.5).toFixed(2)} m³`,
+          'Plantas acuáticas (juncos, papiros)': `${peopleServed * 10} unidades`,
+          'Tanque de distribución': '1 unidad (200-500L)',
+          'Sistema de riego por goteo': `${(peopleServed * 15).toFixed(0)} metros`
+        };
+        cost = peopleServed * 180000;
+        break;
+
+      case 'estanque':
+        // Estanque o lago natural
+        const pondArea = areaNum < 50 ? areaNum : 50; // Máximo típico 50m²
+        const pondDepth = 1.5; // Profundidad promedio
+        const pondVolume = pondArea * pondDepth * 0.7; // m³ (factor de forma)
+        materials = {
+          'Área de espejo de agua': `${pondArea.toFixed(0)} m²`,
+          'Volumen de agua': `${pondVolume.toFixed(0)} m³ (${(pondVolume * 1000).toFixed(0)} litros)`,
+          'Excavación': `${(pondArea * pondDepth * 1.2).toFixed(2)} m³`,
+          'Geomembrana EPDM o arcilla': `${(pondArea * 1.3).toFixed(2)} m²`,
+          'Grava perimetral': `${(pondArea * 0.15).toFixed(2)} m³`,
+          'Plantas acuáticas oxigenadoras': `${Math.ceil(pondArea / 3)} unidades`,
+          'Plantas flotantes': `${Math.ceil(pondArea / 5)} unidades`,
+          'Peces (opcional, control larvas)': `${Math.ceil(pondVolume / 2)} unidades`,
+          'Bomba recirculación (opcional)': '1 unidad',
+          'Sistema de rebose': '1 unidad'
+        };
+        cost = pondArea * 45000;
+        break;
+
+      case 'permacultura':
+        // Diseño de permacultura integral
+        const landArea = areaNum; // Área total del terreno
+        materials = {
+          'Área de diseño': `${landArea.toFixed(0)} m²`,
+          'Zonas de permacultura': '5 zonas planificadas',
+          'Elementos sugeridos': 'Según diseño integral',
+          'Análisis de sitio': '1 estudio completo',
+          'Diseño de agua (swales, zanjas)': `${(landArea * 0.1).toFixed(0)} metros lineales`,
+          'Árboles frutales': `${Math.ceil(landArea / 100)} unidades`,
+          'Cercos vivos': `${(landArea * 0.3).toFixed(0)} metros`,
+          'Compost y lombricultivo': '2 sistemas',
+          'Huerto intensivo': `${Math.ceil(landArea / 50)} m²`,
+          'Zona de bosque alimentario': `${(landArea * 0.2).toFixed(0)} m²`
+        };
+        cost = landArea * 15000; // Costo de diseño e implementación básica
+        break;
+
       default:
         break;
     }
@@ -351,7 +427,11 @@ function MaterialCalculator() {
       'bano-seco': 'Baño Seco (Compostero)',
       'horno': 'Horno de Barro/Leña',
       'chimenea': 'Chimenea/Rocket Mass Heater',
-      'piso-climatizado': 'Piso Climatizado (Radiante)'
+      'piso-climatizado': 'Piso Climatizado (Radiante)',
+      'cosecha-agua': 'Cosecha de Agua de Lluvia',
+      'aguas-grises': 'Tratamiento de Aguas Grises',
+      'estanque': 'Estanque/Lago Natural',
+      'permacultura': 'Diseño de Permacultura'
     };
     return names[tech] || tech;
   };
@@ -395,6 +475,12 @@ function MaterialCalculator() {
             <option value="horno">Horno de Barro/Leña</option>
             <option value="chimenea">Chimenea/Rocket Mass Heater</option>
             <option value="piso-climatizado">Piso Climatizado (Radiante)</option>
+          </optgroup>
+          <optgroup label="Gestión de Agua y Permacultura">
+            <option value="cosecha-agua">Cosecha de Agua de Lluvia</option>
+            <option value="aguas-grises">Tratamiento de Aguas Grises</option>
+            <option value="estanque">Estanque/Lago Natural</option>
+            <option value="permacultura">Diseño de Permacultura</option>
           </optgroup>
         </select>
       </div>

@@ -254,6 +254,38 @@ function ProjectPlanner() {
         'Vertido de masa térmica sobre tubos',
         'Instalación de terminación de piso',
         'Conexión a fuente de calor y pruebas'
+      ],
+      'cosecha-agua': [
+        'Cálculo de captación según área y lluvia',
+        'Instalación de canaletas perimetrales',
+        'Colocación de filtros y primera lluvia',
+        'Instalación de tanques de almacenamiento',
+        'Sistema de distribución y bombeo',
+        'Pruebas y mantenimiento inicial'
+      ],
+      'aguas-grises': [
+        'Separación de tuberías grises y negras',
+        'Instalación de trampa de grasas',
+        'Construcción de lecho filtrante con grava',
+        'Plantación de especies filtradoras',
+        'Sistema de distribución a riego',
+        'Ajuste y monitoreo del sistema'
+      ],
+      'estanque': [
+        'Diseño de forma y profundidades',
+        'Excavación con pendientes suaves',
+        'Impermeabilización (arcilla o geomembrana)',
+        'Instalación de plantas acuáticas',
+        'Llenado y establecimiento del ecosistema',
+        'Introducción de fauna (si aplica)'
+      ],
+      'permacultura': [
+        'Análisis completo de sitio',
+        'Diseño de zonas y sectores',
+        'Planificación de flujos de agua',
+        'Diseño de bosque alimentario',
+        'Implementación de sistemas integrados',
+        'Monitoreo y ajuste continuo'
       ]
     };
     return tasks[tech] || tasks['adobe'];
@@ -331,6 +363,12 @@ function ProjectPlanner() {
               <option value="horno">Horno de Barro/Leña</option>
               <option value="chimenea">Chimenea/Rocket Mass Heater</option>
               <option value="piso-climatizado">Piso Climatizado</option>
+            </optgroup>
+            <optgroup label="Gestión de Agua y Permacultura">
+              <option value="cosecha-agua">Cosecha de Agua</option>
+              <option value="aguas-grises">Aguas Grises</option>
+              <option value="estanque">Estanque Natural</option>
+              <option value="permacultura">Permacultura</option>
             </optgroup>
           </select>
         </div>

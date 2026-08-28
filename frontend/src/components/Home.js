@@ -17,13 +17,13 @@ function Home() {
           <h3>Calculadora de Materiales</h3>
           <p>
             Calcula con precisión los materiales necesarios para tu proyecto de construcción natural.
-            Incluye 21 técnicas: tierra (adobe, cob, superadobe, tapia, tierra-paja), fibras vegetales (bahareque, paja, bambú), pétreos (piedra, mampostería, madera), reciclaje (botellas, llantas), diseños especiales (circular, walipini, cellar, temazcal, baño seco) y sistemas térmicos (hornos, chimeneas, pisos climatizados).
+            Incluye 25 técnicas: tierra, fibras vegetales, pétreos, reciclaje, diseños especiales, sistemas térmicos y gestión integral de agua y permacultura.
           </p>
           <ul>
             <li>✓ Cálculos precisos por m²</li>
-            <li>✓ 21 técnicas constructivas</li>
+            <li>✓ 25 técnicas constructivas</li>
             <li>✓ Estimación de costos</li>
-            <li>✓ Sistemas de calefacción y cocción</li>
+            <li>✓ Gestión de agua y permacultura</li>
           </ul>
         </div>
 
@@ -31,15 +31,15 @@ function Home() {
           <div className="icon">📚</div>
           <h3>Guía de Técnicas</h3>
           <p>
-            Aprende sobre 21 diferentes técnicas de construcción natural, sistemas pasivos de climatización, diseños especiales y sistemas de calefacción.
+            Aprende sobre 25 diferentes técnicas de construcción natural, sistemas pasivos, diseños especiales, sistemas térmicos y gestión integral de agua.
           </p>
           <ul>
             <li>✓ Adobe, cob, tapia y tierra-paja</li>
             <li>✓ Piedra, mampostería y madera</li>
-            <li>✓ Botellas y llantas recicladas</li>
-            <li>✓ Walipini, cellar, temazcal y baño seco</li>
             <li>✓ Hornos, chimeneas y pisos climatizados</li>
-            <li>✓ Sistemas de manejo térmico pasivo</li>
+            <li>✓ Cosecha de agua y aguas grises</li>
+            <li>✓ Estanques naturales y permacultura</li>
+            <li>✓ Estructuras especiales y saneamiento ecológico</li>
           </ul>
         </div>
 
