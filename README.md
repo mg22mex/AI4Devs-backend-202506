@@ -10,7 +10,7 @@ Esta plataforma ayuda a arquitectos, autoconstructores, estudiantes y comunidade
 
 ### ✨ Características Principales
 
-1. **Calculadora de Materiales** - Calcula cantidades exactas y costos para 25 técnicas constructivas
+1. **Calculadora de Materiales** - Calcula cantidades exactas y costos para 26 técnicas constructivas
 2. **Guía de Técnicas** - Información detallada sobre cada método de construcción natural + sistemas pasivos
 3. **Planificador de Proyectos** - Genera planes con fases, cronograma y presupuesto
 4. **Inspiración** - Galería de diseños y principios de construcción sostenible
@@ -56,6 +56,7 @@ Esta plataforma ayuda a arquitectos, autoconstructores, estudiantes y comunidade
 - **Tratamiento de Aguas Grises**: Reutilización natural para riego
 - **Estanques/Lagos Naturales**: Almacenamiento, microclima y biodiversidad
 - **Diseño de Permacultura**: Sistema integral autosuficiente
+- **Análisis de Curvas de Nivel**: Topografía, swales y prevención de erosión
 
 ### 🚀 Inicio Rápido
 

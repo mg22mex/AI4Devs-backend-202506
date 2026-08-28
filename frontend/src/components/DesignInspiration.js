@@ -241,6 +241,15 @@ function DesignInspiration() {
       features: ['1 ha diseñada', '3 estanques 180K L', '120 kg peces/año', '800 m² huerto', '70% autosuficiencia'],
       climate: 'Clima mediterráneo con estaciones',
       icon: '🌳'
+    },
+    {
+      title: 'Finca Regenerativa con Swales',
+      technique: 'Curvas de Nivel + Permacultura',
+      location: 'Pucón, Chile',
+      description: 'Terreno de 5 hectáreas en ladera (15% pendiente) diseñado con curvas de nivel. 600 metros de swales captan y distribuyen agua de lluvia. Sistema previene erosión, infiltra 2.4 millones litros/año y recarga napas. Bermas plantadas con 180 árboles frutales. En 3 años suelo recuperó fertilidad y producción aumentó 300%.',
+      features: ['5 ha', '600 m swales', '2.4M L infiltrados/año', '180 árboles', 'Erosión cero'],
+      climate: 'Ladera con pendiente, lluvias abundantes',
+      icon: '📏'
     }
   ];
 

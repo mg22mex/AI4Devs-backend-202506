@@ -17,13 +17,13 @@ function Home() {
           <h3>Calculadora de Materiales</h3>
           <p>
             Calcula con precisión los materiales necesarios para tu proyecto de construcción natural.
-            Incluye 25 técnicas: tierra, fibras vegetales, pétreos, reciclaje, diseños especiales, sistemas térmicos y gestión integral de agua y permacultura.
+            Incluye 26 técnicas: tierra, fibras vegetales, pétreos, reciclaje, diseños especiales, sistemas térmicos, gestión integral de agua, permacultura y análisis topográfico.
           </p>
           <ul>
             <li>✓ Cálculos precisos por m²</li>
-            <li>✓ 25 técnicas constructivas</li>
+            <li>✓ 26 técnicas constructivas</li>
             <li>✓ Estimación de costos</li>
-            <li>✓ Gestión de agua y permacultura</li>
+            <li>✓ Análisis topográfico y curvas de nivel</li>
           </ul>
         </div>
 
@@ -31,14 +31,14 @@ function Home() {
           <div className="icon">📚</div>
           <h3>Guía de Técnicas</h3>
           <p>
-            Aprende sobre 25 diferentes técnicas de construcción natural, sistemas pasivos, diseños especiales, sistemas térmicos y gestión integral de agua.
+            Aprende sobre 26 diferentes técnicas de construcción natural, sistemas pasivos, diseños especiales, sistemas térmicos, gestión integral de agua y análisis topográfico.
           </p>
           <ul>
             <li>✓ Adobe, cob, tapia y tierra-paja</li>
             <li>✓ Piedra, mampostería y madera</li>
             <li>✓ Hornos, chimeneas y pisos climatizados</li>
             <li>✓ Cosecha de agua y aguas grises</li>
-            <li>✓ Estanques naturales y permacultura</li>
+            <li>✓ Estanques, permacultura y curvas de nivel</li>
             <li>✓ Estructuras especiales y saneamiento ecológico</li>
           </ul>
         </div>

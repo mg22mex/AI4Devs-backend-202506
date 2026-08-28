@@ -760,6 +760,41 @@ function TechniquesGuide() {
         'Compostaje y ciclaje de nutrientes',
         'Implementación por fases (3-5 años)'
       ]
+    },
+    {
+      name: 'Análisis de Curvas de Nivel',
+      icon: '📏',
+      description: 'Levantamiento topográfico y diseño basado en curvas de nivel. Fundamental para manejo de agua, prevención de erosión y ubicación óptima de elementos. Incluye swales (zanjas de infiltración) que siguen el contorno.',
+      advantages: [
+        'Previene erosión del suelo',
+        'Maximiza infiltración de agua',
+        'Swales captan y distribuyen agua de lluvia',
+        'Optimiza ubicación de construcciones',
+        'Reduce costos de movimiento de tierra',
+        'Permite diseño armónico con el terreno',
+        'Base para diseño permacultural'
+      ],
+      disadvantages: [
+        'Requiere levantamiento topográfico profesional',
+        'Inversión inicial en estudio',
+        'Construcción de swales requiere excavación',
+        'Mantenimiento de swales (limpieza anual)',
+        'Requiere comprensión del flujo de agua',
+        'No aplicable en terrenos completamente planos'
+      ],
+      ideal: 'Terrenos con pendiente, diseño permacultural, manejo de agua, prevención de erosión, agricultura regenerativa',
+      process: [
+        'Levantamiento topográfico profesional (nivel o GPS)',
+        'Generar plano de curvas de nivel (cada 1-5m según pendiente)',
+        'Identificar flujos de agua principales',
+        'Diseñar ubicación de swales en curvas de nivel',
+        'Marcar swales en terreno con estacas y nivel A',
+        'Excavación de swales (30-50cm prof x 50-80cm ancho)',
+        'Berma en lado bajo del swale (con tierra excavada)',
+        'Plantar berma con árboles/arbustos',
+        'Sistema de rebose entre swales',
+        'Monitoreo y ajuste después de primeras lluvias'
+      ]
     }
   ];
 

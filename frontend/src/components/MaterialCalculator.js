@@ -393,6 +393,26 @@ function MaterialCalculator() {
         cost = landArea * 15000; // Costo de diseño e implementación básica
         break;
 
+      case 'curvas-nivel':
+        // Análisis topográfico y diseño con curvas de nivel
+        const terrainArea = areaNum; // Área del terreno en m²
+        const slopePercent = 10; // Pendiente promedio estimada
+        const swalesLength = terrainArea * 0.15; // 15% del área en swales
+        materials = {
+          'Área de terreno': `${terrainArea.toFixed(0)} m²`,
+          'Levantamiento topográfico': '1 estudio profesional',
+          'Plano de curvas de nivel': '1 plano detallado',
+          'Swales (zanjas de infiltración)': `${swalesLength.toFixed(0)} metros lineales`,
+          'Excavación para swales': `${(swalesLength * 0.5 * 0.5).toFixed(2)} m³`,
+          'Plantas para swales': `${Math.ceil(swalesLength / 2)} unidades`,
+          'Terrazas de cultivo (si aplica)': `${Math.ceil(terrainArea / 200)} niveles`,
+          'Sistema de drenaje': `${Math.ceil(terrainArea / 100)} puntos`,
+          'Caminos siguiendo contorno': `${(terrainArea * 0.08).toFixed(0)} metros`,
+          'Estacas de marcación': `${Math.ceil(swalesLength / 5)} unidades`
+        };
+        cost = terrainArea * 8000 + swalesLength * 12000; // Estudio + construcción swales
+        break;
+
       default:
         break;
     }
@@ -431,7 +451,8 @@ function MaterialCalculator() {
       'cosecha-agua': 'Cosecha de Agua de Lluvia',
       'aguas-grises': 'Tratamiento de Aguas Grises',
       'estanque': 'Estanque/Lago Natural',
-      'permacultura': 'Diseño de Permacultura'
+      'permacultura': 'Diseño de Permacultura',
+      'curvas-nivel': 'Análisis de Curvas de Nivel'
     };
     return names[tech] || tech;
   };
@@ -481,6 +502,7 @@ function MaterialCalculator() {
             <option value="aguas-grises">Tratamiento de Aguas Grises</option>
             <option value="estanque">Estanque/Lago Natural</option>
             <option value="permacultura">Diseño de Permacultura</option>
+            <option value="curvas-nivel">Análisis de Curvas de Nivel</option>
           </optgroup>
         </select>
       </div>

@@ -286,6 +286,14 @@ function ProjectPlanner() {
         'Diseño de bosque alimentario',
         'Implementación de sistemas integrados',
         'Monitoreo y ajuste continuo'
+      ],
+      'curvas-nivel': [
+        'Levantamiento topográfico del terreno',
+        'Generación de plano de curvas de nivel',
+        'Diseño de swales y sistema de agua',
+        'Marcación en terreno con estacas',
+        'Excavación de swales en contorno',
+        'Plantación de bermas y monitoreo'
       ]
     };
     return tasks[tech] || tasks['adobe'];
@@ -369,6 +377,7 @@ function ProjectPlanner() {
               <option value="aguas-grises">Aguas Grises</option>
               <option value="estanque">Estanque Natural</option>
               <option value="permacultura">Permacultura</option>
+              <option value="curvas-nivel">Curvas de Nivel</option>
             </optgroup>
           </select>
         </div>
