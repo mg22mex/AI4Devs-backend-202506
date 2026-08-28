@@ -150,9 +150,53 @@ function MaterialCalculator() {
           'Aislante natural (lana, corcho)': `${(areaNum * 0.15).toFixed(2)} m³`,
           'Tratamiento natural (aceite de linaza)': `${(areaNum * 0.3).toFixed(0)} litros`,
           'Clavos y tornillos': `${(areaNum * 0.5).toFixed(0)} kg`,
-          'Impermeabilizante ecológico': `${(areaNum * 0.4).toFixed(0)} litros`
+          'Impermeabilizante ecológico': `${(areaNum * 0.4).toFixed(0)} litros'
         };
         cost = maderaVolume * 450000 + areaNum * 55000;
+        break;
+
+      case 'llantas':
+        const llantasVolume = areaNum * heightNum * thicknessNum;
+        const numLlantas = Math.ceil(llantasVolume / 0.3); // Aprox 3-4 llantas por m³
+        materials = {
+          'Llantas/Neumáticos usados': `${numLlantas}`,
+          'Tierra compactada para relleno': `${(llantasVolume * 1.8).toFixed(2)} m³`,
+          'Botellas para muros internos (opcional)': `${Math.ceil(areaNum * 50)}`,
+          'Mortero para revoque': `${(areaNum * 0.04).toFixed(2)} m³`,
+          'Latas de aluminio (relleno)': `${Math.ceil(numLlantas * 5)}`,
+          'Herramientas (mazo de goma)': '1 unidad'
+        };
+        cost = numLlantas * 500 + llantasVolume * 18000; // Llantas casi gratis
+        break;
+
+      case 'mamposteria':
+        const mamposteriaVolume = areaNum * heightNum * thicknessNum;
+        materials = {
+          'Bloques/Ladrillos de barro cocido': `${Math.ceil(mamposteriaVolume / 0.003)} unidades`,
+          'Mortero de cal-arena': `${(mamposteriaVolume * 0.25).toFixed(2)} m³`,
+          'Cal hidráulica': `${(mamposteriaVolume * 0.12 * 1000).toFixed(0)} kg`,
+          'Arena tamizada': `${(mamposteriaVolume * 0.35).toFixed(2)} m³`,
+          'Refuerzo (varillas o malla)': `${(areaNum * 1.1).toFixed(0)} m²`,
+          'Impermeabilizante base': `${(areaNum * 0.3).toFixed(0)} litros`
+        };
+        cost = mamposteriaVolume * 120000;
+        break;
+
+      case 'circular':
+        // Para diseños circulares/domos - más eficiente en materiales
+        const circularBaseArea = areaNum;
+        const radius = Math.sqrt(circularBaseArea / Math.PI);
+        const surfaceArea = 2 * Math.PI * radius * heightNum; // Área de superficie curva
+        const domeVolume = (2/3) * Math.PI * Math.pow(radius, 2) * heightNum;
+        materials = {
+          'Técnica base seleccionada': '(Combinar con otra técnica)',
+          'Área de superficie': `${surfaceArea.toFixed(2)} m²`,
+          'Volumen de material': `${domeVolume.toFixed(2)} m³`,
+          'Reducción vs construcción cuadrada': `${((1 - surfaceArea/(4*Math.sqrt(circularBaseArea)*heightNum)) * 100).toFixed(0)}%`,
+          'Ventaja térmica': 'Mayor eficiencia energética',
+          'Nota': 'Aplicar materiales según técnica elegida'
+        };
+        cost = domeVolume * 30000; // Estimado medio
         break;
 
       default:
@@ -179,7 +223,10 @@ function MaterialCalculator() {
       'botellas': 'Botellas de Vidrio',
       'tapia': 'Tapia/Tapial',
       'tierra-paja': 'Tierra-Paja',
-      'madera': 'Madera'
+      'madera': 'Madera',
+      'llantas': 'Llantas/Neumáticos (Earthship)',
+      'mamposteria': 'Mampostería',
+      'circular': 'Diseño Circular/Domo'
     };
     return names[tech] || tech;
   };
@@ -191,17 +238,30 @@ function MaterialCalculator() {
       <div className="form-group">
         <label>Técnica Constructiva:</label>
         <select value={technique} onChange={(e) => setTechnique(e.target.value)}>
-          <option value="adobe">Adobe</option>
-          <option value="cob">Cob</option>
-          <option value="superadobe">Superadobe</option>
-          <option value="bahareque">Bahareque (Quincha)</option>
-          <option value="paja">Pacas de Paja (Fardos)</option>
-          <option value="bambu">Bambú</option>
-          <option value="piedra">Piedra</option>
-          <option value="botellas">Botellas de Vidrio Recicladas</option>
-          <option value="tapia">Tapia/Tapial (Tierra Compactada)</option>
-          <option value="tierra-paja">Tierra-Paja (Light Earth)</option>
-          <option value="madera">Madera (Construcción tradicional)</option>
+          <optgroup label="Técnicas de Tierra">
+            <option value="adobe">Adobe</option>
+            <option value="cob">Cob</option>
+            <option value="superadobe">Superadobe</option>
+            <option value="tapia">Tapia/Tapial (Tierra Compactada)</option>
+            <option value="tierra-paja">Tierra-Paja (Light Earth)</option>
+          </optgroup>
+          <optgroup label="Técnicas con Fibras Vegetales">
+            <option value="bahareque">Bahareque (Quincha)</option>
+            <option value="paja">Pacas de Paja (Fardos)</option>
+            <option value="bambu">Bambú</option>
+          </optgroup>
+          <optgroup label="Materiales Pétreos y Tradicionales">
+            <option value="piedra">Piedra</option>
+            <option value="mamposteria">Mampostería</option>
+            <option value="madera">Madera</option>
+          </optgroup>
+          <optgroup label="Reciclaje y Materiales Reutilizados">
+            <option value="botellas">Botellas de Vidrio Recicladas</option>
+            <option value="llantas">Llantas/Neumáticos (Earthship)</option>
+          </optgroup>
+          <optgroup label="Diseños Especiales">
+            <option value="circular">Diseño Circular/Domo</option>
+          </optgroup>
         </select>
       </div>
 

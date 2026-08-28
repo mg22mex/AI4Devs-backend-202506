@@ -115,6 +115,42 @@ function DesignInspiration() {
       features: ['70 m²', 'Madera certificada FSC', 'Techo de madera natural', 'Integración total', 'Estufa de leña'],
       climate: 'Clima templado lluvioso',
       icon: '🪵'
+    },
+    {
+      title: 'Earthship de Llantas Autosuficiente',
+      technique: 'Llantas/Neumáticos',
+      location: 'Nuevo México, USA / Adaptable',
+      description: 'Casa completamente autosuficiente construida con 800 neumáticos reciclados. Diseño en forma de U que maximiza captación solar. Integra invernadero interior, captación de agua lluvia y tratamiento de aguas.',
+      features: ['120 m²', '800 llantas recicladas', 'Invernadero interior', 'Autosuficiente 100%', 'Masa térmica extrema'],
+      climate: 'Adaptable a cualquier clima, ideal para extremos',
+      icon: '🛞'
+    },
+    {
+      title: 'Domo de Superadobe Circular',
+      technique: 'Circular + Superadobe',
+      location: 'California, USA',
+      description: 'Domo perfecto de 10 metros de diámetro construido con técnica de superadobe en espiral. Sin columnas interiores, espacio diáfano. Diseño icónico de Cal-Earth Institute.',
+      features: ['78 m²', 'Sin estructura interna', 'Ventilación cenital', 'Resistente a sismos', 'Eficiencia térmica 30%'],
+      climate: 'Climas áridos y semi-áridos',
+      icon: '⭕'
+    },
+    {
+      title: 'Casa con Sistemas Pasivos Integrados',
+      technique: 'Mixta + Climatización Pasiva',
+      location: 'Diseño bioclimático avanzado',
+      description: 'Vivienda que combina masa térmica (muros de tapia), ventilación cruzada, chimenea solar, pozo canadiense y captación solar. Consume 80% menos energía que casa convencional.',
+      features: ['130 m²', 'Pozo canadiense', 'Chimenea solar', 'Muros de tapia 50cm', 'Confort sin HVAC'],
+      climate: 'Clima continental con extremos',
+      icon: '🌡️'
+    },
+    {
+      title: 'Casa de Mampostería con Botellas',
+      technique: 'Mampostería + Botellas',
+      location: 'Proyecto urbano comunitario',
+      description: 'Construcción híbrida que combina muros estructurales de mampostería con muros interiores decorativos de 2,500 botellas de colores. Participación de 50 vecinos en construcción.',
+      features: ['110 m²', '2,500 botellas', 'Construcción comunitaria', 'Muros lumínicos', 'Arte funcional'],
+      climate: 'Urbano, clima templado',
+      icon: '🏘️'
     }
   ];
 

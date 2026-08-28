@@ -179,6 +179,27 @@ function ProjectPlanner() {
         'Instalación de aislamiento natural',
         'Colocación de revestimiento exterior',
         'Aplicación de acabados protectores'
+      ],
+      'llantas': [
+        'Recolección y selección de llantas',
+        'Relleno y apisonado intensivo de tierra',
+        'Apilado en forma de U o herradura',
+        'Relleno de espacios con latas',
+        'Revoque completo de protección'
+      ],
+      'mamposteria': [
+        'Fabricación o compra de ladrillos',
+        'Preparación de mortero de cal',
+        'Levantamiento de muros con niveles',
+        'Instalación de refuerzos estructurales',
+        'Impermeabilización y acabados'
+      ],
+      'circular': [
+        'Diseño circular o de domo específico',
+        'Trazado circular del perímetro',
+        'Cimientos circulares o radiales',
+        'Construcción según técnica base elegida',
+        'Acabados curvos y detalles especiales'
       ]
     };
     return tasks[tech] || tasks['adobe'];
@@ -224,17 +245,30 @@ function ProjectPlanner() {
         <div className="form-group">
           <label>Técnica Constructiva:</label>
           <select value={technique} onChange={(e) => setTechnique(e.target.value)}>
-            <option value="adobe">Adobe</option>
-            <option value="cob">Cob</option>
-            <option value="superadobe">Superadobe</option>
-            <option value="bahareque">Bahareque</option>
-            <option value="paja">Pacas de Paja</option>
-            <option value="bambu">Bambú</option>
-            <option value="piedra">Piedra</option>
-            <option value="botellas">Botellas de Vidrio</option>
-            <option value="tapia">Tapia/Tapial</option>
-            <option value="tierra-paja">Tierra-Paja</option>
-            <option value="madera">Madera</option>
+            <optgroup label="Técnicas de Tierra">
+              <option value="adobe">Adobe</option>
+              <option value="cob">Cob</option>
+              <option value="superadobe">Superadobe</option>
+              <option value="tapia">Tapia/Tapial</option>
+              <option value="tierra-paja">Tierra-Paja</option>
+            </optgroup>
+            <optgroup label="Técnicas con Fibras Vegetales">
+              <option value="bahareque">Bahareque</option>
+              <option value="paja">Pacas de Paja</option>
+              <option value="bambu">Bambú</option>
+            </optgroup>
+            <optgroup label="Materiales Pétreos y Tradicionales">
+              <option value="piedra">Piedra</option>
+              <option value="mamposteria">Mampostería</option>
+              <option value="madera">Madera</option>
+            </optgroup>
+            <optgroup label="Reciclaje y Materiales Reutilizados">
+              <option value="botellas">Botellas de Vidrio</option>
+              <option value="llantas">Llantas/Neumáticos</option>
+            </optgroup>
+            <optgroup label="Diseños Especiales">
+              <option value="circular">Diseño Circular/Domo</option>
+            </optgroup>
           </select>
         </div>
       </div>

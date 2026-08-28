@@ -17,17 +17,29 @@ Esta plataforma ayuda a arquitectos, autoconstructores, estudiantes y comunidade
 
 ### 🏗️ Técnicas Soportadas
 
+**Técnicas de Tierra:**
 - **Adobe**: Bloques de tierra para climas secos
 - **Cob**: Construcción monolítica con formas orgánicas
 - **Superadobe**: Sacos de tierra resistentes a sismos
+- **Tapia/Tapial**: Tierra compactada monolítica
+- **Tierra-Paja**: Mezcla liviana con excelente aislamiento
+
+**Fibras Vegetales:**
 - **Bahareque (Quincha)**: Entramado liviano tropical
 - **Pacas de Paja**: Aislamiento superior para climas fríos
 - **Bambú**: Estructuras livianas y renovables
+
+**Materiales Pétreos y Tradicionales:**
 - **Piedra**: Construcción tradicional de alta durabilidad
-- **Botellas de Vidrio**: Muros con botellas recicladas y efectos lumínicos
-- **Tapia/Tapial**: Tierra compactada monolítica
-- **Tierra-Paja**: Mezcla liviana con excelente aislamiento
+- **Mampostería**: Ladrillos o bloques de barro cocido
 - **Madera**: Construcción tradicional con madera natural
+
+**Reciclaje y Reutilización:**
+- **Botellas de Vidrio**: Muros con botellas recicladas y efectos lumínicos
+- **Llantas/Neumáticos**: Construcción tipo Earthship con máxima eficiencia térmica
+
+**Diseños Especiales:**
+- **Construcción Circular/Domos**: Diseños eficientes y resistentes
 
 ### 🚀 Inicio Rápido
 

@@ -17,12 +17,13 @@ function Home() {
           <h3>Calculadora de Materiales</h3>
           <p>
             Calcula con precisión los materiales necesarios para tu proyecto de construcción natural.
-            Incluye 11 técnicas: adobe, cob, superadobe, bahareque, pacas de paja, bambú, piedra, botellas recicladas, tapia, tierra-paja y madera.
+            Incluye 14 técnicas: tierra (adobe, cob, superadobe, tapia, tierra-paja), fibras vegetales (bahareque, paja, bambú), pétreos (piedra, mampostería, madera), reciclaje (botellas, llantas) y diseños circulares.
           </p>
           <ul>
             <li>✓ Cálculos precisos por m²</li>
-            <li>✓ 11 técnicas constructivas</li>
+            <li>✓ 14 técnicas constructivas</li>
             <li>✓ Estimación de costos</li>
+            <li>✓ Diseños circulares/domos</li>
           </ul>
         </div>
 
@@ -30,14 +31,14 @@ function Home() {
           <div className="icon">📚</div>
           <h3>Guía de Técnicas</h3>
           <p>
-            Aprende sobre 11 diferentes técnicas de construcción natural, sus ventajas,
-            desventajas y aplicaciones ideales.
+            Aprende sobre 13 diferentes técnicas de construcción natural, sistemas pasivos de climatización y construcción circular.
           </p>
           <ul>
-            <li>✓ Adobe, cob y tierra compactada</li>
-            <li>✓ Piedra y botellas recicladas</li>
-            <li>✓ Bambú, madera y pacas de paja</li>
-            <li>✓ Bahareque y tierra-paja</li>
+            <li>✓ Adobe, cob, tapia y tierra-paja</li>
+            <li>✓ Piedra, mampostería y madera</li>
+            <li>✓ Botellas y llantas recicladas</li>
+            <li>✓ Sistemas de manejo térmico pasivo</li>
+            <li>✓ Construcción circular y domos</li>
           </ul>
         </div>
 
