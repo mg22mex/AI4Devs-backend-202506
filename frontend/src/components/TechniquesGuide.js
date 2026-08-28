@@ -795,6 +795,42 @@ function TechniquesGuide() {
         'Sistema de rebose entre swales',
         'Monitoreo y ajuste después de primeras lluvias'
       ]
+    },
+    {
+      name: 'Jardines Interiores y Biofilia',
+      icon: '🌿',
+      description: 'Integración de naturaleza al interior de espacios habitables mediante plantas, muros verdes, techos vegetales y diseño biofílico. Mejora calidad del aire, reduce estrés, aumenta productividad y conecta con la naturaleza.',
+      advantages: [
+        'Purifica aire interior (elimina CO₂, toxinas)',
+        'Reduce estrés y mejora salud mental (30-40%)',
+        'Aumenta productividad y concentración (+15%)',
+        'Regula humedad natural (40-60% óptimo)',
+        'Reduce temperatura interior (2-5°C en verano)',
+        'Aísla acústicamente (muros verdes -10dB)',
+        'Aumenta valor inmobiliario (+15-20%)',
+        'Belleza natural y conexión con la naturaleza'
+      ],
+      disadvantages: [
+        'Requiere mantenimiento regular (riego, poda)',
+        'Inversión inicial en plantas y sistemas',
+        'Necesita iluminación adecuada (natural o LED)',
+        'Puede atraer insectos (aunque generalmente benéficos)',
+        'Muros verdes requieren impermeabilización',
+        'Sistema de riego automático recomendado'
+      ],
+      ideal: 'Viviendas, oficinas, espacios de trabajo, escuelas, hospitales, restaurantes, hoteles, espacios comerciales',
+      process: [
+        'Análisis de iluminación natural disponible',
+        'Selección de plantas según luz y humedad',
+        'Diseño de ubicación estratégica (zonas de descanso, trabajo)',
+        'Instalación de jardín vertical (si aplica)',
+        'Sistema de riego automático por goteo',
+        'Plantas grandes en piso (1 cada 8-10 m²)',
+        'Plantas pequeñas en mesas/repisas',
+        'Iluminación LED de crecimiento (zonas oscuras)',
+        'Techo verde interior (opcional, doble altura)',
+        'Mantenimiento mensual programado'
+      ]
     }
   ];
 

@@ -413,6 +413,28 @@ function MaterialCalculator() {
         cost = terrainArea * 8000 + swalesLength * 12000; // Estudio + construcción swales
         break;
 
+      case 'jardines-interiores':
+        // Jardines interiores y biofilia
+        const interiorArea = areaNum; // Área interior en m²
+        const wallArea = heightNum * (widthNum * 2 + (areaNum / widthNum) * 2); // Área de muros
+        const verticalGardenArea = wallArea * 0.15; // 15% de muros con jardín vertical
+        const plantsIndoor = Math.ceil(interiorArea / 8); // 1 planta cada 8m²
+        materials = {
+          'Área interior': `${interiorArea.toFixed(0)} m²`,
+          'Plantas de interior grandes': `${plantsIndoor} unidades`,
+          'Plantas de mesa/escritorio': `${Math.ceil(plantsIndoor * 1.5)} unidades`,
+          'Jardín vertical (muro verde)': `${verticalGardenArea.toFixed(2)} m²`,
+          'Módulos para jardín vertical': `${Math.ceil(verticalGardenArea / 0.5)} unidades`,
+          'Sistema de riego automático': '1 sistema completo',
+          'Sustrato y tierra especial': `${(verticalGardenArea * 0.1 + plantsIndoor * 0.02).toFixed(2)} m³`,
+          'Macetas decorativas': `${plantsIndoor + Math.ceil(plantsIndoor * 1.5)} unidades`,
+          'Iluminación LED crecimiento': `${Math.ceil(interiorArea / 15)} lámparas`,
+          'Humidificador (si necesario)': `${Math.ceil(interiorArea / 40)} unidades`,
+          'Techo verde interior (opcional)': `${(interiorArea * 0.1).toFixed(2)} m²`
+        };
+        cost = interiorArea * 35000 + verticalGardenArea * 85000; // Plantas + jardín vertical
+        break;
+
       default:
         break;
     }
@@ -452,7 +474,8 @@ function MaterialCalculator() {
       'aguas-grises': 'Tratamiento de Aguas Grises',
       'estanque': 'Estanque/Lago Natural',
       'permacultura': 'Diseño de Permacultura',
-      'curvas-nivel': 'Análisis de Curvas de Nivel'
+      'curvas-nivel': 'Análisis de Curvas de Nivel',
+      'jardines-interiores': 'Jardines Interiores / Biofilia'
     };
     return names[tech] || tech;
   };
@@ -503,6 +526,9 @@ function MaterialCalculator() {
             <option value="estanque">Estanque/Lago Natural</option>
             <option value="permacultura">Diseño de Permacultura</option>
             <option value="curvas-nivel">Análisis de Curvas de Nivel</option>
+          </optgroup>
+          <optgroup label="Diseño Interior y Biofilia">
+            <option value="jardines-interiores">Jardines Interiores / Muros Verdes</option>
           </optgroup>
         </select>
       </div>

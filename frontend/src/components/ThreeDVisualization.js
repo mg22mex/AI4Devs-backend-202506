@@ -149,6 +149,16 @@ function ThreeDVisualization() {
       url: 'sweethome3d.com'
     },
     {
+      name: 'Planner 5D',
+      icon: '🏠',
+      type: 'Freemium (básico gratis)',
+      difficulty: 'Muy Fácil',
+      features: ['Diseño intuitivo', 'Biblioteca extensa', 'Renders en la nube', 'App móvil', 'Vista VR'],
+      bestFor: 'Diseño rápido de interiores y presentaciones',
+      url: 'planner5d.com',
+      naturalLimitations: 'Biblioteca limitada en elementos naturales (adobe, cob, bambú). Requiere creatividad con texturas y objetos personalizados.'
+    },
+    {
       name: 'Revit (Autodesk)',
       icon: '🏢',
       type: 'Pago (con trial)',
@@ -540,6 +550,176 @@ function ThreeDVisualization() {
           <li><strong>Interior:</strong> Espacio social principal</li>
           <li><strong>Detalle:</strong> Textura de material característico</li>
           <li><strong>Contexto:</strong> Con entorno natural/urbano</li>
+        </ul>
+      </div>
+
+      {/* Nueva Sección: Elementos Naturales en Software 3D */}
+      <h2 className="section-title" style={{marginTop: '60px'}}>🌿 Modelar Elementos Naturales en Software 3D</h2>
+      
+      <div className="info-section">
+        <p style={{fontSize: '1.05em', textAlign: 'center', marginBottom: '30px'}}>
+          Guía específica para representar construcción natural y jardines interiores en Planner 5D y otros programas.
+          Estos elementos suelen no estar en bibliotecas estándar - aquí te mostramos cómo crearlos.
+        </p>
+      </div>
+
+      <div className="card" style={{marginBottom: '30px'}}>
+        <h3>🏠 Elementos Naturales en Planner 5D</h3>
+        <p style={{marginBottom: '20px'}}>
+          Planner 5D es excelente para interiores pero carece de materiales de construcción natural.
+          Aquí cómo solucionar esto:
+        </p>
+
+        <div className="two-column-grid">
+          <div>
+            <h5 style={{color: '#4a7c59'}}>🧱 Muros de Adobe/Tierra:</h5>
+            <ul style={{fontSize: '0.9em'}}>
+              <li><strong>Usar:</strong> Muros de ladrillo o concreto como base</li>
+              <li><strong>Textura:</strong> Subir foto de adobe real o descargar de textures.com</li>
+              <li><strong>Color:</strong> Tonos ocre, terracota, marrón claro</li>
+              <li><strong>Espesor:</strong> Aumentar a 40-60cm (más que muro estándar)</li>
+              <li><strong>Tip:</strong> Agregar irregularidades con relieves sutiles</li>
+            </ul>
+
+            <h5 style={{color: '#4a7c59', marginTop: '15px'}}>🌾 Techos de Paja/Verde:</h5>
+            <ul style={{fontSize: '0.9em'}}>
+              <li><strong>Usar:</strong> Techo inclinado genérico</li>
+              <li><strong>Textura paja:</strong> Textura de madera clara o pasto seco</li>
+              <li><strong>Techo verde:</strong> Textura de pasto + pequeñas plantas</li>
+              <li><strong>Espesor:</strong> Mayor que techo estándar (30-40cm)</li>
+              <li><strong>Tip:</strong> Agregar vegetación en bordes</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 style={{color: '#4a7c59'}}>🎋 Bambú y Madera Natural:</h5>
+            <ul style={{fontSize: '0.9em'}}>
+              <li><strong>Columnas:</strong> Usar columnas de madera, ajustar radio</li>
+              <li><strong>Textura:</strong> Bambú real o madera con nudos</li>
+              <li><strong>Vigas:</strong> Elementos estructurales vistos</li>
+              <li><strong>Color:</strong> Miel, caramelo, natural sin barniz</li>
+              <li><strong>Tip:</strong> No usar acabados brillantes (más natural)</li>
+            </ul>
+
+            <h5 style={{color: '#4a7c59', marginTop: '15px'}}>🪨 Piedra Natural:</h5>
+            <ul style={{fontSize: '0.9em'}}>
+              <li><strong>Usar:</strong> Muros de piedra o roca de biblioteca</li>
+              <li><strong>Textura:</strong> Piedra irregular, no pulida</li>
+              <li><strong>Color:</strong> Grises, marrones, según región</li>
+              <li><strong>Mortero:</strong> Visible entre piedras (realismo)</li>
+              <li><strong>Tip:</strong> Combinar tamaños diferentes</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 style={{color: '#4a7c59', marginTop: '25px'}}>🌿 Jardines Interiores en Planner 5D</h4>
+        <div className="two-column-grid">
+          <div>
+            <h5 style={{color: '#4a7c59'}}>Plantas de Interior:</h5>
+            <ul style={{fontSize: '0.9em'}}>
+              <li><strong>Biblioteca:</strong> Planner 5D tiene +100 plantas</li>
+              <li><strong>Distribución:</strong> 1 planta grande cada 8-10 m²</li>
+              <li><strong>Esquinas:</strong> Plantas altas (2m+) en esquinas</li>
+              <li><strong>Mesas:</strong> Plantas pequeñas en superficies</li>
+              <li><strong>Grupos:</strong> Agrupar 3-5 plantas para impacto</li>
+              <li><strong>Tip:</strong> Usar macetas de materiales naturales</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h5 style={{color: '#4a7c59'}}>Muros Verdes/Jardines Verticales:</h5>
+            <ul style={{fontSize: '0.9em'}}>
+              <li><strong>Método 1:</strong> Textura de pared con vegetación</li>
+              <li><strong>Método 2:</strong> Panel personalizado con plantas</li>
+              <li><strong>Método 3:</strong> Multiplicar plantas pequeñas en grid</li>
+              <li><strong>Altura:</strong> Cubrir 60-80% de altura de muro</li>
+              <li><strong>Ubicación:</strong> Muros con iluminación natural</li>
+              <li><strong>Tip:</strong> Agregar sistema de riego visible (realismo)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="card" style={{marginBottom: '30px'}}>
+        <h3>🎨 Técnicas Avanzadas para Otros Software</h3>
+        
+        <div className="two-column-grid">
+          <div>
+            <h5 style={{color: '#4a7c59'}}>SketchUp:</h5>
+            <ul style={{fontSize: '0.9em'}}>
+              <li><strong>Warehouse 3D:</strong> Buscar "adobe house", "living wall"</li>
+              <li><strong>Plugins:</strong> ClothWorks (techos de paja orgánicos)</li>
+              <li><strong>Texturas:</strong> texture.com → proyectar en UV</li>
+              <li><strong>Plantas:</strong> SketchUp tiene biblioteca Laubwerk</li>
+              <li><strong>Muros curvos:</strong> Plugin Curviloft para cob/adobe</li>
+            </ul>
+
+            <h5 style={{color: '#4a7c59', marginTop: '15px'}}>Blender (Avanzado):</h5>
+            <ul style={{fontSize: '0.9em'}}>
+              <li><strong>Particle System:</strong> Pasto en techos verdes</li>
+              <li><strong>Displacement:</strong> Irregularidades en adobe</li>
+              <li><strong>Geometry Nodes:</strong> Muros de botellas/llantas</li>
+              <li><strong>Add-ons:</strong> Botanical, Ivy Gen (vegetación)</li>
+              <li><strong>PBR Materials:</strong> Poly Haven (adobe, tierra, paja)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 style={{color: '#4a7c59'}}>Sweet Home 3D:</h5>
+            <ul style={{fontSize: '0.9em'}}>
+              <li><strong>Importar modelos:</strong> Formato OBJ desde bibliotecas</li>
+              <li><strong>Texturas personalizadas:</strong> Carpeta de usuario</li>
+              <li><strong>Plantas:</strong> Biblioteca tiene +50 especies</li>
+              <li><strong>Limitación:</strong> Menos flexible para muros naturales</li>
+              <li><strong>Mejor para:</strong> Distribución con muebles naturales</li>
+            </ul>
+
+            <h5 style={{color: '#4a7c59', marginTop: '15px'}}>Revit/ArchiCAD (BIM):</h5>
+            <ul style={{fontSize: '0.9em'}}>
+              <li><strong>Familias custom:</strong> Crear muros de adobe paramet.</li>
+              <li><strong>Materiales:</strong> Definir propiedades térmicas reales</li>
+              <li><strong>Capas:</strong> Muros multicapa (tierra-paja-revoque)</li>
+              <li><strong>Plantas:</strong> Importar desde Laubwerk o VizPeople</li>
+              <li><strong>Ventaja:</strong> Cálculos energéticos precisos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="result-box" style={{marginTop: '30px'}}>
+        <h4>💡 Tips Profesionales: Elementos Naturales</h4>
+        
+        <div className="two-column-grid" style={{marginTop: '20px'}}>
+          <div>
+            <h5 style={{color: '#4a7c59'}}>Realismo en Materiales:</h5>
+            <ul style={{paddingLeft: '20px', fontSize: '0.9em'}}>
+              <li>Adobe/tierra: Agregar variación de color sutil</li>
+              <li>Piedra: Nunca perfectamente alineada</li>
+              <li>Madera: Mostrar nudos, vetas, imperfecciones</li>
+              <li>Paja: Textura orgánica, no uniforme</li>
+              <li>Plantas: Variar tamaños y especies</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 style={{color: '#4a7c59'}}>Jardines Interiores:</h5>
+            <ul style={{paddingLeft: '20px', fontSize: '0.9em'}}>
+              <li>Iluminación: Agregar luz natural direccional</li>
+              <li>Sombras: Plantas proyectan sombras en muros</li>
+              <li>Macetas: Materiales naturales (barro, fibra)</li>
+              <li>Riego: Mostrar sistema si es muro verde</li>
+              <li>Densidad: No sobrepoblar (espacio respirable)</li>
+            </ul>
+          </div>
+        </div>
+
+        <h5 style={{color: '#4a7c59', marginTop: '20px'}}>Recursos Específicos:</h5>
+        <ul style={{paddingLeft: '20px', fontSize: '0.9em'}}>
+          <li><strong>Texturas Adobe:</strong> textures.com/search?q=adobe+wall</li>
+          <li><strong>Plantas 3D:</strong> sketchuptextureclub.com/plants</li>
+          <li><strong>Piedra Natural:</strong> ambientcg.com/list?type=Material&search=stone</li>
+          <li><strong>Muros Verdes:</strong> cgtrader.com/search/living+wall</li>
+          <li><strong>Bambú:</strong> 3dwarehouse.sketchup.com/search/?q=bamboo</li>
         </ul>
       </div>
 

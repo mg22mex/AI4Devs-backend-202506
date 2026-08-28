@@ -5,7 +5,7 @@ Una aplicación web integral para diseñar, planificar y calcular proyectos de c
 ## 🌟 Características
 
 ### 1. Calculadora de Materiales
-Calcula con precisión los materiales necesarios para tu proyecto según 26 técnicas constructivas:
+Calcula con precisión los materiales necesarios para tu proyecto según 27 técnicas constructivas y de diseño:
 - **Adobe**: Bloques de tierra, arena y paja
 - **Cob**: Construcción monolítica de tierra
 - **Superadobe**: Sacos rellenos de tierra
@@ -32,6 +32,7 @@ Calcula con precisión los materiales necesarios para tu proyecto según 26 téc
 - **Estanques Naturales**: Lagos ecológicos y reservorios
 - **Permacultura**: Diseño integral autosuficiente
 - **Curvas de Nivel**: Análisis topográfico y swales
+- **Jardines Interiores**: Muros verdes y biofilia interior
 
 ### 2. Guía de Técnicas Constructivas
 Información completa sobre cada técnica:

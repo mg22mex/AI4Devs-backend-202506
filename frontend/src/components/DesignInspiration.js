@@ -250,6 +250,15 @@ function DesignInspiration() {
       features: ['5 ha', '600 m swales', '2.4M L infiltrados/año', '180 árboles', 'Erosión cero'],
       climate: 'Ladera con pendiente, lluvias abundantes',
       icon: '📏'
+    },
+    {
+      title: 'Oficina Biofílica con Jardines Interiores',
+      technique: 'Biofilia + Adobe',
+      location: 'Santiago, Chile',
+      description: 'Oficina de 200m² construida en adobe con 45m² de muros verdes interiores y 68 plantas distribuidas estratégicamente. Sistema de riego automático. Estudio mostró: reducción estrés laboral 35%, aumento productividad 18%, reducción temperatura 3.5°C sin aire acondicionado, mejora calidad aire (CO₂ -40%). ROI en salud y productividad: 14 meses.',
+      features: ['200 m² oficina', '45 m² muros verdes', '68 plantas', 'Estrés -35%', 'Productividad +18%'],
+      climate: 'Clima mediterráneo urbano',
+      icon: '🌿'
     }
   ];
 

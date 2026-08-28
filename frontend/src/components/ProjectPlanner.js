@@ -294,6 +294,14 @@ function ProjectPlanner() {
         'Marcación en terreno con estacas',
         'Excavación de swales en contorno',
         'Plantación de bermas y monitoreo'
+      ],
+      'jardines-interiores': [
+        'Análisis de iluminación natural en espacios',
+        'Selección de especies de plantas apropiadas',
+        'Diseño de ubicación de jardines verticales',
+        'Instalación de sistema de riego automático',
+        'Colocación de plantas grandes y pequeñas',
+        'Programación de mantenimiento regular'
       ]
     };
     return tasks[tech] || tasks['adobe'];
@@ -378,6 +386,9 @@ function ProjectPlanner() {
               <option value="estanque">Estanque Natural</option>
               <option value="permacultura">Permacultura</option>
               <option value="curvas-nivel">Curvas de Nivel</option>
+            </optgroup>
+            <optgroup label="Diseño Interior y Biofilia">
+              <option value="jardines-interiores">Jardines Interiores</option>
             </optgroup>
           </select>
         </div>
