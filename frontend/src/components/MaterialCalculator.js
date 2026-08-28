@@ -249,6 +249,24 @@ function MaterialCalculator() {
         cost = temazcalArea * 85000; // Más costoso por especialización
         break;
 
+      case 'bano-seco':
+        // Baño compostero ecológico - sistema compacto
+        const numUnits = Math.ceil(areaNum / 1.5) || 1; // Típicamente 1.5m² por unidad
+        materials = {
+          'Unidades a construir': `${numUnits}`,
+          'Madera tratada para estructura': `${(numUnits * 0.4).toFixed(2)} m³`,
+          'Tapa de inodoro con asiento': `${numUnits} unidades`,
+          'Contenedor/cámara de compostaje (200L)': `${numUnits * 2} unidades`,
+          'Tubo de ventilación PVC (10cm)': `${(numUnits * 3).toFixed(0)} metros`,
+          'Malla mosquitera': `${(numUnits * 2).toFixed(0)} m²`,
+          'Material absorbente (aserrín)': `${(numUnits * 80).toFixed(0)} kg/año`,
+          'Bisagras y herrajes': `${numUnits * 4} unidades`,
+          'Puerta de madera': `${numUnits} unidad(es)`,
+          'Material de separación (orina)': `${numUnits} sistemas`
+        };
+        cost = numUnits * 320000; // Costo por unidad completa
+        break;
+
       default:
         break;
     }
@@ -279,7 +297,8 @@ function MaterialCalculator() {
       'circular': 'Diseño Circular/Domo',
       'walipini': 'Walipini (Invernadero Subterráneo)',
       'cellar': 'Bodega/Cellar Subterráneo',
-      'temazcal': 'Temazcal (Baño de Vapor)'
+      'temazcal': 'Temazcal (Baño de Vapor)',
+      'bano-seco': 'Baño Seco (Compostero)'
     };
     return names[tech] || tech;
   };
@@ -317,6 +336,7 @@ function MaterialCalculator() {
             <option value="walipini">Walipini (Invernadero Subterráneo)</option>
             <option value="cellar">Bodega/Cellar Subterráneo</option>
             <option value="temazcal">Temazcal (Baño de Vapor)</option>
+            <option value="bano-seco">Baño Seco (Compostero)</option>
           </optgroup>
         </select>
       </div>

@@ -1,13 +1,14 @@
 # Estructuras Especiales de Construcción Natural
 
-Este documento detalla tres estructuras especializadas recientemente agregadas a la plataforma EcoArq: **Walipini**, **Bodegas Subterráneas (Root Cellars)** y **Temazcales**.
+Este documento detalla cuatro estructuras especializadas agregadas a la plataforma EcoArq: **Walipini**, **Bodegas Subterráneas (Root Cellars)**, **Temazcales** y **Baños Secos**.
 
 ## Tabla de Contenidos
 1. [Walipini - Invernadero Subterráneo](#walipini)
 2. [Bodega Subterránea - Root Cellar](#bodega-subterránea)
 3. [Temazcal - Baño de Vapor](#temazcal)
-4. [Consideraciones de Diseño](#consideraciones-de-diseño)
-5. [Referencias y Recursos](#referencias)
+4. [Baño Seco - Saneamiento Ecológico](#bano-seco)
+5. [Consideraciones de Diseño](#consideraciones-de-diseño)
+6. [Referencias y Recursos](#referencias)
 
 ---
 
@@ -361,7 +362,320 @@ Para un temazcal de 8 m²:
 
 ---
 
-## 4. Consideraciones de Diseño Compartidas {#consideraciones-de-diseño}
+## 4. Baño Seco - Saneamiento Ecológico {#bano-seco}
+
+### 🚽 Descripción
+
+El **baño seco** o **baño compostero** es un sistema de saneamiento ecológico que no utiliza agua para el transporte de desechos humanos. En su lugar, convierte los excrementos en compost seguro mediante procesos aeróbicos controlados.
+
+### Principio de Funcionamiento
+
+- **Sin agua**: Ahorro de 30-40 litros por persona por día
+- **Compostaje aeróbico**: Descomposición controlada con presencia de oxígeno
+- **Separación de orina** (opcional): Facilita el compostaje y permite uso directo como fertilizante
+- **Material absorbente**: Aserrín, viruta, paja o tierra seca absorben humedad y controlan olores
+- **Ventilación**: Tubo de 3+ metros genera tiro natural que elimina olores
+
+### Ventajas
+
+✅ **Cero consumo de agua** (ahorro de ~12,000 litros/persona/año)  
+✅ **Genera compost rico en nutrientes** (25-30 kg/persona/año)  
+✅ **No contamina aguas subterráneas** ni superficiales  
+✅ **Sin conexión a alcantarillado** (ahorro en infraestructura)  
+✅ **Bajo costo de operación** (solo material absorbente)  
+✅ **Ideal para zonas rurales, remotas y off-grid**  
+✅ **Reduce huella ecológica significativamente**  
+✅ **Cierra ciclo de nutrientes** (economía circular)  
+
+### Desventajas
+
+❌ Requiere disciplina y educación de usuarios  
+❌ Necesita suministro constante de material absorbente  
+❌ Mantenimiento regular de cámaras de compostaje  
+❌ Puede generar olores si mal ventilado o mal operado  
+❌ No aceptado por todos los códigos de construcción  
+❌ Algunos usuarios tienen resistencia cultural inicial  
+❌ Requiere gestión adecuada del compost (12-24 meses)  
+
+### Tipos de Baños Secos
+
+#### 1. Baño Seco de Cámara Simple
+
+**Descripción**: Una sola cámara que se llena y luego se cierra para compostaje.  
+**Ventaja**: Diseño más simple y económico.  
+**Desventaja**: Requiere construcción de nueva cámara cada vez que se llena.
+
+#### 2. Baño Seco de Doble Cámara (Recomendado)
+
+**Descripción**: Dos cámaras alternantes. Mientras una se usa, la otra composta.  
+**Ventaja**: Sistema continuo sin interrupciones.  
+**Desventaja**: Mayor costo inicial de construcción.
+
+#### 3. Baño Seco con Separación de Orina
+
+**Descripción**: Inodoro especial separa orina de heces.  
+**Ventaja**: Compostaje más rápido y eficiente, orina directa como fertilizante.  
+**Desventaja**: Requiere inodoro especializado ($150-300 USD).
+
+#### 4. Baño Seco Portátil/Móvil
+
+**Descripción**: Unidad compacta con cubeta removible.  
+**Ventaja**: Ideal para eventos, camping, construcción temporal.  
+**Desventaja**: Requiere vaciado frecuente.
+
+### Diseño Típico (Doble Cámara)
+
+**Dimensiones recomendadas:**
+- **Caseta superior**: 1.2m x 1.2m (mínimo), altura 2-2.2m
+- **Cámaras de compostaje**: 0.8m x 1m x 1.2m de alto cada una
+- **Capacidad**: ~250 litros por cámara (suficiente para 1-2 años/familia de 4)
+- **Tubo de ventilación**: Diámetro 10-15cm, altura mínima 3 metros
+
+**Componentes esenciales:**
+
+1. **Caseta superior**: Estructura de madera, adobe o ladrillo
+2. **Asiento elevado**: 50-60cm sobre cámaras (puede ser taza de inodoro estándar sin agua)
+3. **Dos cámaras de compostaje**: Con acceso inferior para extracción
+4. **Tubo de ventilación**: PVC negro (absorbe calor, aumenta tiro)
+5. **Malla mosquitera**: En extremo superior del tubo
+6. **Tapa del asiento**: Hermética para cerrar cuando no se usa
+7. **Contenedor de material absorbente**: Aserrín, viruta o paja
+8. **Compuerta selectora**: Dirige desechos a cámara activa
+9. **Puertas de acceso inferior**: Para extracción de compost maduro
+
+### Construcción Paso a Paso
+
+#### Fase 1: Diseño y Ubicación
+
+1. **Selección del sitio**: 
+   - Mínimo 10m de pozos de agua
+   - Acceso fácil para mantenimiento
+   - Buen drenaje del terreno
+   - Orientación del tubo hacia vientos dominantes (mejora ventilación)
+
+2. **Permisos**: Verificar normativa local (algunos municipios requieren autorización)
+
+#### Fase 2: Construcción de Cámaras
+
+1. **Excavación**: Cavidad de 1.8m x 1m x 1.2m de profundidad (para ambas cámaras)
+2. **Cimientos**: Base de piedra o concreto (10-15cm) con ligera pendiente hacia delante
+3. **Muros divisorios**: Ladrillo, bloques o madera tratada entre cámaras
+4. **Impermeabilización**: Aunque no hay líquidos, protege de humedad del suelo
+5. **Ventilación inferior**: Pequeños orificios en base (entrada de aire)
+6. **Puertas de acceso**: Marcos de madera con puertas herméticas
+
+#### Fase 3: Estructura Superior
+
+1. **Piso elevado**: Plataforma a 50-60cm sobre cámaras
+2. **Abertura con taza**: Orificio de 25-30cm de diámetro (o forma de inodoro)
+3. **Compuerta selectora**: Mecanismo para dirigir a cámara izquierda o derecha
+4. **Taza de inodoro**: Puede usar taza estándar sin sifón (cortar conexión de agua)
+
+#### Fase 4: Sistema de Ventilación
+
+1. **Tubo principal**: PVC de 10-15cm, desde cámara hasta 3+ metros altura
+2. **Conexión**: Unir tubo a cámara activa (idealmente ambas cámaras)
+3. **Pintar de negro**: Absorbe calor solar, aumenta convección
+4. **Malla superior**: Evita entrada de insectos
+5. **Sombrero opcional**: Protege de lluvia (pero no debe bloquear salida)
+
+#### Fase 5: Caseta
+
+1. **Estructura**: Madera, adobe, bambú, etc. (según disponibilidad)
+2. **Techo**: Impermeable, con aleros para proteger muros
+3. **Puerta**: Con ventilación superior (rejillas) pero sin corrientes directas
+4. **Ventanas pequeñas**: Iluminación natural (opcionales)
+5. **Estante**: Para material absorbente y papel
+
+#### Fase 6: Acabados y Accesorios
+
+1. **Tapa hermética**: Importante para cerrar cuando no se usa
+2. **Contenedor de aserrín**: Con pala o taza medidora
+3. **Señalización**: Instrucciones de uso claras
+4. **Decoración**: Pintura, plantas, etc. (humanizar el espacio)
+
+### Materiales Absorbentes
+
+**Aserrín de madera** (más común):
+- Absorción excelente
+- Control de olores efectivo
+- Abundante en aserraderos (a menudo gratis)
+- **No usar**: Aserrín de madera tratada o pintada
+
+**Viruta de madera**:
+- Similar al aserrín pero menos denso
+- Buena aireación
+
+**Paja o heno picado**:
+- Abundante en zonas rurales
+- Relación C/N ideal para compostaje
+- Más voluminoso
+
+**Tierra seca**:
+- Gratuito y universal
+- Menos efectivo en control de olores
+- Compost más pesado
+
+**Hojas secas trituradas**:
+- Estacional pero efectivo
+- Excelente para compostaje
+- Rico en carbono
+
+**Cantidad necesaria**: ~80-100 kg por persona por año (aserrín).
+
+### Uso y Operación
+
+#### Instrucciones para Usuarios
+
+1. **Después de usar**: Agregar 1-2 tazas (200-400 ml) de material absorbente
+2. **Cerrar la tapa**: Siempre después de usar
+3. **Solo desechos humanos y papel**: No tirar basura, toallas sanitarias, etc.
+4. **Orina**: Si el diseño separa, usar recipiente aparte (diluir 1:5 para riego)
+5. **Papel higiénico**: Preferir papel biodegradable, sin tintas
+
+#### Mantenimiento Regular
+
+**Semanal**:
+- Verificar nivel de cámara activa
+- Reabastecer material absorbente
+- Limpiar asiento y superficies
+
+**Mensual**:
+- Verificar ventilación (no obstrucciones)
+- Revisar hermeticidad de tapa
+- Limpiar mosquitera
+
+**Anual o cuando se llena cámara**:
+- Cambiar a cámara alternativa
+- Sellar cámara llena (dejar compostar 12-24 meses)
+- Iniciar uso de cámara vacía
+
+**Cada 12-24 meses**:
+- Extraer compost maduro de cámara en reposo
+- Tamizar y verificar madurez
+- Usar en jardines ornamentales o árboles frutales
+
+### Compostaje y Maduración
+
+#### Tiempos de Compostaje
+
+- **Mínimo**: 12 meses después de llenado
+- **Recomendado**: 18-24 meses (mayor seguridad)
+- **Climas cálidos**: Proceso más rápido (10-12 meses puede ser suficiente)
+- **Climas fríos**: Requerir hasta 24-36 meses
+
+#### Indicadores de Compost Maduro
+
+✅ Color marrón oscuro a negro  
+✅ Textura como tierra de jardín  
+✅ Olor a tierra de bosque (no fecal)  
+✅ No reconocible material original  
+✅ Temperatura ambiente (proceso terminado)  
+
+#### Seguridad del Compost
+
+**Patógenos eliminados por**:
+- Tiempo (12+ meses)
+- pH alcalino (se desarrolla naturalmente)
+- Competencia con microorganismos benéficos
+- Desecación parcial
+
+**Uso seguro**:
+- **Recomendado**: Árboles, arbustos ornamentales, frutales
+- **Aceptable**: Hortalizas de fruto (tomates, calabazas) aplicando 2-3 meses antes
+- **Evitar**: Hortalizas de raíz (zanahorias, papas) por precaución
+- **Nunca**: En cultivos de consumo crudo inmediato
+
+### Ventilación y Control de Olores
+
+**Principio**: Un baño seco bien ventilado NO tiene olores desagradables.
+
+#### Sistema de Ventilación Efectivo
+
+1. **Tubo alto** (3+ metros): Genera tiro natural por convección
+2. **Tubo negro**: Absorbe calor solar, aumenta flujo ascendente
+3. **Sin obstrucciones**: Camino libre desde cámara hasta salida
+4. **Entrada de aire**: Desde caseta hacia cámara (pequeña rejilla en puerta o muro)
+5. **Tapa hermética**: Fuerza aire por el tubo (no se escapa por asiento)
+
+#### Si hay olores, verificar:
+
+- ¿Tubo suficientemente alto?
+- ¿Tubo obstruido?
+- ¿Tapa cierra bien?
+- ¿Suficiente material absorbente?
+- ¿Exceso de humedad? (agregar más absorbente)
+
+### Normativa y Legalidad
+
+**Variable según país y región**:
+
+- **México**: Permitido en zonas rurales, algunas normas estatales lo reconocen
+- **Chile**: Permitido en zonas rurales sin alcantarillado (verificar municipio)
+- **Argentina**: Aceptado en muchas provincias para zonas sin servicios
+- **España**: Requiere autorización, más común en zonas rurales
+- **USA/Canadá**: Varía por estado/provincia, más común en off-grid
+
+**Recomendación**: Consultar con autoridad sanitaria local antes de construir.
+
+### Costos Estimados (Referencia)
+
+#### Baño Seco de Doble Cámara (Construcción Propia)
+
+- **Materiales de construcción** (madera, ladrillos): $150,000 - $250,000 CLP
+- **Tubo de ventilación y accesorios**: $30,000 - $50,000 CLP
+- **Taza de inodoro (opcional, puede usar madera)**: $20,000 - $80,000 CLP
+- **Herrajes, bisagras, pinturas**: $30,000 - $50,000 CLP
+- **Total aproximado**: $230,000 - $430,000 CLP por unidad
+
+#### Baño Seco Prefabricado/Comercial
+
+- **Unidad básica**: $400,000 - $800,000 CLP
+- **Unidad premium con separador de orina**: $800,000 - $1,500,000 CLP
+- **Instalación**: $100,000 - $200,000 CLP
+
+#### Operación Anual
+
+- **Material absorbente** (aserrín gratis de aserradero): $0 - $50,000 CLP
+- **Papel higiénico**: $30,000 - $60,000 CLP/persona
+- **Mantenimiento**: $20,000 - $50,000 CLP
+- **Total anual**: $50,000 - $160,000 CLP
+
+**Comparación**:
+- Sistema de alcantarillado consume 12,000 L agua/persona/año = ~$50,000 CLP
+- **Baño seco**: $0 en agua + ahorro en tratamiento de aguas
+
+**ROI**: 3-5 años considerando ahorro de agua y valor del compost generado.
+
+### Casos de Éxito
+
+#### Ecoaldea Los Molinos (Colombia)
+
+- 12 baños secos comunitarios
+- Sirven a 80 personas
+- 6 años de operación exitosa
+- Generan 600 kg compost/año
+- Cero consumo de agua
+- Educación clave para aceptación
+
+#### Proyecto Walden (Chile)
+
+- Baños secos en 35 cabañas turísticas
+- Huéspedes reportan experiencia positiva (85%)
+- Ahorro de 1.2 millones litros agua/año
+- Marketing ecológico atrae turistas conscientes
+
+#### Comunidad Rural Los Aromos (México)
+
+- 45 familias sin acceso a alcantarillado
+- Baños secos instalados con apoyo de ONG
+- Reducción de enfermedades hídricas
+- Empoderamiento comunitario
+- Huertos beneficiados con compost
+
+---
+
+## 5. Consideraciones de Diseño Compartidas {#consideraciones-de-diseño}
 
 ### Drenaje
 
@@ -415,7 +729,7 @@ Diseñar para **mínimo impacto visual y máxima integración**:
 
 ---
 
-## 5. Referencias y Recursos {#referencias}
+## 6. Referencias y Recursos {#referencias}
 
 ### Walipini
 
@@ -469,6 +783,29 @@ Diseñar para **mínimo impacto visual y máxima integración**:
 - Maestro Tonatiuh Díaz
 - Comunidad de Tepoztlán (Morelos, México)
 
+### Baño Seco
+
+**Libros:**
+- "The Humanure Handbook" - Joseph Jenkins (clásico definitivo)
+- "Liquid Gold: The Lore and Logic of Using Urine" - Carol Steinfeld
+- "Lifting the Lid: An Ecological Approach to Toilet Systems" - Peter Harper & Louise Halestrap
+- "The Composting Toilet System Book" - David Del Porto & Carol Steinfeld
+
+**Organizaciones:**
+- Asociación de Saneamiento Sostenible (SuSanA - Sustainable Sanitation Alliance)
+- Water For People (proyectos de saneamiento)
+- SARAR Transformación (México - saneamiento ecológico)
+
+**Proyectos destacados:**
+- Ecosan (Saneamiento Ecológico) - Programa GTZ/GIZ
+- Sarar Transformación - México (20+ años experiencia)
+- CESAL - Proyectos en América Latina
+
+**Recursos web:**
+- Humanure.com (Joseph Jenkins)
+- Compostingtoilet.org
+- Ecosan.at (plataforma de intercambio)
+
 ### Construcción con Tierra
 
 **Libros generales aplicables:**
@@ -485,20 +822,22 @@ Diseñar para **mínimo impacto visual y máxima integración**:
 
 ## Conclusión
 
-Estas tres estructuras especiales representan **soluciones ancestrales probadas** que ofrecen **autonomía**, **sostenibilidad** y **conexión con la naturaleza**:
+Estas cuatro estructuras especiales representan **soluciones probadas** (ancestrales y modernas) que ofrecen **autonomía**, **sostenibilidad** y **conexión con la naturaleza**:
 
 - **Walipini**: Soberanía alimentaria en climas extremos
 - **Bodega**: Preservación sin electricidad
 - **Temazcal**: Bienestar y tradición
+- **Baño Seco**: Saneamiento ecológico y cierre de ciclo de nutrientes
 
 Todas pueden construirse con **materiales locales**, **técnicas naturales** y **bajo impacto ambiental**, siendo ideales para proyectos de:
 - Permacultura y autosuficiencia
 - Ecoturismo y turismo de bienestar
 - Comunidades resilientes
 - Educación ambiental
+- Reducción de huella ecológica
 
 ---
 
 **Documento creado para EcoArq - Plataforma de Construcción Natural**  
-**Versión 1.0 - 2026**  
+**Versión 2.0 - 2026** (Actualizado con Baño Seco)  
 **Licencia Creative Commons BY-SA 4.0**

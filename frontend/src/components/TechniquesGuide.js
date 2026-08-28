@@ -480,6 +480,42 @@ function TechniquesGuide() {
         'Construir bancas interiores de madera',
         'Decorar con piedras de río'
       ]
+    },
+    {
+      name: 'Baño Seco (Compostero)',
+      icon: '🚽',
+      description: 'Sistema de saneamiento ecológico que no usa agua y convierte los desechos humanos en compost seguro. Ideal para autosuficiencia y zonas sin alcantarillado.',
+      advantages: [
+        'Cero consumo de agua (ahorro de 30-40 litros/día/persona)',
+        'Genera compost rico en nutrientes',
+        'No contamina aguas subterráneas',
+        'Sin conexión a alcantarillado',
+        'Bajo costo de operación',
+        'Ideal para zonas rurales y remotas',
+        'Reduce huella ecológica significativamente'
+      ],
+      disadvantages: [
+        'Requiere mantenimiento regular',
+        'Necesita material absorbente constante (aserrín, paja)',
+        'Gestión de compost requiere conocimiento',
+        'Puede generar olores si mal ventilado',
+        'No aceptado por todas las normativas',
+        'Requiere educación de usuarios'
+      ],
+      ideal: 'Zonas rurales, off-grid, permacultura, ecoaldeas, autosuficiencia, regiones con escasez de agua',
+      process: [
+        'Diseñar ubicación (ventilación y acceso a cámara)',
+        'Construir estructura de madera o adobe',
+        'Instalar cámara doble de compostaje (alternancia)',
+        'Crear asiento con separador de orina (opcional)',
+        'Instalar tubo de ventilación (mínimo 3m altura)',
+        'Colocar malla mosquitera en tubo',
+        'Construir tapa hermética y asiento',
+        'Crear acceso inferior para extracción de compost',
+        'Pintar tubo de ventilación de negro (efecto chimenea)',
+        'Proveer contenedor de material absorbente',
+        'Educar a usuarios sobre uso correcto'
+      ]
     }
   ];
 

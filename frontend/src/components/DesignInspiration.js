@@ -178,6 +178,15 @@ function DesignInspiration() {
       features: ['8 m²', 'Piedra volcánica', 'Tradición ancestral', 'Terapia y bienestar', 'Bajo costo'],
       climate: 'Tropical, ideal cualquier clima',
       icon: '♨️'
+    },
+    {
+      title: 'Sistema de Baños Secos Comunitario',
+      technique: 'Baño Seco',
+      location: 'Ecoaldea Valle del Sol, Chile',
+      description: 'Sistema de 4 baños secos composteros que sirven a comunidad de 25 personas. Construcción de madera con separación de orina y doble cámara. En 3 años han generado 800 kg de compost de alta calidad sin contaminar agua. Ahorro de 300,000 litros de agua potable anuales.',
+      features: ['4 unidades', 'Cero agua', '800 kg compost/3 años', 'Ahorro 300K litros/año', 'Bajo mantenimiento'],
+      climate: 'Adaptable a cualquier clima',
+      icon: '🚽'
     }
   ];
 

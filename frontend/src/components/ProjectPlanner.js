@@ -221,6 +221,14 @@ function ProjectPlanner() {
         'Construcción de domo bajo con adobe',
         'Instalación de piedras volcánicas y chimenea',
         'Impermeabilización y aislamiento con tierra'
+      ],
+      'bano-seco': [
+        'Diseño y ubicación del sistema',
+        'Construcción de estructura y caseta',
+        'Instalación de cámara doble de compostaje',
+        'Montaje de asiento con separador',
+        'Instalación de tubo de ventilación de 3m',
+        'Educación de usuarios sobre manejo'
       ]
     };
     return tasks[tech] || tasks['adobe'];
@@ -292,6 +300,7 @@ function ProjectPlanner() {
               <option value="walipini">Walipini (Invernadero)</option>
               <option value="cellar">Bodega/Cellar</option>
               <option value="temazcal">Temazcal</option>
+              <option value="bano-seco">Baño Seco</option>
             </optgroup>
           </select>
         </div>
