@@ -150,7 +150,7 @@ function MaterialCalculator() {
           'Aislante natural (lana, corcho)': `${(areaNum * 0.15).toFixed(2)} m³`,
           'Tratamiento natural (aceite de linaza)': `${(areaNum * 0.3).toFixed(0)} litros`,
           'Clavos y tornillos': `${(areaNum * 0.5).toFixed(0)} kg`,
-          'Impermeabilizante ecológico': `${(areaNum * 0.4).toFixed(0)} litros'
+          'Impermeabilizante ecológico': `${(areaNum * 0.4).toFixed(0)} litros`
         };
         cost = maderaVolume * 450000 + areaNum * 55000;
         break;
@@ -416,7 +416,8 @@ function MaterialCalculator() {
       case 'jardines-interiores':
         // Jardines interiores y biofilia
         const interiorArea = areaNum; // Área interior en m²
-        const wallArea = heightNum * (widthNum * 2 + (areaNum / widthNum) * 2); // Área de muros
+        const perimeter = 4 * Math.sqrt(interiorArea); // Perímetro asumiendo espacio cuadrado
+        const wallArea = heightNum * perimeter; // Área de muros
         const verticalGardenArea = wallArea * 0.15; // 15% de muros con jardín vertical
         const plantsIndoor = Math.ceil(interiorArea / 8); // 1 planta cada 8m²
         materials = {
