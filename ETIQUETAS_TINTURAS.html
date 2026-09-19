@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Minimalistas - Tinturas Medicinales</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1cm;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: white;
+        }
+        
+        .etiquetas-container {
+            display: grid;
+            grid-template-columns: repeat(3, 6cm);
+            grid-gap: 0.5cm;
+            padding: 1cm;
+        }
+        
+        .etiqueta {
+            width: 6cm;
+            height: 4cm;
+            border: 1px solid #e0e0e0;
+            border-radius: 3px;
+            padding: 8px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+            position: relative;
+            page-break-inside: avoid;
+        }
+        
+        .etiqueta-numero {
+            position: absolute;
+            top: 5px;
+            left: 8px;
+            font-size: 9px;
+            color: #999;
+            font-weight: 300;
+        }
+        
+        .etiqueta-nombre {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2c3e2c;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+        
+        .etiqueta-cientifico {
+            font-size: 12px;
+            font-style: italic;
+            color: #6b8e6b;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+        
+        .etiqueta-icono {
+            position: absolute;
+            bottom: 5px;
+            right: 8px;
+            font-size: 14px;
+            opacity: 0.3;
+        }
+        
+        /* Estilos especiales para etiquetas peligrosas */
+        .etiqueta.peligroso {
+            border: 2px solid #d32f2f;
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+        }
+        
+        .etiqueta.peligroso .etiqueta-nombre {
+            color: #d32f2f;
+        }
+        
+        .etiqueta.regulado {
+            border: 1.5px solid #f57c00;
+            background: linear-gradient(135deg, #fff8e1 0%, #ffe0b2 100%);
+        }
+        
+        .etiqueta.regulado .etiqueta-nombre {
+            color: #e65100;
+        }
+        
+        /* Línea decorativa */
+        .etiqueta::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #6b8e6b, transparent);
+            opacity: 0.3;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .etiqueta {
+                box-shadow: none;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+        }
+        
+        /* Página de instrucciones */
+        .instrucciones {
+            padding: 2cm;
+            max-width: 18cm;
+            margin: 0 auto 2cm;
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            background: #f9f9f9;
+            page-break-after: always;
+        }
+        
+        .instrucciones h1 {
+            color: #3a5a3a;
+            margin-top: 0;
+        }
+        
+        .instrucciones ul {
+            line-height: 2;
+        }
+        
+        .no-print {
+            display: none;
+        }
+        
+        @media screen {
+            .no-print {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- PÁGINA DE INSTRUCCIONES -->
+<div class="instrucciones no-print">
+    <h1>📋 Instrucciones de Impresión</h1>
+    <p><strong>Formato:</strong> 26 etiquetas de 6×4cm (diseño minimalista)</p>
+    
+    <h3>Configuración de impresora:</h3>
+    <ul>
+        <li>Papel: A4 (21×29.7cm)</li>
+        <li>Orientación: Vertical</li>
+        <li>Márgenes: 1cm todos los lados</li>
+        <li>Escala: 100% (sin ajustar)</li>
+        <li>Calidad: Alta (600 DPI recomendado)</li>
+    </ul>
+    
+    <h3>Materiales recomendados:</h3>
+    <ul>
+        <li><strong>Papel adhesivo mate</strong> (mejor para escritura)</li>
+        <li>Papel adhesivo brillante (más resistente al agua)</li>
+        <li>Papel normal + cinta adhesiva transparente</li>
+        <li>Papel kraft adhesivo (look vintage)</li>
+    </ul>
+    
+    <h3>Después de imprimir:</h3>
+    <ul>
+        <li>Recortar con tijera o cutter por las líneas</li>
+        <li>Opcional: Plastificar con cinta transparente</li>
+        <li>Dejar espacio en reverso para fecha y notas</li>
+    </ul>
+    
+    <h3>Código de colores:</h3>
+    <ul>
+        <li><strong>Verde/Blanco:</strong> Legal y seguro</li>
+        <li><strong>Naranja:</strong> Regulado / Precaución</li>
+        <li><strong>Rojo:</strong> Peligroso / Ilegal</li>
+    </ul>
+    
+    <p style="margin-top: 30px; font-size: 12px; color: #666; text-align: center;">
+        Presiona Ctrl+P (Windows) o Cmd+P (Mac) para imprimir
+    </p>
+</div>
+
+<!-- ETIQUETAS -->
+<div class="etiquetas-container">
+
+<!-- 1. Amanita muscaria -->
+<div class="etiqueta regulado">
+    <span class="etiqueta-numero">#1</span>
+    <div class="etiqueta-nombre">Amanita</div>
+    <div class="etiqueta-cientifico">Amanita muscaria</div>
+    <span class="etiqueta-icono">🍄</span>
+</div>
+
+<!-- 2. Cannabis -->
+<div class="etiqueta regulado">
+    <span class="etiqueta-numero">#2</span>
+    <div class="etiqueta-nombre">Cannabis</div>
+    <div class="etiqueta-cientifico">Cannabis sativa</div>
+    <span class="etiqueta-icono">🌿</span>
+</div>
+
+<!-- 3. Cardo mariano -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#3</span>
+    <div class="etiqueta-nombre">Cardo Mariano</div>
+    <div class="etiqueta-cientifico">Silybum marianum</div>
+    <span class="etiqueta-icono">🫀</span>
+</div>
+
+<!-- 4. Chaga -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#4</span>
+    <div class="etiqueta-nombre">Chaga</div>
+    <div class="etiqueta-cientifico">Inonotus obliquus</div>
+    <span class="etiqueta-icono">🍄</span>
+</div>
+
+<!-- 5. Chilcuague -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#5</span>
+    <div class="etiqueta-nombre">Chilcuague</div>
+    <div class="etiqueta-cientifico">Heliopsis longipes</div>
+    <span class="etiqueta-icono">🌼</span>
+</div>
+
+<!-- 6. Chuchupate -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#6</span>
+    <div class="etiqueta-nombre">Chuchupate</div>
+    <div class="etiqueta-cientifico">Ligusticum porteri</div>
+    <span class="etiqueta-icono">🌿</span>
+</div>
+
+<!-- 7. Cola de caballo -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#7</span>
+    <div class="etiqueta-nombre">Cola de Caballo</div>
+    <div class="etiqueta-cientifico">Equisetum arvense</div>
+    <span class="etiqueta-icono">🌾</span>
+</div>
+
+<!-- 8. Cola de pavo -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#8</span>
+    <div class="etiqueta-nombre">Cola de Pavo</div>
+    <div class="etiqueta-cientifico">Trametes versicolor</div>
+    <span class="etiqueta-icono">🍄</span>
+</div>
+
+<!-- 9. Cordyceps -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#9</span>
+    <div class="etiqueta-nombre">Cordyceps</div>
+    <div class="etiqueta-cientifico">Cordyceps militaris</div>
+    <span class="etiqueta-icono">🍄</span>
+</div>
+
+<!-- 10. Datura -->
+<div class="etiqueta peligroso">
+    <span class="etiqueta-numero">#10</span>
+    <div class="etiqueta-nombre">⚠️ Datura</div>
+    <div class="etiqueta-cientifico">Datura stramonium</div>
+    <span class="etiqueta-icono">☠️</span>
+</div>
+
+<!-- 11. Flor de Jamaica -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#11</span>
+    <div class="etiqueta-nombre">Jamaica</div>
+    <div class="etiqueta-cientifico">Hibiscus sabdariffa</div>
+    <span class="etiqueta-icono">🌺</span>
+</div>
+
+<!-- 12. Flor de Jasmine -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#12</span>
+    <div class="etiqueta-nombre">Jazmín</div>
+    <div class="etiqueta-cientifico">Jasminum officinale</div>
+    <span class="etiqueta-icono">🌸</span>
+</div>
+
+<!-- 13. Flor de Magnolia -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#13</span>
+    <div class="etiqueta-nombre">Magnolia</div>
+    <div class="etiqueta-cientifico">Magnolia officinalis</div>
+    <span class="etiqueta-icono">🌺</span>
+</div>
+
+<!-- 14. Flor de Granada -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#14</span>
+    <div class="etiqueta-nombre">Granada</div>
+    <div class="etiqueta-cientifico">Punica granatum</div>
+    <span class="etiqueta-icono">🌸</span>
+</div>
+
+<!-- 15. Flor de Tilo -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#15</span>
+    <div class="etiqueta-nombre">Tilo</div>
+    <div class="etiqueta-cientifico">Tilia platyphyllos</div>
+    <span class="etiqueta-icono">🌼</span>
+</div>
+
+<!-- 16. Ganoderma -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#16</span>
+    <div class="etiqueta-nombre">Reishi</div>
+    <div class="etiqueta-cientifico">Ganoderma lucidum</div>
+    <span class="etiqueta-icono">🍄</span>
+</div>
+
+<!-- 17. Gobernadora -->
+<div class="etiqueta regulado">
+    <span class="etiqueta-numero">#17</span>
+    <div class="etiqueta-nombre">Gobernadora</div>
+    <div class="etiqueta-cientifico">Larrea tridentata</div>
+    <span class="etiqueta-icono">⚠️</span>
+</div>
+
+<!-- 18. Hierba del sapo -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#18</span>
+    <div class="etiqueta-nombre">Hierba del Sapo</div>
+    <div class="etiqueta-cientifico">Eryngium heterophyllum</div>
+    <span class="etiqueta-icono">🌿</span>
+</div>
+
+<!-- 19. Hikuri (Peyote) -->
+<div class="etiqueta peligroso">
+    <span class="etiqueta-numero">#19</span>
+    <div class="etiqueta-nombre">🚫 Hikuri</div>
+    <div class="etiqueta-cientifico">Lophophora williamsii</div>
+    <span class="etiqueta-icono">🌵</span>
+</div>
+
+<!-- 20. Jengibre -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#20</span>
+    <div class="etiqueta-nombre">Jengibre</div>
+    <div class="etiqueta-cientifico">Zingiber officinale</div>
+    <span class="etiqueta-icono">🫚</span>
+</div>
+
+<!-- 21. LSD -->
+<div class="etiqueta peligroso">
+    <span class="etiqueta-numero">#21</span>
+    <div class="etiqueta-nombre">🚫 LSD</div>
+    <div class="etiqueta-cientifico">Dietilamida ácido lisérgico</div>
+    <span class="etiqueta-icono">⚗️</span>
+</div>
+
+<!-- 22. Melena de León -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#22</span>
+    <div class="etiqueta-nombre">Melena de León</div>
+    <div class="etiqueta-cientifico">Hericium erinaceus</div>
+    <span class="etiqueta-icono">🍄</span>
+</div>
+
+<!-- 23. Psilocibina -->
+<div class="etiqueta peligroso">
+    <span class="etiqueta-numero">#23</span>
+    <div class="etiqueta-nombre">🚫 Psilocibina</div>
+    <div class="etiqueta-cientifico">Psilocybe spp.</div>
+    <span class="etiqueta-icono">🍄</span>
+</div>
+
+<!-- 24. Sábila flor -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#24</span>
+    <div class="etiqueta-nombre">Aloe Vera</div>
+    <div class="etiqueta-cientifico">Aloe vera</div>
+    <span class="etiqueta-icono">🌵</span>
+</div>
+
+<!-- 25. GINKGO BILOBA (NUEVO) -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#25</span>
+    <div class="etiqueta-nombre">Ginkgo Biloba</div>
+    <div class="etiqueta-cientifico">Ginkgo biloba</div>
+    <span class="etiqueta-icono">🍃</span>
+</div>
+
+<!-- 26. ASHWAGANDHA (NUEVO) -->
+<div class="etiqueta">
+    <span class="etiqueta-numero">#26</span>
+    <div class="etiqueta-nombre">Ashwagandha</div>
+    <div class="etiqueta-cientifico">Withania somnifera</div>
+    <span class="etiqueta-icono">🌿</span>
+</div>
+
+</div>
+
+<!-- ETIQUETAS EN BLANCO (para añadir más plantas) -->
+<div class="page-break"></div>
+
+<div style="text-align: center; padding: 2cm; page-break-after: always;">
+    <h2 style="color: #3a5a3a;">Etiquetas en Blanco</h2>
+    <p style="color: #666;">Espacio adicional para tus propias tinturas</p>
+</div>
+
+<div class="etiquetas-container">
+    <!-- 6 etiquetas en blanco para personalizar -->
+    <div class="etiqueta" style="border: 2px dashed #ccc;">
+        <span class="etiqueta-numero">#__</span>
+        <div class="etiqueta-nombre">__________</div>
+        <div class="etiqueta-cientifico">_________________</div>
+    </div>
+    
+    <div class="etiqueta" style="border: 2px dashed #ccc;">
+        <span class="etiqueta-numero">#__</span>
+        <div class="etiqueta-nombre">__________</div>
+        <div class="etiqueta-cientifico">_________________</div>
+    </div>
+    
+    <div class="etiqueta" style="border: 2px dashed #ccc;">
+        <span class="etiqueta-numero">#__</span>
+        <div class="etiqueta-nombre">__________</div>
+        <div class="etiqueta-cientifico">_________________</div>
+    </div>
+    
+    <div class="etiqueta" style="border: 2px dashed #ccc;">
+        <span class="etiqueta-numero">#__</span>
+        <div class="etiqueta-nombre">__________</div>
+        <div class="etiqueta-cientifico">_________________</div>
+    </div>
+    
+    <div class="etiqueta" style="border: 2px dashed #ccc;">
+        <span class="etiqueta-numero">#__</span>
+        <div class="etiqueta-nombre">__________</div>
+        <div class="etiqueta-cientifico">_________________</div>
+    </div>
+    
+    <div class="etiqueta" style="border: 2px dashed #ccc;">
+        <span class="etiqueta-numero">#__</span>
+        <div class="etiqueta-nombre">__________</div>
+        <div class="etiqueta-cientifico">_________________</div>
+    </div>
+</div>
+
+<!-- PIE DE PÁGINA -->
+<div style="text-align: center; padding: 2cm; margin-top: 2cm; border-top: 2px solid #e0e0e0;">
+    <p style="font-size: 12px; color: #999;">
+        <strong>Tinturas Medicinales</strong> · 26 Especies Documentadas · Versión 2.0 - 2026<br>
+        Solo para fines educativos y personales
+    </p>
+</div>
+
+</body>
+</html>
