@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Completa: Plantas Medicinales y Hongos - 26 Especies</title>
+    <style>
+        @page {
+            margin: 2cm;
+            size: A4;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e2c;
+            max-width: 100%;
+            margin: 0;
+            padding: 20px;
+            background: #faf9f6;
+        }
+        
+        h1 {
+            color: #3a5a3a;
+            text-align: center;
+            border-bottom: 3px solid #6b8e6b;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        
+        h2 {
+            color: #4a6a4a;
+            border-left: 5px solid #6b8e6b;
+            padding-left: 15px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            page-break-after: avoid;
+        }
+        
+        .planta {
+            background: white;
+            border: 1px solid #d4e4d4;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            page-break-inside: avoid;
+        }
+        
+        .planta-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 2px solid #e8f5e8;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .planta-numero {
+            background: #6b8e6b;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .planta-nombre {
+            font-size: 22px;
+            font-weight: bold;
+            color: #3a5a3a;
+            flex-grow: 1;
+            margin-left: 15px;
+        }
+        
+        .planta-cientifico {
+            font-style: italic;
+            color: #6b8e6b;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .info-item {
+            background: #f9fdf9;
+            padding: 12px;
+            border-radius: 5px;
+            border-left: 3px solid #6b8e6b;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #4a6a4a;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .info-value {
+            color: #2c3e2c;
+            font-size: 15px;
+        }
+        
+        .usos {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .legalidad {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        
+        .legal {
+            background: #c8e6c9;
+            color: #2e7d32;
+        }
+        
+        .regulado {
+            background: #fff9c4;
+            color: #f57c00;
+        }
+        
+        .ilegal {
+            background: #ffcdd2;
+            color: #c62828;
+        }
+        
+        .peligroso {
+            background: #ff5252;
+            color: white;
+        }
+        
+        .advertencia {
+            background: #fff3cd;
+            border-left: 5px solid #ff9800;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .tabla-resumen {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .tabla-resumen th {
+            background: #6b8e6b;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .tabla-resumen td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .tabla-resumen tr:hover {
+            background: #f5f5f5;
+        }
+        
+        .portada {
+            text-align: center;
+            padding: 100px 20px;
+            page-break-after: always;
+        }
+        
+        .portada h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #3a5a3a;
+        }
+        
+        .portada .subtitulo {
+            font-size: 24px;
+            color: #6b8e6b;
+            margin-bottom: 40px;
+        }
+        
+        .portada .info {
+            font-size: 16px;
+            color: #666;
+            line-height: 2;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .planta {
+                box-shadow: none;
+            }
+            
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- PORTADA -->
+    <div class="portada">
+        <h1>🌿 Guía Completa de Plantas Medicinales y Hongos</h1>
+        <div class="subtitulo">26 Especies Documentadas</div>
+        <div class="info">
+            <p><strong>Incluye:</strong> Nombres científicos, ratios de tintura, dosis y usos</p>
+            <p><strong>Hongos Medicinales:</strong> Chaga, Cola de Pavo, Cordyceps, Ganoderma, Melena de León</p>
+            <p><strong>Adaptógenos:</strong> Ganoderma, Ashwagandha, Cordyceps</p>
+            <p><strong>Nootrópicos:</strong> Melena de León, Ginkgo biloba</p>
+            <p style="margin-top: 60px; font-style: italic; color: #999;">
+                Versión 2.0 - Septiembre 2026<br>
+                Solo para fines educativos
+            </p>
+        </div>
+    </div>
+
+    <h1>📚 Guía Detallada por Especie</h1>
+
+    <!-- HONGOS MEDICINALES -->
+    <h2>🍄 Hongos Medicinales</h2>
+
+    <div class="planta">
+        <div class="planta-header">
+            <span class="planta-numero">#4</span>
+            <span class="planta-nombre">CHAGA</span>
+        </div>
+        <div class="planta-cientifico">Inonotus obliquus</div>
+        <div class="usos">
+            <span class="info-label">Usos principales:</span> Inmunomodulador potente, antioxidante (ORAC 52,000+), anticancerígeno (in vitro), salud digestiva
+        </div>
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Tintura</span>
+                <span class="info-value">1:5 (50% alcohol) - Doble extracción<br>2-3ml × 2-3 veces/día</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Otras formas</span>
+                <span class="info-value">Té: 2-4g/taza × 1-3 tazas/día<br>Polvo: 1,000-3,000mg/día</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Contraindicaciones</span>
+                <span class="info-value">Anticoagulantes, diabetes (monitorear glucosa)</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Mejor momento</span>
+                <span class="info-value">Mañana y tarde con comidas</span>
+            </div>
+        </div>
+        <span class="legalidad legal">✅ Legal - Suplemento</span>
+    </div>
+
+    <div class="planta">
+        <div class="planta-header">
+            <span class="planta-numero">#8</span>
+            <span class="planta-nombre">COLA DE PAVO</span>
+        </div>
+        <div class="planta-cientifico">Trametes versicolor</div>
+        <div class="usos">
+            <span class="info-label">Usos principales:</span> Cáncer adyuvante (mejor evidencia de hongos), inmunomodulador, VPH, infecciones respiratorias
+        </div>
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Tintura</span>
+                <span class="info-value">1:4 (50% alcohol)<br>3-5ml × 2-3 veces/día</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Otras formas</span>
+                <span class="info-value">Extracto: 3,000-9,000mg/día<br>Té: 5-10g/L × hervir 1-2h</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Contraindicaciones</span>
+                <span class="info-value">Autoinmunes (consultar), embarazo</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Uso oncológico</span>
+                <span class="info-value">PSK 3g/día durante quimio (Japón)</span>
+            </div>
+        </div>
+        <span class="legalidad legal">✅ Legal - Suplemento</span>
+    </div>
+
+    <div class="planta">
+        <div class="planta-header">
+            <span class="planta-numero">#9</span>
+            <span class="planta-nombre">CORDYCEPS</span>
+        </div>
+        <div class="planta-cientifico">Cordyceps sinensis / C. militaris</div>
+        <div class="usos">
+            <span class="info-label">Usos principales:</span> Rendimiento atlético (↑VO2 max), energía, libido, función pulmonar, función renal
+        </div>
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Tintura</span>
+                <span class="info-value">1:4 (50% alcohol)<br>2-4ml × 2 veces/día</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Otras formas</span>
+                <span class="info-value">Polvo: 3,000-6,000mg/día<br>Té: 3-5g/500ml × 1h hervir</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Contraindicaciones</span>
+                <span class="info-value">Autoinmunes, cirugía próxima, trastornos hemorrágicos</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Mejor momento</span>
+                <span class="info-value">Mañana, 1-2h pre-entrenamiento. NO noche</span>
+            </div>
+        </div>
+        <span class="legalidad legal">✅ Legal - Suplemento</span>
+    </div>
+
+    <div class="planta">
+        <div class="planta-header">
+            <span class="planta-numero">#16</span>
+            <span class="planta-nombre">GANODERMA (REISHI)</span>
+        </div>
+        <div class="planta-cientifico">Ganoderma lucidum</div>
+        <div class="usos">
+            <span class="info-label">Usos principales:</span> Adaptógeno, inmunomodulador, sueño, ansiedad, hepatoprotector, cardiovascular
+        </div>
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Tintura</span>
+                <span class="info-value">1:5 (50% alcohol) - Doble extracción<br>2-4ml × 2-3 veces/día</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Otras formas</span>
+                <span class="info-value">Extracto: 1,500-5,000mg/día<br>Té: 3-5g/L × 1-2h hervir</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Contraindicaciones</span>
+                <span class="info-value">Cirugía próxima, trasplante órganos, anticoagulantes</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Mejor momento</span>
+                <span class="info-value">Mañana y noche. Para sueño: 1-2h antes dormir</span>
+            </div>
+        </div>
+        <span class="legalidad legal">✅ Legal - Suplemento</span>
+    </div>
+
+    <div class="planta">
+        <div class="planta-header">
+            <span class="planta-numero">#22</span>
+            <span class="planta-nombre">MELENA DE LEÓN</span>
+        </div>
+        <div class="planta-cientifico">Hericium erinaceus</div>
+        <div class="usos">
+            <span class="info-label">Usos principales:</span> 🧠 Neuroprotector #1, memoria, demencia/Alzheimer, depresión, regeneración neuronal (NGF)
+        </div>
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Tintura</span>
+                <span class="info-value">1:5 (50% alcohol) - Doble extracción<br>3-5ml × 2 veces/día</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Otras formas</span>
+                <span class="info-value">Extracto: 3,000-5,000mg/día<br>Polvo: 1-3g/día</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Contraindicaciones</span>
+                <span class="info-value">Alergia a hongos</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Tiempo efectos</span>
+                <span class="info-value">Cognitivos: 2-4 semanas. Ánimo: 4 semanas</span>
+            </div>
+        </div>
+        <span class="legalidad legal">✅ Legal - Suplemento</span>
+    </div>
+
+    <!-- PLANTAS MEDICINALES -->
+    <h2 style="page-break-before: always;">🌱 Plantas Medicinales</h2>
+
+    <div class="planta">
+        <div class="planta-header">
+            <span class="planta-numero">#3</span>
+            <span class="planta-nombre">CARDO MARIANO</span>
+        </div>
+        <div class="planta-cientifico">Silybum marianum</div>
+        <div class="usos">
+            <span class="info-label">Usos principales:</span> 🫀 Hepatoprotector #1, cirrosis, hepatitis, hígado graso, antioxidante
+        </div>
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Tintura</span>
+                <span class="info-value">1:5 (70% alcohol)<br>30-60 gotas × 3 veces/día</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Otras formas</span>
+                <span class="info-value">Extracto estandarizado: 280-600mg silimarina/día</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Contraindicaciones</span>
+                <span class="info-value">Alergia a Asteraceae (ambrosía)</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Duración tratamiento</span>
+                <span class="info-value">Mínimo 6-8 semanas. Uso continuo seguro hasta 4 años</span>
+            </div>
+        </div>
+        <span class="legalidad legal">✅ Legal - Suplemento</span>
+    </div>
+
+    <div class="planta">
+        <div class="planta-header">
+            <span class="planta-numero">#20</span>
+            <span class="planta-nombre">JENGIBRE</span>
+        </div>
+        <div class="planta-cientifico">Zingiber officinale</div>
+        <div class="usos">
+            <span class="info-label">Usos principales:</span> 🤢 Náuseas #1 (embarazo, quimio), dolor menstrual, artritis, digestivo, migraña
+        </div>
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Tintura</span>
+                <span class="info-value">1:5 (60% alcohol)<br>1-3ml × 3 veces/día</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Otras formas</span>
+                <span class="info-value">Fresco: 1-2cm rallado/taza<br>Polvo: 500-2,000mg/día</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Contraindicaciones</span>
+                <span class="info-value">Anticoagulantes, cálculos biliares, cirugía próxima</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Embarazo</span>
+                <span class="info-value">✅ SEGURO hasta 4g/día (mejor que medicamentos)</span>
+            </div>
+        </div>
+        <span class="legalidad legal">✅ Legal - Alimento/Suplemento</span>
+    </div>
+
+    <!-- ADAPTÓGENOS Y NOOTRÓPICOS -->
+    <h2 style="page-break-before: always;">🧠 Adaptógenos y Nootrópicos</h2>
+
+    <div class="planta">
+        <div class="planta-header">
+            <span class="planta-numero">#25</span>
+            <span class="planta-nombre">GINKGO BILOBA</span>
+        </div>
+        <div class="planta-cientifico">Ginkgo biloba</div>
+        <div class="usos">
+            <span class="info-label">Usos principales:</span> Memoria, circulación cerebral, antioxidante, vértigo, tinnitus, demencia, concentración
+        </div>
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Tintura</span>
+                <span class="info-value">1:5 (50-70% alcohol)<br>30-60 gotas × 2-3 veces/día</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Otras formas</span>
+                <span class="info-value">Extracto estandarizado: 120-240mg/día<br>(24% glucósidos, 6% terpenos)</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Contraindicaciones</span>
+                <span class="info-value">Anticoagulantes, cirugía próxima (suspender 2 semanas), epilepsia, embarazo</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Tiempo efectos</span>
+                <span class="info-value">Circulación: 2-3 semanas. Memoria: 6-12 semanas</span>
+            </div>
+        </div>
+        <span class="legalidad legal">✅ Legal - Suplemento</span>
+        <div class="advertencia">
+            <strong>⚠️ Importante:</strong> Anticoagulante leve. Suspender 2 semanas antes de cualquier cirugía. No combinar con aspirina o warfarina sin supervisión médica.
+        </div>
+    </div>
+
+    <div class="planta">
+        <div class="planta-header">
+            <span class="planta-numero">#26</span>
+            <span class="planta-nombre">ASHWAGANDHA</span>
+        </div>
+        <div class="planta-cientifico">Withania somnifera</div>
+        <div class="usos">
+            <span class="info-label">Usos principales:</span> Adaptógeno, reduce estrés/cortisol (-30%), ansiedad, energía, libido, sueño, tiroides, fuerza muscular
+        </div>
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Tintura</span>
+                <span class="info-value">1:5 (60% alcohol)<br>2-4ml × 2 veces/día</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Otras formas</span>
+                <span class="info-value">Extracto: 300-600mg/día (withanólidos 5%)<br>Polvo raíz: 3-6g/día</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Contraindicaciones</span>
+                <span class="info-value">Embarazo, lactancia, autoinmunes, hipertiroidismo</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Mejor momento</span>
+                <span class="info-value">Mañana (energía) y noche (sueño). Con comida</span>
+            </div>
+        </div>
+        <span class="legalidad legal">✅ Legal - Suplemento</span>
+        <div class="advertencia">
+            <strong>⚠️ Importante:</strong> Puede aumentar hormonas tiroideas. No usar en hipertiroidismo. Consultar médico si toma medicación tiroidea.
+        </div>
+    </div>
+
+    <!-- TABLA RESUMEN -->
+    <h2 style="page-break-before: always;">📊 Tabla Resumen Completa - 26 Especies</h2>
+
+    <table class="tabla-resumen">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre Común</th>
+                <th>Nombre Científico</th>
+                <th>Ratio Tintura</th>
+                <th>Dosis Tintura</th>
+                <th>Legalidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Amanita muscaria</td><td><em>Amanita muscaria</em></td><td>1:5 (40%)</td><td>15-30 gotas × 2/día</td><td>⚠️ Regulado</td></tr>
+            <tr><td>2</td><td>Cannabis</td><td><em>Cannabis sativa</em></td><td>1:5-1:10 (70-95%)</td><td>Variable por ratio CBD:THC</td><td>⚠️ Variable</td></tr>
+            <tr><td>3</td><td>Cardo mariano</td><td><em>Silybum marianum</em></td><td>1:5 (70%)</td><td>30-60 gotas × 3/día</td><td>✅ Legal</td></tr>
+            <tr><td>4</td><td>Chaga</td><td><em>Inonotus obliquus</em></td><td>1:5 doble (50%)</td><td>2-3ml × 2-3/día</td><td>✅ Legal</td></tr>
+            <tr><td>5</td><td>Chilcuague</td><td><em>Heliopsis longipes</em></td><td>1:5 (70%)</td><td>20-30 gotas enjuague</td><td>✅ Legal</td></tr>
+            <tr><td>6</td><td>Chuchupate</td><td><em>Ligusticum porteri</em></td><td>1:5 (60%)</td><td>30-60 gotas × 3-4/día</td><td>✅ Legal</td></tr>
+            <tr><td>7</td><td>Cola de caballo</td><td><em>Equisetum arvense</em></td><td>1:5 (25%)</td><td>2-6ml × 3/día</td><td>✅ Legal</td></tr>
+            <tr><td>8</td><td>Cola de pavo</td><td><em>Trametes versicolor</em></td><td>1:4 (50%)</td><td>3-5ml × 2-3/día</td><td>✅ Legal</td></tr>
+            <tr><td>9</td><td>Cordyceps</td><td><em>Cordyceps militaris</em></td><td>1:4 (50%)</td><td>2-4ml × 2/día</td><td>✅ Legal</td></tr>
+            <tr><td>10</td><td>Datura</td><td><em>Datura stramonium</em></td><td>❌ NO PREPARAR</td><td>❌ NO USAR</td><td>⚠️ Peligroso</td></tr>
+            <tr><td>11-15</td><td>Flores (Jasmine, Magnolia, Granada)</td><td><em>Varios</em></td><td>1:5 (40%)</td><td>1-2ml × 2/día</td><td>✅ Legal</td></tr>
+            <tr><td>16</td><td>Ganoderma (Reishi)</td><td><em>Ganoderma lucidum</em></td><td>1:5 doble (50%)</td><td>2-4ml × 2-3/día</td><td>✅ Legal</td></tr>
+            <tr><td>17</td><td>Gobernadora</td><td><em>Larrea tridentata</em></td><td>Solo tópico</td><td>❌ NO interno</td><td>⚠️ Hepatotóxico</td></tr>
+            <tr><td>18</td><td>Hierba del sapo</td><td><em>Eryngium heterophyllum</em></td><td>1:5 (50%)</td><td>30-60 gotas × 3/día</td><td>✅ Legal</td></tr>
+            <tr><td>19</td><td>Hikuri (Peyote)</td><td><em>Lophophora williamsii</em></td><td>❌ NO PREPARAR</td><td>❌ NO USAR</td><td>🚫 Ilegal</td></tr>
+            <tr><td>20</td><td>Jengibre</td><td><em>Zingiber officinale</em></td><td>1:5 (60%)</td><td>1-3ml × 3/día</td><td>✅ Legal</td></tr>
+            <tr><td>21</td><td>LSD</td><td><em>N/A (sintético)</em></td><td>❌ NO APLICA</td><td>❌ NO USAR</td><td>🚫 Ilegal</td></tr>
+            <tr><td>22</td><td>Melena de león</td><td><em>Hericium erinaceus</em></td><td>1:5 doble (50%)</td><td>3-5ml × 2/día</td><td>✅ Legal</td></tr>
+            <tr><td>23</td><td>Psilocibina</td><td><em>Psilocybe</em> spp.</td><td>❌ NO PREPARAR</td><td>❌ NO USAR</td><td>🚫 Ilegal</td></tr>
+            <tr><td>24</td><td>Sábila (Aloe vera)</td><td><em>Aloe vera</em></td><td>1:5 (40%) flor</td><td>1-2ml × 2/día</td><td>✅ Legal</td></tr>
+            <tr><td>25</td><td><strong>Ginkgo biloba</strong></td><td><em>Ginkgo biloba</em></td><td>1:5 (50-70%)</td><td>30-60 gotas × 2-3/día</td><td>✅ Legal</td></tr>
+            <tr><td>26</td><td><strong>Ashwagandha</strong></td><td><em>Withania somnifera</em></td><td>1:5 (60%)</td><td>2-4ml × 2/día</td><td>✅ Legal</td></tr>
+        </tbody>
+    </table>
+
+    <!-- GUÍA DE PREPARACIÓN -->
+    <h2 style="page-break-before: always;">🧪 Guía de Preparación de Tinturas</h2>
+
+    <div class="planta">
+        <h3>Método Folk (Simple - Casero)</h3>
+        <p><strong>Materiales necesarios:</strong></p>
+        <ul>
+            <li>Frasco de vidrio oscuro (ámbar) con tapa hermética</li>
+            <li>Planta seca picada (o fresca × 2 cantidad)</li>
+            <li>Alcohol al % deseado (vodka 40% o alcohol de grano diluido)</li>
+            <li>Etiqueta y marcador permanente</li>
+            <li>Tela fina para colar (muselina o gasa)</li>
+        </ul>
+
+        <p><strong>Proceso paso a paso:</strong></p>
+        <ol>
+            <li>Llenar frasco 1/3 a 1/2 con planta picada</li>
+            <li>Cubrir completamente con alcohol (2-3cm sobre la planta)</li>
+            <li>Cerrar herméticamente</li>
+            <li>Etiquetar: Nombre, Fecha, Ratio aproximado</li>
+            <li>Guardar en lugar oscuro y fresco</li>
+            <li><strong>Agitar DIARIAMENTE</strong> durante 2-6 semanas</li>
+            <li>Colar con tela fina, exprimir bien</li>
+            <li>Envasar en frasco ámbar con gotero</li>
+            <li>Almacenar en oscuridad (dura 3-5 años)</li>
+        </ol>
+
+        <div class="advertencia">
+            <strong>⏱️ Tiempo de maceración óptimo:</strong> 4-6 semanas. Mínimo absoluto: 2 semanas.
+        </div>
+    </div>
+
+    <div class="planta">
+        <h3>% de Alcohol por Tipo de Material</h3>
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">25-40% (Vodka)</span>
+                <span class="info-value">Flores delicadas, hojas suaves, frutos</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">50-60%</span>
+                <span class="info-value">Hongos (doble), raíces aromáticas, mayoría plantas</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">70-80%</span>
+                <span class="info-value">Cortezas duras, resinas, semillas oleosas</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">90-95%</span>
+                <span class="info-value">Solo aceites esenciales volátiles</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONVERSIONES -->
+    <h2 style="page-break-before: always;">📏 Conversiones y Equivalencias</h2>
+
+    <table class="tabla-resumen">
+        <thead>
+            <tr>
+                <th>Forma</th>
+                <th>Equivalencia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1ml</td><td>20-25 gotas (gotero estándar)</td></tr>
+            <tr><td>30 gotas</td><td>≈ 1.2-1.5ml</td></tr>
+            <tr><td>1 cucharadita (cdta)</td><td>≈ 5ml ≈ 100-125 gotas ≈ 2-3g planta seca</td></tr>
+            <tr><td>1 cucharada (cda)</td><td>≈ 15ml ≈ 6-9g planta seca</td></tr>
+            <tr><td>1g planta seca</td><td>≈ 10g planta fresca</td></tr>
+            <tr><td>1ml tintura 1:5</td><td>≈ 200mg planta seca</td></tr>
+            <tr><td>1 taza té</td><td>≈ 2-3g planta seca</td></tr>
+        </tbody>
+    </table>
+
+    <!-- PIE DE PÁGINA -->
+    <div style="margin-top: 60px; padding: 30px; background: #f5f5f5; border-radius: 10px; text-align: center; page-break-inside: avoid;">
+        <p><strong>⚠️ DESCARGO DE RESPONSABILIDAD</strong></p>
+        <p style="font-size: 14px; line-height: 1.8;">
+            Esta información es solo para fines educativos. No constituye consejo médico profesional.<br>
+            Consulte siempre con un médico, herbólogo o profesional de la salud calificado antes de iniciar cualquier tratamiento.<br>
+            El autor no se responsabiliza por el uso indebido de esta información.<br><br>
+            <strong>Versión 2.0 - Septiembre 2026</strong>
+        </p>
+    </div>
+
+</body>
+</html>

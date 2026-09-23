@@ -1,316 +1,161 @@
-# LTI - Talent Tracking System | EN
+# EcoArq - Plataforma de Diseño de Construcción Natural | Natural Construction Design Platform
 
-This project is a full-stack application with a React frontend and an Express backend using Prisma as an ORM. The frontend is started with Create React App, and the backend is written in TypeScript.
+## 🌍 Español
 
-## Explanation of Directories and Files
+**EcoArq** es una aplicación web integral para diseñar, planificar y calcular proyectos de construcción natural y sostenible.
 
-- `backend/`: Contains the server-side code written in Node.js.
-  - `src/`: Contains the source code for the backend.
-    - `index.ts`: The entry point for the backend server.
-    - `application/`: Contains the application logic.
-    - `domain/`: Contains the business logic.
-    - `infrastructure/`: Contains code that communicates with the database.
-    - `presentation/`: Contains code related to the presentation layer (such as controllers).
-    - `routes/`: Contains the route definitions for the API.
-    - `tests/`: Contains test files.
-  - `prisma/`: Contains the Prisma schema file for ORM.
-  - `tsconfig.json`: TypeScript configuration file.
-- `frontend/`: Contains the client-side code written in React."
-  - `src/`: Contains the source code for the frontend.
-  - `public/`: Contains static files such as the HTML file and images.
-  - `build/`: Contains the production-ready build of the frontend.
-- `.env`: Contains the environment variables.
-- `docker-compose.yml`: Contains the Docker Compose configuration to manage your application's services.
-- `README.md`: This file contains information about the project and instructions on how to run it.
+### 🎯 Propósito
 
-## Project Structure
+Esta plataforma ayuda a arquitectos, autoconstructores, estudiantes y comunidades a planificar proyectos de construcción usando materiales naturales y técnicas sostenibles.
 
-The project is divided into two main directories: `frontend` and `backend`.
+### ✨ Características Principales
 
-### Frontend
+1. **Calculadora de Materiales** - Calcula cantidades exactas y costos para 27 técnicas constructivas y de diseño
+2. **Guía de Técnicas** - Información detallada sobre cada método de construcción natural + sistemas pasivos
+3. **Planificador de Proyectos** - Genera planes con fases, cronograma y presupuesto
+4. **Inspiración** - Galería de diseños y principios de construcción sostenible
+5. **Visualización 3D** - Exporta datos y crea renders profesionales con guías de software
 
-The frontend is a React application, and its main files are located in the src directory. The public directory contains static assets, and the build directory contains the production build of the application.
+### 🏗️ Técnicas Soportadas
 
-### Backend
+**Técnicas de Tierra:**
+- **Adobe**: Bloques de tierra para climas secos
+- **Cob**: Construcción monolítica con formas orgánicas
+- **Superadobe**: Sacos de tierra resistentes a sismos
+- **Tapia/Tapial**: Tierra compactada monolítica
+- **Tierra-Paja**: Mezcla liviana con excelente aislamiento
 
-The backend is an Express application written in TypeScript. The src directory contains the source code, divided into several subdirectories:
+**Fibras Vegetales:**
+- **Bahareque (Quincha)**: Entramado liviano tropical
+- **Pacas de Paja**: Aislamiento superior para climas fríos
+- **Bambú**: Estructuras livianas y renovables
 
-- `application`: Contains the application logic.
-- `domain`: Contains the domain models.
-- `infrastructure`: Contains code related to the infrastructure.
-- `presentation`: Contains code related to the presentation layer.
-- `routes`: Contains the application routes.
-- `tests`: Contains the application tests.
+**Materiales Pétreos y Tradicionales:**
+- **Piedra**: Construcción tradicional de alta durabilidad
+- **Mampostería**: Ladrillos o bloques de barro cocido
+- **Madera**: Construcción tradicional con madera natural
 
-The `prisma` directory contains the Prisma schema.
+**Reciclaje y Reutilización:**
+- **Botellas de Vidrio**: Muros con botellas recicladas y efectos lumínicos
+- **Llantas/Neumáticos**: Construcción tipo Earthship con máxima eficiencia térmica
 
-## First steps
+**Diseños Especiales:**
+- **Construcción Circular/Domos**: Diseños eficientes y resistentes
+- **Walipini**: Invernadero subterráneo para cultivo todo el año
+- **Bodega/Cellar**: Almacenamiento subterráneo sin refrigeración
+- **Temazcal**: Baño de vapor tradicional terapéutico
+- **Baño Seco**: Sistema de saneamiento ecológico sin agua
 
-To get started with this project, follow these steps:
+**Sistemas de Calefacción y Cocción:**
+- **Hornos de Barro/Leña**: Cocción tradicional de alta eficiencia
+- **Chimeneas/Rocket Mass Heater**: Calefacción con masa térmica (hasta 90% eficiencia)
+- **Pisos Climatizados**: Sistema de calefacción radiante con energía solar
 
-1. Clone the repository.
-2. Install the dependencies for the frontend and backend:
+**Gestión de Agua y Permacultura:**
+- **Cosecha de Agua de Lluvia**: Captación y almacenamiento (40-80% autosuficiencia)
+- **Tratamiento de Aguas Grises**: Reutilización natural para riego
+- **Estanques/Lagos Naturales**: Almacenamiento, microclima y biodiversidad
+- **Diseño de Permacultura**: Sistema integral autosuficiente
+- **Análisis de Curvas de Nivel**: Topografía, swales y prevención de erosión
 
-```sh
+**Diseño Interior y Biofilia:**
+- **Jardines Interiores / Muros Verdes**: Naturaleza interior, purificación de aire, bienestar
+
+### 🚀 Inicio Rápido
+
+```bash
+# Instalar dependencias
 cd frontend
 npm install
 
-cd ../backend
-npm install
-```
-3. Build the backend server:
-```
-cd backend
-npm run build
-````
-4. Start the backend server:
-```
-cd backend
-npm start
-```
-5. In a new terminal window, build the frontend server:
-```
-cd frontend
-npm run build
-```
-6. Start the frontend server:
-```
-cd frontend
+# Iniciar aplicación
 npm start
 ```
 
-The backend server will be running at http://localhost:3010 and the frontend will be available at http://localhost:3000.
+La aplicación se abrirá en http://localhost:3000
 
-## Docker and PostgreSQL
+### 📖 Documentación Completa
 
-This project uses Docker to run a PostgreSQL database. Here's how to set it up:
+Ver [ECOARQ_README.md](./ECOARQ_README.md) para documentación detallada.
 
-Install Docker on your machine if you haven't done so already. You can download it from here.
-Navigate to the root directory of the project in your terminal.
-Run the following command to start the Docker container:
+---
 
-```
-docker-compose up -d
-```
-This will start a PostgreSQL database in a Docker container. The -d flag runs the container in detached mode, which means it runs in the background.
+## 🌎 English
 
-To access the PostgreSQL database, you can use any PostgreSQL client with the following connection details:
+**EcoArq** is a comprehensive web platform for designing, planning, and calculating natural and sustainable construction projects.
 
-- Host: localhost
-- Port: 5432
-- User: postgres
-- Password: password
-- Database: mydatabase
-  
-Please replace User, Password, and Database with the actual username, password, and database name specified in your .env file.
+### 🎯 Purpose
 
-To stop the Docker container, run the following command:
+This platform helps architects, self-builders, students, and communities plan construction projects using natural materials and sustainable techniques.
 
-```
-docker-compose down
-```
-To generate the database using Prisma, follow these steps:
+### ✨ Main Features
 
-1. Make sure that the .env file in the root directory of the backend contains the DATABASE_URL variable with the correct connection string to your PostgreSQL database. If it doesn’t work, try replacing the full URL directly in schema.prisma, in the url variable.
+1. **Materials Calculator** - Calculate exact quantities and costs for 6 construction techniques
+2. **Techniques Guide** - Detailed information about each natural building method
+3. **Project Planner** - Generate plans with phases, timeline, and budget
+4. **Inspiration** - Gallery of designs and sustainable building principles
 
-2. Open a terminal and navigate to the backend directory where the schema.prisma and seed.ts files are located.
+### 🏗️ Supported Techniques
 
-3. Run the following commands to generate the Prisma structure, apply migrations to your database, and populate it with sample data:
+- **Adobe**: Earth blocks for dry climates
+- **Cob**: Monolithic construction with organic shapes
+- **Superadobe**: Earthquake-resistant earth bags
+- **Bahareque (Wattle and Daub)**: Lightweight tropical framework
+- **Straw Bales**: Superior insulation for cold climates
+- **Bamboo**: Lightweight and renewable structures
 
-```
-npx prisma generate
-npx prisma migrate dev
-ts-node seed.ts
-```
+### 🚀 Quick Start
 
-Once you have completed all the steps, you should be able to save new candidates, both via web and via API, view them in the database, and retrieve them using GET by ID.
-
-```
-POST http://localhost:3010/candidates
-{
-    "firstName": "Albert",
-    "lastName": "Saelices",
-    "email": "albert.saelices@gmail.com",
-    "phone": "656874937",
-    "address": "Calle Sant Dalmir 2, 5ºB. Barcelona",
-    "educations": [
-        {
-            "institution": "UC3M",
-            "title": "Computer Science",
-            "startDate": "2006-12-31",
-            "endDate": "2010-12-26"
-        }
-    ],
-    "workExperiences": [
-        {
-            "company": "Coca Cola",
-            "position": "SWE",
-            "description": "",
-            "startDate": "2011-01-13",
-            "endDate": "2013-01-17"
-        }
-    ],
-    "cv": {
-        "filePath": "uploads/1715760936750-cv.pdf",
-        "fileType": "application/pdf"
-    }
-}
-```
-
---------------------------------------------
-
-# LTI - Sistema de Seguimiento de Talento | ES
-
-Este proyecto es una aplicación full-stack con un frontend en React y un backend en Express usando Prisma como un ORM. El frontend se inicia con Create React App y el backend está escrito en TypeScript.
-
-## Explicación de Directorios y Archivos
-
-- `backend/`: Contiene el código del lado del servidor escrito en Node.js.
-  - `src/`: Contiene el código fuente para el backend.
-    - `index.ts`: El punto de entrada para el servidor backend.
-    - `application/`: Contiene la lógica de aplicación.
-    - `domain/`: Contiene la lógica de negocio.
-    - `infrastructure/`: Contiene código que se comunica con la base de datos.
-    - `presentation/`: Contiene código relacionado con la capa de presentación (como controladores).
-    - `routes/`: Contiene las definiciones de rutas para la API.
-    - `tests/`: Contiene archivos de prueba.
-  - `prisma/`: Contiene el archivo de esquema de Prisma para ORM.
-  - `tsconfig.json`: Archivo de configuración de TypeScript.
-- `frontend/`: Contiene el código del lado del cliente escrito en React.
-  - `src/`: Contiene el código fuente para el frontend.
-  - `public/`: Contiene archivos estáticos como el archivo HTML e imágenes.
-  - `build/`: Contiene la construcción lista para producción del frontend.
-- `.env`: Contiene las variables de entorno.
-- `docker-compose.yml`: Contiene la configuración de Docker Compose para gestionar los servicios de tu aplicación.
-- `README.md`: Este archivo, contiene información sobre el proyecto e instrucciones sobre cómo ejecutarlo.
-
-## Estructura del Proyecto
-
-El proyecto está dividido en dos directorios principales: `frontend` y `backend`.
-
-### Frontend
-
-El frontend es una aplicación React y sus archivos principales están ubicados en el directorio `src`. El directorio `public` contiene activos estáticos y el directorio `build` contiene la construcción de producción de la aplicación.
-
-### Backend
-
-El backend es una aplicación Express escrita en TypeScript. El directorio `src` contiene el código fuente, dividido en varios subdirectorios:
-
-- `application`: Contiene la lógica de aplicación.
-- `domain`: Contiene los modelos de dominio.
-- `infrastructure`: Contiene código relacionado con la infraestructura.
-- `presentation`: Contiene código relacionado con la capa de presentación.
-- `routes`: Contiene las rutas de la aplicación.
-- `tests`: Contiene las pruebas de la aplicación.
-
-El directorio `prisma` contiene el esquema de Prisma.
-
-## Primeros Pasos
-
-Para comenzar con este proyecto, sigue estos pasos:
-
-1. Clona el repositorio.
-2. Instala las dependencias para el frontend y el backend:
-```sh
+```bash
+# Install dependencies
 cd frontend
 npm install
 
-cd ../backend
-npm install
-```
-3. Construye el servidor backend:
-```
-cd backend
-npm run build
-````
-4. Inicia el servidor backend:
-```
-cd backend
-npm start
-```
-5. En una nueva ventana de terminal, construye el servidor frontend:
-```
-cd frontend
-npm run build
-```
-6. Inicia el servidor frontend:
-```
-cd frontend
+# Start application
 npm start
 ```
 
-El servidor backend estará corriendo en http://localhost:3010 y el frontend estará disponible en http://localhost:3000.
+The application will open at http://localhost:3000
 
-## Docker y PostgreSQL
+### 📖 Full Documentation
 
-Este proyecto usa Docker para ejecutar una base de datos PostgreSQL. Así es cómo ponerlo en marcha:
+See [ECOARQ_README.md](./ECOARQ_README.md) for complete documentation.
 
-Instala Docker en tu máquina si aún no lo has hecho. Puedes descargarlo desde aquí.
-Navega al directorio raíz del proyecto en tu terminal.
-Ejecuta el siguiente comando para iniciar el contenedor Docker:
-```
-docker-compose up -d
-```
-Esto iniciará una base de datos PostgreSQL en un contenedor Docker. La bandera -d corre el contenedor en modo separado, lo que significa que se ejecuta en segundo plano.
+---
 
-Para acceder a la base de datos PostgreSQL, puedes usar cualquier cliente PostgreSQL con los siguientes detalles de conexión:
- - Host: localhost
- - Port: 5432
- - User: postgres
- - Password: password
- - Database: mydatabase
+## 🛠️ Technology Stack
 
-Por favor, reemplaza User, Password y Database con el usuario, la contraseña y el nombre de la base de datos reales especificados en tu archivo .env.
+- React 18
+- Modern CSS3 with gradients and animations
+- JavaScript ES6+
+- Responsive design (mobile, tablet, desktop)
 
-Para detener el contenedor Docker, ejecuta el siguiente comando:
-```
-docker-compose down
-```
+## 🌱 Environmental Benefits
 
-Para generar la base de datos utilizando Prisma, sigue estos pasos:
+- Reduces carbon footprint
+- Uses renewable and local materials
+- Promotes self-construction
+- Strengthens local communities
+- Creates healthy living spaces
 
-1. Asegúrate de que el archivo `.env` en el directorio raíz del backend contenga la variable `DATABASE_URL` con la cadena de conexión correcta a tu base de datos PostgreSQL. Si no te funciona, prueba a reemplazar la URL completa directamente en `schema.prisma`, en la variable `url`.
+## 🤝 Contributing
 
-2. Abre una terminal y navega al directorio del backend donde se encuentra el archivo `schema.prisma` y `seed.ts`.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-3. Ejecuta los siguientes comandos para generar la estructura de prisma, las migraciones a tu base de datos y poblarla con datos de ejemplo:
-```
-npx prisma generate
-npx prisma migrate dev
-ts-node seed.ts
-```
+## 📧 Contact
 
-Una vez has dado todos los pasos, deberías poder guardar nuevos candidatos, tanto via web, como via API, verlos en la base de datos y obtenerlos mediante GET por id.
+For questions or suggestions, please open an issue.
 
-```
-POST http://localhost:3010/candidates
-{
-    "firstName": "Albert",
-    "lastName": "Saelices",
-    "email": "albert.saelices@gmail.com",
-    "phone": "656874937",
-    "address": "Calle Sant Dalmir 2, 5ºB. Barcelona",
-    "educations": [
-        {
-            "institution": "UC3M",
-            "title": "Computer Science",
-            "startDate": "2006-12-31",
-            "endDate": "2010-12-26"
-        }
-    ],
-    "workExperiences": [
-        {
-            "company": "Coca Cola",
-            "position": "SWE",
-            "description": "",
-            "startDate": "2011-01-13",
-            "endDate": "2013-01-17"
-        }
-    ],
-    "cv": {
-        "filePath": "uploads/1715760936750-cv.pdf",
-        "fileType": "application/pdf"
-    }
-}
-```
+## ⚖️ License
 
+See LICENSE.md for details.
+
+---
+
+## Previous Project Archive
+
+This repository previously contained an LTI Talent Tracking System. The documentation for that project has been preserved in the git history if needed.
+
+---
+
+**¡Construyamos un futuro más verde y sostenible juntos! | Let's build a greener, more sustainable future together!** 🌍💚
