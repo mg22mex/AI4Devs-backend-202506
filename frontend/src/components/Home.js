@@ -7,7 +7,7 @@ function Home() {
       
       <div className="info-section">
         <p style={{fontSize: '1.2em', textAlign: 'center', marginBottom: '30px'}}>
-          Tu plataforma integral para diseñar y planificar proyectos de construcción natural sostenible.
+          Tu plataforma integral para diseñar y planificar proyectos de construcción natural sostenible y medicina herbal tradicional.
         </p>
       </div>
 
@@ -82,6 +82,20 @@ function Home() {
             <li>✓ Guías de software 3D</li>
             <li>✓ Proceso de renderizado</li>
             <li>✓ Recursos y tutoriales</li>
+          </ul>
+        </div>
+
+        <div className="card">
+          <div className="icon">🌿</div>
+          <h3>Plantas Medicinales</h3>
+          <p>
+            Base de datos de 26 plantas medicinales y hongos con información detallada sobre preparación, dosis y usos terapéuticos.
+          </p>
+          <ul>
+            <li>✓ Hongos medicinales y adaptógenos</li>
+            <li>✓ Ratios de tintura y dosis</li>
+            <li>✓ Descarga PDF y etiquetas</li>
+            <li>✓ Guía de preparación</li>
           </ul>
         </div>
       </div>

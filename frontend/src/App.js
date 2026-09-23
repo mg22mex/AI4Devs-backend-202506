@@ -5,6 +5,7 @@ import TechniquesGuide from './components/TechniquesGuide';
 import ProjectPlanner from './components/ProjectPlanner';
 import DesignInspiration from './components/DesignInspiration';
 import ThreeDVisualization from './components/ThreeDVisualization';
+import MedicinalPlantsGuide from './components/MedicinalPlantsGuide';
 import Home from './components/Home';
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
         return <DesignInspiration />;
       case '3d':
         return <ThreeDVisualization />;
+      case 'plants':
+        return <MedicinalPlantsGuide />;
       default:
         return <Home />;
     }
@@ -33,7 +36,7 @@ function App() {
     <div className="app">
       <header className="header">
         <h1>🏡 EcoArq</h1>
-        <p>Plataforma de Diseño de Construcción Natural</p>
+        <p>Plataforma de Construcción Natural y Medicina Herbal</p>
       </header>
 
       <nav className="navigation">
@@ -72,6 +75,12 @@ function App() {
           onClick={() => setActiveSection('3d')}
         >
           Visualización 3D
+        </button>
+        <button 
+          className={`nav-button ${activeSection === 'plants' ? 'active' : ''}`}
+          onClick={() => setActiveSection('plants')}
+        >
+          🌿 Plantas Medicinales
         </button>
       </nav>
 
